@@ -24,6 +24,9 @@ Text Domain: mi-tema-en-blanco
     width: 100%;
     height: 100px;
     background-color: #FF7500;
+    padding: 0 20px;
+    position: static;
+    z-index: 999;
     /* border: 1px solid black; */
 }
 
@@ -41,4 +44,14 @@ Text Domain: mi-tema-en-blanco
     font-size: 20px;
     font-weight: bold;
     /* Quita el subrayado */
+}
+
+.pepito {
+    height: 100px;
+    width: 100px;
+}
+
+.slider__container {
+    height: 300px;
+    width: 100%;
 }

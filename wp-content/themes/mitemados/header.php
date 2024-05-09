@@ -16,8 +16,9 @@
             <ul id="ul_id" class="ul_class">
                 <li id="li_id" class="li_class"><a href="">Inicio</a></li>
                 <li id="li_id" class="li_class"><a href="">Servicios</a></li>
-                <li id="li_id" class="li_class"><a href="">Conocesenos</a></li>
+                <li id="li_id" class="li_class"><a href="">Conocenos</a></li>
                 <li id="li_id" class="li_class"><a href="">Contacto</a></li>
             </ul>
         </nav><!-- #site-navigation -->
+
     </header>
