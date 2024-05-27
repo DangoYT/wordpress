@@ -25,7 +25,7 @@ Text Domain: mi-tema-en-blanco
     height: 100px;
     background-color: #FF7500;
     padding: 0 20px;
-    position: static;
+    position: fixed;
     z-index: 999;
     /* border: 1px solid black; */
 }

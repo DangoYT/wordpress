@@ -1,0 +1,74 @@
+/*
+Theme Name: Mi Tema Personalizado para soyDelivery
+Theme URI: http://tusitio.com
+Author: Tu Nombre
+Author URI: http://tusitio.com
+Description: Descripción de tu tema personalizado.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: mi-tema-personalizado
+*/
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header,
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.nav_class {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: #FF7500;
+    padding: 0 20px;
+    /*  position: fixed; */
+    z-index: 999;
+    /* border: 1px solid black; */
+}
+
+.ul_class {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.ul_class li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    /* Quita el subrayado */
+}
+
+.pepito {
+    height: 100px;
+    width: 100px;
+}
+
+.slider__container {
+    height: 300px;
+    width: 100%;
+}
