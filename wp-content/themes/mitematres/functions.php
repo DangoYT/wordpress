@@ -46,6 +46,16 @@ function soydelivery_custom_admin_menu()
         6 // Posición
     );
 }
+
+function soydelivery_enqueue_scripts()
+{
+    wp_enqueue_style('slick-carousel-css', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css');
+    wp_enqueue_style('slick-carousel-theme-css', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css');
+    wp_enqueue_script('slick-carousel-js', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js', array('jquery'), null, true);
+    wp_enqueue_style('style', get_stylesheet_uri());
+}
+add_action('wp_enqueue_scripts', 'soydelivery_enqueue_scripts');
+
 add_action('admin_menu', 'soydelivery_custom_admin_menu');
 
 add_action('init', 'soydelivery_custom_post_types');
