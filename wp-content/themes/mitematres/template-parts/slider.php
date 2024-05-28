@@ -15,11 +15,13 @@
                 <div class="carousel-item">
                     <?php
                     if ($imagen && !empty($imagen['url'])) {
+                        echo '<a href="' . get_permalink() . '">';
                         echo '<img src="' . esc_url($imagen['url']) . '" alt="' . esc_attr($imagen['alt']) . '">';
+                        echo '</a>';
                     }
                     ?>
                     <div class="carousel-caption">
-                        <h3><?php the_title(); ?></h3>
+                        <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
                     </div>
                 </div>
                 <?php

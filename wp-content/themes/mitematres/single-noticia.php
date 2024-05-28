@@ -14,13 +14,15 @@
                 <div class="imagen-noticia">
                     <?php
                     $imagen = get_field('imagen_de_la_noticia');
-                    if ($imagen) {
-                        echo wp_get_attachment_image($imagen, 'full');
+                    if ($imagen && !empty($imagen['url'])) {
+                        echo '<img src="' . esc_url($imagen['url']) . '" alt="' . esc_attr($imagen['alt']) . '">';
+                    } else {
+                        echo '<p>Imagen no disponible</p>';
                     }
                     ?>
                 </div>
                 <div class="contenido-noticia">
-                    <?php the_content(); ?>
+                    <?php the_field('contenido_completo_de_la_noticia'); ?>
                 </div>
             </article>
             <?php

@@ -25,10 +25,16 @@ function soydelivery_custom_post_types()
                 'singular_name' => __('Noticia'),
                 'add_new_item' => __('Agregar Nueva Noticia'),
                 'edit_item' => __('Editar Noticia'),
+                'new_item' => __('Nueva Noticia'),
+                'view_item' => __('Ver Noticia'),
+                'search_items' => __('Buscar Noticias'),
+                'not_found' => __('No se encontraron noticias'),
+                'not_found_in_trash' => __('No se encontraron noticias en la papelera'),
             ),
             'public' => true,
             'has_archive' => true,
-            'supports' => array('title', 'editor', 'thumbnail'),
+            'rewrite' => array('slug' => 'noticia'),
+            'supports' => array('title', 'thumbnail'), // Eliminamos 'editor'
             'menu_icon' => 'dashicons-media-document',
         )
     );
