@@ -12,7 +12,8 @@
 <body <?php body_class(); ?>>
     <header>
         <nav id="nav_id" class="nav_class">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/logo_GlobalDev.png" alt="Logo de tu sitio">
+            <img class="logoSoyDev" src="<?php echo get_template_directory_uri(); ?>/images/logoSoyDev.png"
+                alt="Logo de tu sitio">
             <ul id="ul_id" class="ul_class">
                 <li id="li_id" class="li_class"><a href="">Inicio</a></li>
                 <li id="li_id" class="li_class"><a href="">Servicios</a></li>

@@ -19,14 +19,13 @@ body {
 
 header,
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #5a0000;
+    color: #FFFFFF;
     text-align: center;
-    padding: 10px 0;
+    margin: auto 0;
 }
 
 a {
-    color: #0066cc;
     text-decoration: none;
 }
 
@@ -36,15 +35,18 @@ a:hover {
 
 .nav_class {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    width: 100%;
-    height: 100px;
     background-color: #FF7500;
-    padding: 0 20px;
-    /*  position: fixed; */
+    height: 140px;
+    padding: 10px, 100px, 10px, 100px;
     z-index: 999;
     /* border: 1px solid black; */
+}
+
+.logoSoyDev {
+    width: 336px;
+    height: 43.51px;
 }
 
 .ul_class {
@@ -57,10 +59,73 @@ a:hover {
 
 .ul_class li a {
     text-decoration: none;
-    color: white;
+    color: #FFFFFF;
     font-size: 20px;
     font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
     /* Quita el subrayado */
+}
+
+.headerr {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    height: 295px;
+    width: 1046px;
+
+}
+
+.container {
+    /* border: 1px solid black; */
+    height: 221.85px;
+    width: 517px;
+    gap: 40px;
+}
+
+.titulo {
+    height: 116px;
+}
+
+.container h1 {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 44px;
+    font-weight: 700;
+}
+
+.banderas {
+    display: flex;
+    justify-content: space-between;
+    height: 65.85px;
+    width: 410px;
+}
+
+.banderas img {
+    height: 65.77px;
+    width: 72.97px;
+}
+
+.content_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-conocenos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 38px;
+    width: 310px;
+    border-radius: 5.58px;
+    background-color: #414141;
+    font-family: 'Karla', sans-serif;
 }
 
 .pepito {
@@ -68,7 +133,188 @@ a:hover {
     width: 100px;
 }
 
+
+/* Estilos para el contenedor del slider */
+.slider {
+    height: 574px;
+    width: 1280px;
+}
+
 .slider__container {
     height: 300px;
     width: 100%;
+}
+
+/* Estilos para el contenedor del carousel */
+.carousel {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: #f9f9f9;
+    /* Color de fondo del carousel */
+    border-radius: 10px;
+    /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra */
+}
+
+/* Estilos para los elementos del carousel */
+.carousel-inner {
+    display: flex;
+    align-items: center;
+}
+
+.carousel-item {
+    position: relative;
+    width: 50%;
+    height: 550px;
+    /* Cada item ocupará la mitad del espacio */
+    padding: 10px;
+    /* Espaciado interno */
+    box-sizing: border-box;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item img {
+    width: 552px;
+    height: 355px;
+    object-fit: cover;
+    /* Asegura que las imágenes se ajusten al área especificada sin distorsión */
+    border-radius: 10px;
+    /* Bordes redondeados de las imágenes */
+}
+
+
+/* Estilos para las leyendas (captions) */
+.carousel-caption {
+    position: absolute;
+    bottom: 80px;
+    left: 45%;
+    transform: translateX(-50%);
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    /* Fondo semitransparente */
+    color: #000000;
+    padding: 10px 20px;
+    border-radius: 0px 0px 5px 5px;
+    text-align: center;
+}
+
+.carousel-caption h3 {
+    color: #FF7500;
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.carousel-caption a {
+    color: #FF7500;
+}
+
+/* Estilos para los indicadores del carousel */
+.slick-dots {
+    bottom: 10px;
+}
+
+.slick-dots li button:before {
+    font-size: 12px;
+    color: #fff;
+    /* Color de los puntos no activos */
+}
+
+.slick-dots li.slick-active button:before {
+    color: #000;
+    /* Color del punto activo */
+}
+
+/* Estilos para las flechas de navegación */
+.slick-prev,
+.slick-next {
+    width: 30px;
+    height: 30px;
+    z-index: 1;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    font-size: 30px;
+    color: #000;
+    /* Color de las flechas de navegación */
+}
+
+
+.servicios {
+    background-color: #FF7500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 1155px;
+    width: 1280px;
+}
+
+.servicios h2 {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 59.33px;
+    color: white;
+    height: 59px;
+    width: 800px;
+}
+
+.servicios h3 {
+    border: 1px solid white;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    margin-top: 40px;
+}
+
+.servicios__logos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    width: 1046px;
+    margin: 0 auto;
+}
+
+.servicios__logo__item {
+    background-color: white;
+    height: 364px;
+    width: 308px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.servicios__logo__item h3 {
+    font-family: 'Karla', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 21.7px;
+    color: #FF7500;
+}
+
+.servicios__logo__item p {
+    font-family: 'Karla', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17.57px;
+    text-align: center;
+    color: #414141;
+}
+
+.btn-conocenos {
+    background-color: #414141;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-family: 'Karla', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19.36px;
 }

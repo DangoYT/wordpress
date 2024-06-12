@@ -4,13 +4,14 @@
         $slider_query = new WP_Query(
             array(
                 'post_type' => 'noticia',
-                'posts_per_page' => 3,
+                'posts_per_page' => 6, // Ajusta este número según la cantidad de noticias que quieras mostrar
             )
         );
         if ($slider_query->have_posts()):
             while ($slider_query->have_posts()):
                 $slider_query->the_post();
                 $imagen = get_field('imagen_de_la_noticia');
+                $resumen = get_field('resumen_de_la_noticia');
                 ?>
                 <div class="carousel-item">
                     <?php
@@ -22,6 +23,7 @@
                     ?>
                     <div class="carousel-caption">
                         <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+                        <p><?php echo esc_html($resumen); ?></p>
                     </div>
                 </div>
                 <?php
@@ -40,8 +42,11 @@
             dots: true,
             infinite: true,
             speed: 300,
-            slidesToShow: 1,
-            adaptiveHeight: true
+            slidesToShow: 2,           // Mostrar dos noticias a la vez
+            slidesToScroll: 1,         // Deslizar una noticia a la vez
+            adaptiveHeight: true,
+            autoplay: true,
+            autoplaySpeed: 5000        // Velocidad de reproducción automática (5000 ms = 5 segundos)
         });
     });
 </script>
