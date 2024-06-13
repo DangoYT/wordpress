@@ -10,6 +10,72 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: mi-tema-personalizado
 */
 
+/* Fonts */
+@font-face {
+    font-family: 'Karla';
+    src: url('fonts/Karla-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Karla';
+    src: url('fonts/Karla-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Karla';
+    src: url('fonts/Karla-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Karla';
+    src: url('fonts/Karla-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Museo Sans Rounded';
+    src: url('fonts/MuseoSansRounded-900.otf') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Simply Sans';
+    src: url('fonts/SimplySans-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Simply Sans';
+    src: url('fonts/SimplySans-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Simply Sans';
+    src: url('fonts/SimplySans-BookItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Simply Sans';
+    src: url('fonts/SimplySans-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Estilos globales */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -17,7 +83,10 @@ body {
     background-color: #f9f9f9;
 }
 
-header,
+header {
+    background-color: #FF7500
+}
+
 footer {
     background-color: #5a0000;
     color: #FFFFFF;
@@ -25,77 +94,100 @@ footer {
     margin: auto 0;
 }
 
-a {
-    text-decoration: none;
-}
+/* ----------------Estilos para el menú de navegación -----------------*/
 
-a:hover {
-    text-decoration: underline;
-}
-
-.nav_class {
+.navContainer {
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: #FF7500;
+    /* max-width: 1280px; */
+    /* width: 1280px; */
     height: 140px;
-    padding: 10px, 100px, 10px, 100px;
-    z-index: 999;
-    /* border: 1px solid black; */
+    padding: 10px 100px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.logoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex: 1 0 0;
+    align-self: stretch;
 }
 
 .logoSoyDev {
+    display: flex;
     width: 336px;
-    height: 43.51px;
-}
-
-.ul_class {
-    display: flex;
-    list-style: none;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 40px;
-}
-
-.ul_class li a {
-    text-decoration: none;
-    color: #FFFFFF;
-    font-size: 20px;
-    font-weight: bold;
-    font-family: 'Open Sans', sans-serif;
-    /* Quita el subrayado */
-}
-
-.headerr {
-    display: flex;
+    height: 43.509px;
+    padding-right: 84.787px;
     align-items: center;
+}
+
+.ulContainer {
+    display: flex;
+    width: 617px;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+    list-style-type: none;
+}
+
+.ulContainer li a {
+    display: flex;
+    padding: 10px;
     justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #FFF;
+    font-family: "Simply Sans";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: none;
+}
+
+/* -------------- Estilos para el encabezado ---------------- */
+
+.encabezado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 40px;
 }
 
 .content {
     /* border: 1px solid black; */
     display: flex;
-    justify-content: space-between;
-    height: 295px;
-    width: 1046px;
-
+    /* width: 1046px; */
+    /* justify-content: space-between; */
+    /* align-items: flex-start; */
+    gap: 40px;
 }
 
 .container {
     /* border: 1px solid black; */
-    height: 221.85px;
-    width: 517px;
-    gap: 40px;
-}
-
-.titulo {
-    height: 116px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    width: 32.3rem;
+    height: 13.9rem;
 }
 
 .container h1 {
-    font-family: 'Montserrat Alternates', sans-serif;
+    color: #414141;
+    /* H1 */
+    font-family: "Museo Sans Rounded";
     font-size: 44px;
+    font-style: normal;
     font-weight: 700;
+    line-height: 131.523%;
+    /* 57.87px */
 }
 
 .banderas {
@@ -110,38 +202,65 @@ a:hover {
     width: 72.97px;
 }
 
+.imagenEncabezado {
+    width: 444px;
+    height: 295px;
+}
+
+/* --------------- Estilos para el botón ---------------- */
+
+
 .content_btn {
     display: flex;
+    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
+    text-decoration: none;
+    text-align: center;
 }
 
-.btn-conocenos {
+.btn-contactar {
     display: flex;
+    width: 310px;
+    padding: 11px 30px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5.578px;
+    background: var(--Surface-Surface-gris, #414141);
+    box-shadow: 0px 2.231px 4.462px 0px rgba(0, 0, 0, 0.15);
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-family: "Karla", sans-serif;
+    font-size: 19.39px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 15.618px;
+}
+
+/* ---------------- Estilos para el slider ----------------- */
+
+
+.slider {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white;
-    height: 38px;
-    width: 310px;
-    border-radius: 5.58px;
-    background-color: #414141;
-    font-family: 'Karla', sans-serif;
+    gap: 40px;
+    align-self: stretch;
 }
 
-.pepito {
-    height: 100px;
-    width: 100px;
-}
-
-
-/* Estilos para el contenedor del slider */
-.slider {
-    height: 574px;
-    width: 1280px;
+.slider__title {
+    color: var(--Text-Text-naranja, #FF7500);
+    font-family: "Simply Sans";
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }
 
 .slider__container {
-    height: 300px;
+    /*  height: 300px; */
     width: 100%;
 }
 
@@ -153,7 +272,7 @@ a:hover {
     overflow: hidden;
     background-color: #f9f9f9;
     /* Color de fondo del carousel */
-    border-radius: 10px;
+    /* border-radius: 10px; */
     /* Bordes redondeados */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     /* Sombra */

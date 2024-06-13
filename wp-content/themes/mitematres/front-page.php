@@ -2,12 +2,11 @@
 
 <main>
 
-    <section class="headerr">
+    <section class="encabezado">
         <div class="content">
             <div class="container">
-                <div class="titulo">
-                    <h1>Tecnología e innovación aplicada a tus envíos</h1>
-                </div>
+
+                <h1>Tecnología e innovación aplicada a tus envíos</h1>
 
                 <div class="banderas">
                     <img src="wp-content/themes/mitematres/images/uruguayConNombre.png" alt="">
@@ -15,20 +14,24 @@
                     <img src="wp-content/themes/mitematres/images/paraguayConNombre.png" alt="">
                 </div>
 
-                <!-- Añadir más contenido aquí -->
             </div>
-            <div>
+
+            <div class="imagenEncabezado">
                 <img src="wp-content/themes/mitematres/images/Imagen.jpg" alt="">
             </div>
+
         </div>
     </section>
+
     <section class="content_btn">
-        <a href="conocenos.php" class="btn-conocenos">Contactar</a>
+        <a href="contactar.php" class="btn-contactar">Contactar</a>
     </section>
+
     <section class="slider">
-        <h2>Deslizá para ver más noticias</h2>
+        <h2 class="slider__title">Deslizá para ver más noticias</h2>
         <?php get_template_part('template-parts/slider'); ?>
     </section>
+
     <section class="servicios">
         <h2>Conoce más sobre nuestros servicios</h2>
         <h3>Brindamos una amplia variedad de soluciones
@@ -76,6 +79,7 @@
         </div>
         <a class="btn-conocenos" href="">Contactar</a>
     </section>
+
 </main>
 
 <?php get_footer(); ?>
