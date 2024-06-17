@@ -265,69 +265,103 @@ footer {
 }
 
 /* Estilos para el contenedor del carousel */
+/* Estilos para el contenedor del carousel */
+/* Estilos para el contenedor del carousel */
+/* Estilos para el contenedor del carousel */
+/* Estilos para el contenedor del carousel */
+/* Estilos para el contenedor del carousel */
 .carousel {
     position: relative;
     width: 100%;
     margin: 0 auto;
-    overflow: hidden;
-    background-color: #f9f9f9;
-    /* Color de fondo del carousel */
-    /* border-radius: 10px; */
-    /* Bordes redondeados */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* Sombra */
+    overflow: visible;
+    /* Cambiar a visible */
+    display: flex;
+    justify-content: center;
+    /* Centra el carousel horizontalmente */
+    z-index: 1;
+    /* Asegurarse de que el contenedor del carousel esté en el nivel correcto */
 }
 
 /* Estilos para los elementos del carousel */
 .carousel-inner {
     display: flex;
     align-items: center;
+    justify-content: center;
+    /* Centra los elementos dentro del carousel */
+    width: 100%;
+    z-index: 1;
+    /* Asegurarse de que los elementos internos estén en el nivel correcto */
 }
 
 .carousel-item {
     position: relative;
-    width: 50%;
-    height: 550px;
-    /* Cada item ocupará la mitad del espacio */
+    flex: 0 0 auto;
+    width: 522px;
+    /* Ancho fijo */
+    height: 355px;
+    /* Alto fijo */
+    margin: 0 15px;
+    /* Espacio entre los elementos del carousel */
     padding: 10px;
     /* Espaciado interno */
     box-sizing: border-box;
     transition: transform 0.5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
+    /* Asegúrate de que el caption se muestre fuera del contenedor */
 }
 
 .carousel-item img {
-    width: 552px;
-    height: 355px;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    /* Asegura que las imágenes se ajusten al área especificada sin distorsión */
+    /* Ajusta la imagen sin distorsionar */
     border-radius: 10px;
     /* Bordes redondeados de las imágenes */
 }
 
-
 /* Estilos para las leyendas (captions) */
 .carousel-caption {
     position: absolute;
-    bottom: 80px;
-    left: 45%;
+    bottom: -80px;
+    /* Ajusta la posición para que esté fuera de la imagen */
+    left: 50%;
     transform: translateX(-50%);
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-    /* Fondo semitransparente */
-    color: #000000;
-    padding: 10px 20px;
-    border-radius: 0px 0px 5px 5px;
+    background-color: rgba(255, 255, 255, 0.9);
+    /* Fondo blanco */
+    color: #000;
+    padding: 15px 20px;
+    border-radius: 10px;
     text-align: center;
+    width: 90%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra */
+    z-index: 2;
+    /* Asegurarse de que el caption esté por encima de las imágenes */
 }
 
 .carousel-caption h3 {
-    color: #FF7500;
-    margin: 0;
+    margin: 0 0 10px;
     font-size: 1.5em;
+    color: #ff7e00;
+    /* Color del título en naranja */
 }
 
-.carousel-caption a {
-    color: #FF7500;
+.carousel-caption p {
+    margin: 0;
+    font-size: 1em;
+    color: #333;
+    /* Color del resumen */
+}
+
+.carousel-caption .icon {
+    font-size: 2em;
+    color: #ff7e00;
+    /* Color del icono en naranja */
+    margin-bottom: 10px;
 }
 
 /* Estilos para los indicadores del carousel */
@@ -337,12 +371,12 @@ footer {
 
 .slick-dots li button:before {
     font-size: 12px;
-    color: #fff;
+    color: #000;
     /* Color de los puntos no activos */
 }
 
 .slick-dots li.slick-active button:before {
-    color: #000;
+    color: #ff7e00;
     /* Color del punto activo */
 }
 
@@ -360,6 +394,7 @@ footer {
     color: #000;
     /* Color de las flechas de navegación */
 }
+
 
 
 .servicios {
