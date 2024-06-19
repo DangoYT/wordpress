@@ -17,14 +17,16 @@
                     alt="Logo de tu sitio">
             </div>
             <div>
-                <ul id="ul_id" class="ulContainer">
-                    <li id="li_id" class="li_class"><a href="">Inicio</a></li>
-                    <li id="li_id" class="li_class"><a href="">Servicios</a></li>
-                    <li id="li_id" class="li_class"><a href="">Conocenos</a></li>
-                    <li id="li_id" class="li_class"><a href="">Contacto</a></li>
-                </ul>
+                <?php
+                wp_nav_menu(
+                    array(
+                        'theme_location' => 'header', // Utiliza el nombre del menú que registraste
+                        'container' => false,
+                        'menu_class' => 'ulContainer', // Asegúrate de que esta clase coincide con tus estilos CSS
+                        'items_wrap' => '<ul id="ul_id" class="%2$s">%3$s</ul>',
+                    )
+                );
+                ?>
             </div>
-
         </nav><!-- #site-navigation -->
-
     </header>

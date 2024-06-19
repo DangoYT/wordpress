@@ -16,9 +16,10 @@
 
 <script>
     jQuery(document).ready(function ($) {
-        $('.mi-slider').slick({
+        $('.second-slider__container').slick({
             autoplay: true,
             autoplaySpeed: 3000, // Cambia la imagen cada 3 segundos
+            slidesToShow: 2,
             arrows: false, // Desactiva las flechas de navegación
             dots: true // Activa los puntos de navegación
         });

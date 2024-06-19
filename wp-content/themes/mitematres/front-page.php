@@ -85,6 +85,7 @@
     </section>
 
     <section class="second_slider">
+        <img class="mcaca" src="wp-content/themes/mitematres/images/mcaca.png" alt="">
         <?php get_template_part('template-parts/second_slider'); ?>
     </section>
 </main>
