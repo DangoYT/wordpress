@@ -44,9 +44,10 @@
             speed: 300,
             slidesToShow: 2,           // Mostrar dos noticias a la vez
             slidesToScroll: 1,         // Deslizar una noticia a la vez
-            adaptiveHeight: true,
             autoplay: true,
-            autoplaySpeed: 5000        // Velocidad de reproducción automática (5000 ms = 5 segundos)
+            autoplaySpeed: 5000,     // Velocidad de reproducción automática (5000 ms = 5 segundos)
+            variableWidth: false,
+            arrows: false
         });
     });
 </script>

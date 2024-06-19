@@ -60,25 +60,19 @@ function soydelivery_custom_admin_menu()
 }
 add_action('admin_menu', 'soydelivery_custom_admin_menu');
 
-// Encolar estilos y scripts para Slick Carousel
-function soydelivery_enqueue_scripts()
+// Encolar estilos y scripts necesarios
+function soydelivery_enqueue_assets()
 {
-    wp_enqueue_style('slick-carousel-css', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css');
-    wp_enqueue_style('slick-carousel-theme-css', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css');
-    wp_enqueue_script('slick-carousel-js', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js', array('jquery'), null, true);
-    wp_enqueue_style('main-style', get_stylesheet_uri());
-}
-add_action('wp_enqueue_scripts', 'soydelivery_enqueue_scripts');
+    // Encolar Slick Carousel
+    wp_enqueue_style('slick-css', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css');
+    wp_enqueue_style('slick-theme-css', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css');
+    wp_enqueue_script('slick-js', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js', array('jquery'), null, true);
 
-// Encolar fuentes personalizadas de Google Fonts y estilos de fuentes locales
-function soydelivery_enqueue_styles()
-{
     // Encolar Google Fonts
     wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap', false);
 
     // Encolar el archivo CSS de fuentes locales
     wp_enqueue_style('font-styles', get_template_directory_uri() . '/fonts.css');
 }
-add_action('wp_enqueue_scripts', 'soydelivery_enqueue_styles');
-
+add_action('wp_enqueue_scripts', 'soydelivery_enqueue_assets');
 ?>

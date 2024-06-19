@@ -33,9 +33,13 @@
     </section>
 
     <section class="servicios">
-        <h2>Conoce más sobre nuestros servicios</h2>
-        <h3>Brindamos una amplia variedad de soluciones
-            a nuestros clientes</h3>
+        <div class="servicios__titulo">
+            <h2>Conoce más sobre nuestros servicios</h2>
+        </div>
+        <div class="servicios__subtitulo">
+            <h3>Brindamos una amplia variedad de soluciones
+                a nuestros clientes</h3>
+        </div>
         <div class="servicios__logos">
             <div class="servicios__logo__item">
                 <img src="wp-content/themes/mitematres/images/sameday.png" alt="">
@@ -77,9 +81,12 @@
                     cada una de las entregas y mucho más. Las garantías y efectividad que tus clientes necesitan.</p>
             </div>
         </div>
-        <a class="btn-conocenos" href="">Contactar</a>
+        <a class="btn-contactar" href="">Contactar</a>
     </section>
 
+    <section class="second_slider">
+        <?php get_template_part('template-parts/second_slider'); ?>
+    </section>
 </main>
 
 <?php get_footer(); ?>
