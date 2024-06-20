@@ -75,4 +75,18 @@ function soydelivery_enqueue_assets()
     wp_enqueue_style('font-styles', get_template_directory_uri() . '/fonts.css');
 }
 add_action('wp_enqueue_scripts', 'soydelivery_enqueue_assets');
+
+function registrar_mis_menus_personalizados()
+{
+    register_nav_menus(
+        array(
+            'menu_uruguay' => __('Menú Uruguay'),
+            'menu_paraguay' => __('Menú Paraguay'),
+            'menu_peru' => __('Menú Perú')
+        )
+    );
+}
+add_action('init', 'registrar_mis_menus_personalizados');
+
+
 ?>

@@ -9,10 +9,14 @@
                 <h1>Tecnología e innovación aplicada a tus envíos</h1>
 
                 <div class="banderas">
-                    <img src="wp-content/themes/mitematres/images/uruguayConNombre.png" alt="">
-                    <img src="wp-content/themes/mitematres/images/peruConNombre.png" alt="">
-                    <img src="wp-content/themes/mitematres/images/paraguayConNombre.png" alt="">
+                    <a href="<?php echo site_url('/uruguay'); ?>"><img
+                            src="wp-content/themes/mitematres/images/uruguayConNombre.png" alt="Uruguay"></a>
+                    <a href="<?php echo site_url('/paraguay'); ?>"><img
+                            src="wp-content/themes/mitematres/images/paraguayConNombre.png" alt="Paraguay"></a>
+                    <a href="<?php echo site_url('/peru'); ?>"><img
+                            src="wp-content/themes/mitematres/images/peruConNombre.png" alt="Perú"></a>
                 </div>
+
 
             </div>
 

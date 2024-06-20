@@ -27,10 +27,10 @@
         <div class="footer-redes">
             <p>Seguinos en redes</p>
             <div class="redes">
-                <img src="wp-content/themes/mitematres/images/Insta.svg" alt="">
-                <img src="wp-content/themes/mitematres/images/facebook.svg" alt="">
-                <img src="wp-content/themes/mitematres/images/linkedin.svg" alt="">
-                <img src="wp-content/themes/mitematres/images/twitter.svg" alt="">
+                <img class="" src="<?php echo get_template_directory_uri(); ?>/images/Insta.svg" alt="">
+                <img class="" src="<?php echo get_template_directory_uri(); ?>/images/facebook.svg" alt="">
+                <img class="" src="<?php echo get_template_directory_uri(); ?>/images/linkedin.svg" alt="">
+                <img class="" src="<?php echo get_template_directory_uri(); ?>/images/twitter.svg" alt="">
             </div>
 
         </div>
