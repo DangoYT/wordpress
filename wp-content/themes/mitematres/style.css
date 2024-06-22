@@ -383,41 +383,39 @@ Text Domain: mi-tema-personalizado
 /* ------------------ HERO3  ----------------- */
 
 
-.hero3-uruguay {
+.emprendedor {
     display: flex;
-    /* width: 1046px; */
-    height: 490px;
+    /* width: 1046px;
+    height: 490px; */
     padding: 30px 0px;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     gap: 85px;
 }
 
-.hero3-uruguay-container {
+.emprendedor__container {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    align-self: stretch;
-    width: 1046px;
-    height: 490px;
+    width: 1046px
 }
 
-.hero3-uruguay-soyemprendedor-image-container {}
+.emprendedor__image-container {
+    width: 375px;
+    height: 357.784px;
+}
 
-.hero3-uruguay-soyemprendedor-image {}
+.emprendedor__image {}
 
-.hero3-uruguay-soyemprendedor-text-container {
+.emprendedor__content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 40px;
-
-    width: 517px;
-    height: 442px;
 }
 
-.hero3-uruguay-soyemprendedor-h2 {
+.emprendedor__title {
     color: #414141;
 
     /* H1 */
@@ -427,12 +425,11 @@ Text Domain: mi-tema-personalizado
     font-weight: 700;
     line-height: 131.523%;
     /* 57.87px */
-    text-align: start;
 
-    margin: 0px;
+    width: 517px;
 }
 
-.hero3-uruguay-soyemprendedor-cuponera-container {
+.emprendedor__description {
     display: flex;
     width: 464.77px;
     padding: 20px;
@@ -444,60 +441,58 @@ Text Domain: mi-tema-personalizado
     background: var(--Surface-Surface-brand, #FF7500);
 }
 
-.hero3-uruguay-soyemprendedor-p {
-    color: #000;
-    font-family: "Karla";
+.emprendedor__text {
+    color: #FFF;
+    font-family: "Karla", sans-serif;
     font-size: 15px;
     font-style: normal;
     font-weight: 500;
     line-height: 131.523%;
-    /* 19.728px */
-    width: 517px;
 }
 
-.hero3-uruguay-soyemprendedor-cuponera-button {
+.emprendedor__options {
     display: flex;
     justify-content: center;
     align-items: flex-end;
     gap: 14px;
 }
 
-.hero3-uruguay-soyemprendedor-cuponera {
+.emprendedor__option {
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
     gap: 14px;
 }
 
-.hero3-uruguay-soyemprendedor-cuponera-inputs-container {
+.emprendedor__checkbox-container {
     display: flex;
     padding: 20px;
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
+
     border-radius: 10px;
     background: var(--Surface-Surface-default, #FFF);
 }
 
-.hero3-uruguay-soyemprendedor-cuponera-input-container {
+.emprendedor__checkbox-item {
     display: flex;
     align-items: flex-start;
     gap: 21px;
 }
 
-.hero3-uruguay-soyemprendedor-cuponera-input {}
+.emprendedor__checkbox {}
 
-.hero3-uruguay-soyemprendedor-cuponera-label {
+.emprendedor__label {
     display: flex;
     width: 161px;
     height: 24px;
     align-items: center;
     gap: 10px;
-
     color: var(--Text-Text-primario, #25221E);
 
     /* Body M */
-    font-family: "Karla";
+    font-family: Karla;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -505,6 +500,188 @@ Text Domain: mi-tema-personalizado
     /* 150% */
 }
 
-.hero3-uruguay-soyemprendedor-cuponera-button-container {}
+.emprendedor__button-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 19px;
+}
 
-.hero3-uruguay-soyemprendedor-cuponera-button {}
+.emprendedor__button {
+    display: flex;
+    padding: 11px 30px;
+    align-items: center;
+    gap: 24.543px;
+    align-self: stretch;
+
+    border-radius: 5.578px;
+    background: var(--Surface-Surface-gris, #414141);
+    box-shadow: 0px 2.231px 4.462px 0px rgba(0, 0, 0, 0.15);
+}
+
+.emprendedor__button-container a {
+    color: var(--Text-Text-negative, #FFF);
+    font-family: "Karla", sans-serif;
+    font-size: 13.387px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 15.618px;
+    /* 116.667% */
+    text-decoration: none;
+}
+
+
+.servicios__uruguay {
+    display: flex;
+    padding: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+    align-self: stretch;
+
+    background: var(--Surface-Surface-default, #FFF);
+}
+
+.servicios__uruguay__header {}
+
+.servicios__uruguay__title {
+    color: var(--Text-Text-primario, #25221E);
+
+    /* H2 */
+    font-family: "Simply Sans";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.servicios__uruguay__subheader {
+    border-radius: 10px;
+    border: 7px solid var(--Border-Border-brand-1, #FF7500);
+    display: flex;
+    flex-direction: column;
+    padding: 16px 0px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.servicios__uruguay__subtitle {
+
+    text-align: center;
+    font-family: "Karla", sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 72%;
+    margin: 0 auto;
+}
+
+.servicios__uruguay__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    width: 1046px;
+    margin: 0 auto;
+}
+
+.servicios__uruguay__logo-item {
+    background-color: white;
+    border-radius: 10px;
+    border: 7px solid var(--Border-Border-brand-1, #FF7500);
+    background: var(--Surface-Surface-default, #FFF);
+    height: 364px;
+    width: 308px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.servicios__uruguay__logo-image {}
+
+.servicios__uruguay__logo-title {
+    color: #FF7500;
+    text-align: center;
+    font-family: "Mulish", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 108.523%;
+    /* 21.705px */
+}
+
+.servicios__uruguay__logo-description {
+    color: #414141;
+    text-align: center;
+
+    /* p */
+    font-family: "Karla", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 125.523%;
+    /* 17.573px */
+    padding: 0px 10px;
+}
+
+.servicios__uruguay__contact__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    text-align: center;
+}
+
+.servicios__uruguay__contact-link {
+    display: flex;
+    width: 310px;
+    padding: 11px 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 24.543px;
+
+    border-radius: 5.578px;
+    background: var(--Nasanja-Soydelivery, #FF7500);
+    box-shadow: 0px 2.231px 4.462px 0px rgba(0, 0, 0, 0.25);
+
+    color: var(--Text-Text-negative, #FFF);
+    text-align: center;
+    text-decoration: none;
+
+    color: var(--Text-Text-negative, #FFF);
+    font-family: Karla;
+    font-size: 19.39px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 15.618px;
+    /* 80.549% */
+}
+
+.saberMas__btn__container {
+    display: flex;
+    padding: 7px 25px;
+    align-items: center;
+    gap: 22px;
+    border-radius: 5px;
+    background: var(--Nasanja-Soydelivery, #FF7500);
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.saberMas__btn {
+
+    color: var(--Text-Text-negative, #FFF);
+
+    /* Body XS Bold */
+    font-family: "Karla", sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 14px;
+    /* 116.667% */
+    text-decoration: none;
+}

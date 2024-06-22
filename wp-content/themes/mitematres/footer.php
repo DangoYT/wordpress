@@ -2,24 +2,24 @@
     <div class="footer-container">
         <div class="footer-logo-ubicaciones">
             <div class="footer-logo">
-                <img src="wp-content/themes/mitematres/images/Group.svg" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/images/Group.svg" alt="">
             </div>
 
             <div class="footer-ubicaciones">
-                <img class="ubicaciones" src="wp-content/themes/mitematres/images/ubicación.png" alt="">
+                <img class="ubicaciones" src="<?php echo get_template_directory_uri(); ?>/images/ubicación.png" alt="">
                 <p>Montevideo</p>
                 <p>República de Corea 2962</p>
                 <p>San Salvador 1480</p>
             </div>
 
             <div class="footer-ubicaciones">
-                <img class="ubicaciones" src="wp-content/themes/mitematres/images/ubicación.png" alt="">
+                <img class="ubicaciones" src="<?php echo get_template_directory_uri(); ?>/images/ubicación.png" alt="">
                 <p>Lima</p>
                 <p>Av. José Gálvez Barrenechea 145, La Victoria 15036</p>
             </div>
 
             <div class="footer-ubicaciones">
-                <img class="ubicaciones" src="wp-content/themes/mitematres/images/ubicación.png" alt="">
+                <img class="ubicaciones" src="<?php echo get_template_directory_uri(); ?>/images/ubicación.png" alt="">
                 <p>Asunción</p>
             </div>
 

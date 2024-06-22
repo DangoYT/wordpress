@@ -67,51 +67,45 @@ get_header('uruguay'); // Carga el header personalizado para Uruguay
             </div>
 
     </section>
-    <section class="hero3-uruguay">
-        <div class="hero3-uruguay-container">
+    <section class="emprendedor">
+        <div class="emprendedor__container">
 
-            <div class="hero3-uruguay-soyemprendedor-image-container">
-                <img class="hero3-uruguay-soyemprendedor-image"
+            <div class="emprendedor__image-container">
+                <img class="emprendedor__image"
                     src="<?php echo get_template_directory_uri(); ?>/images/soyemprendedor.svg" alt="">
             </div>
 
-            <div class="hero3-uruguay-soyemprendedor-text-container">
-                <h2 class="hero3-uruguay-soyemprendedor-h2">La forma más flexible de hacer tus envíos</h2>
-                <div class="hero3-uruguay-soyemprendedor-cuponera-container">
-                    <p class="hero3-uruguay-soyemprendedor-p">¡Emprende sin límites! Con nuestra cuponera para
-                        emprendedores, accede a envíos para tu negocio,
-                        con la comodidad de pagar con Mercado pago.¡Podrás usar los cupones sin fecha de vencimiento!
-                    </p>
-                    <div class="hero3-uruguay-soyemprendedor-cuponera-button">
+            <div class="emprendedor__content">
+                <h2 class="emprendedor__title">La forma más flexible de hacer tus envíos</h2>
+                <div class="emprendedor__description">
+                    <p class="emprendedor__text">¡Emprende sin límites! Con nuestra cuponera para emprendedores, accede
+                        a envíos para tu negocio, con la comodidad de pagar con Mercado pago.¡Podrás usar los cupones
+                        sin fecha de vencimiento!</p>
+                    <div class="emprendedor__options">
 
-                        <div class="hero3-uruguay-soyemprendedor-cuponera">
+                        <div class="emprendedor__option">
 
-                            <div class="hero3-uruguay-soyemprendedor-cuponera-inputs-container">
+                            <div class="emprendedor__checkbox-container">
 
-                                <div class="hero3-uruguay-soyemprendedor-cuponera-input-container">
-                                    <input class="hero3-uruguay-soyemprendedor-cuponera-input" type="checkbox">
-                                    <label class="hero3-uruguay-soyemprendedor-cuponera-label" for="">15 Envios -
-                                        $1.500</label>
+                                <div class="emprendedor__checkbox-item">
+                                    <input class="emprendedor__checkbox" type="checkbox">
+                                    <label class="emprendedor__label" for="">15 Envios - $1.500</label>
                                 </div>
-                                <div class="hero3-uruguay-soyemprendedor-cuponera-input-container">
-                                    <input class="hero3-uruguay-soyemprendedor-cuponera-input" type="checkbox">
-                                    <label class="hero3-uruguay-soyemprendedor-cuponera-label" for="">50 Envios -
-                                        $2.500</label>
+                                <div class="emprendedor__checkbox-item">
+                                    <input class="emprendedor__checkbox" type="checkbox">
+                                    <label class="emprendedor__label" for="">50 Envios - $2.500</label>
                                 </div>
-                                <div class="hero3-uruguay-soyemprendedor-cuponera-input-container">
-                                    <input class="hero3-uruguay-soyemprendedor-cuponera-input" type="checkbox">
-                                    <label class="hero3-uruguay-soyemprendedor-cuponera-label" for="">120 Envios -
-                                        $5.000</label>
+                                <div class="emprendedor__checkbox-item">
+                                    <input class="emprendedor__checkbox" type="checkbox">
+                                    <label class="emprendedor__label" for="">120 Envios - $5.000</label>
                                 </div>
 
                             </div>
 
-
-
                         </div>
 
-                        <div class="hero3-uruguay-soyemprendedor-cuponera-button-container">
-                            <a class="hero3-uruguay-soyemprendedor-cuponera-button" href="">Comprar cuponera</a>
+                        <div class="emprendedor__button-container">
+                            <a class="emprendedor__button" href="">Comprar cuponera</a>
                         </div>
 
                     </div>
@@ -120,6 +114,94 @@ get_header('uruguay'); // Carga el header personalizado para Uruguay
 
         </div>
     </section>
+    <section class="servicios__uruguay">
+        <div class="servicios__uruguay__header">
+            <h2 class="servicios__uruguay__title">Conoce más sobre nuestros servicios</h2>
+        </div>
+        <div class="servicios__uruguay__content">
+            <div class="servicios__uruguay__logo-item">
+                <img class="servicios__uruguay__logo-image"
+                    src="<?php echo get_template_directory_uri(); ?>/images/sameday.png" alt="">
+                <h3 class="servicios__uruguay__logo-title">Same day</h3>
+                <p class="servicios__uruguay__logo-description">Retiramos y entregamos tus envíos en el día, para que
+                    tus clientes no tengan que esperar más. Tenemos
+                    soporte de 8:00 a 24:00, para que sepas en cada momento el estado de tus envíos.</p>
+            </div>
+            <div class="servicios__uruguay__logo-item">
+                <img class="servicios__uruguay__logo-image"
+                    src="<?php echo get_template_directory_uri(); ?>/images/mlFlex.png" alt="">
+                <h3 class="servicios__uruguay__logo-title">MercadoLibre Flex</h3>
+                <p class="servicios__uruguay__logo-description">Retiramos y entregamos tus envíos en el día, para que
+                    tus clientes no tengan que esperar más. Tenemos
+                    soporte de 8:00 a 24:00, para que sepas en cada momento el estado de tus envíos.</p>
+                <div class="saberMas__btn__container">
+                    <a class="saberMas__btn" href="">Saber más</a>
+                </div>
+            </div>
+            <div class="servicios__uruguay__logo-item">
+                <img class="servicios__uruguay__logo-image"
+                    src="<?php echo get_template_directory_uri(); ?>/images/fullfilment.png" alt="">
+                <h3 class="servicios__uruguay__logo-title">Fullfilment</h3>
+                <p class="servicios__uruguay__logo-description">¡Enfocate en las ventas que la logística está resuelta!
+                    Ofrecemos un servicio integral para tu
+                    empresa. Almacenamiento, picking, packing, etiquetado, despacho y entrega de productos.</p>
+            </div>
+            <div class="servicios__uruguay__logo-item">
+                <img class="servicios__uruguay__logo-image"
+                    src="<?php echo get_template_directory_uri(); ?>/images/supermercado.png" alt="">
+                <h3 class="servicios__uruguay__logo-title">Supermercados</h3>
+                <p class="servicios__uruguay__logo-description">Ofrecemos servicios de flota de vehículos dedicados a
+                    operaciones exclusivas de entrega a domicilio y
+                    envíos express, que incluye nuestra tecnología asociada para el uso flota tercerizada o propia.</p>
+            </div>
+            <div class="servicios__uruguay__logo-item">
+                <img class="servicios__uruguay__logo-image"
+                    src="<?php echo get_template_directory_uri(); ?>/images/flotaDedicada.png" alt="">
+                <h3 class="servicios__uruguay__logo-title">Flota dedicada</h3>
+                <p class="servicios__uruguay__logo-description">Somos proveedores logísticos de Mercado Envíos Flex. Tus
+                    ventas migran automáticamente a nuestro
+                    sistema de envíos y podes hacer un seguimiento de las diferentes etapas del pedido.</p>
+            </div>
+            <div class="servicios__uruguay__logo-item">
+                <img class="servicios__uruguay__logo-image"
+                    src="<?php echo get_template_directory_uri(); ?>/images/software.png" alt="">
+                <h3 class="servicios__uruguay__logo-title">Software</h3>
+                <p class="servicios__uruguay__logo-description">Nuestra app de conductores ofrece los recursos
+                    tecnológicos necesarios para entregas exitosas:
+                    geolocalización, fecha y hora de finalización de pedidos, la opción de subir una foto al sistema en
+                    cada una de las entregas y mucho más. Las garantías y efectividad que tus clientes necesitan.</p>
+            </div>
+        </div>
+        <div class="servicios__uruguay__contact__container">
+            <a class="servicios__uruguay__contact-link" href="">Contactar</a>
+        </div>
+
+    </section>
+    <section class="second_slider">
+        <img class="mcaca" src="<?php echo get_template_directory_uri(); ?>/images/mcaca.png" alt="">
+        <?php get_template_part('template-parts/second_slider'); ?>
+    </section>
+
+    <section class="trabaja-con-nosotros">
+        <div class="trabaja-con-nosotros__contenido">
+            <h2 class="trabaja-con-nosotros__titulo">En soydelivery estamos en constante crecimiento</h2>
+            <div class="trabaja-con-nosotros__seccion">
+                <div class="trabaja-con-nosotros__contenedor-imagen">
+                    <img class="trabaja-con-nosotros__imagen" src="<?php echo get_template_directory_uri(); ?>" alt="">
+                </div>
+                <div class="trabaja-con-nosotros__contenido-texto">
+                    <h3 class="trabaja-con-nosotros__subtitulo">Trabajá con nosotros</h3>
+                    <p class="trabaja-con-nosotros__descripcion"></p>
+                    <div class="trabaja-con-nosotros__contenedor-enlace">
+                        <a class="trabaja-con-nosotros__enlace" href=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
 </main>
 
 <?php get_footer(); ?>
