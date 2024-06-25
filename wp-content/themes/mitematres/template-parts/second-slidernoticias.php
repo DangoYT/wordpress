@@ -22,9 +22,13 @@
                     }
                     ?>
                     <div class="second__carousel-caption">
-                        <img id="logo" class="second__carousel-icon"
-                            src="<?php echo esc_url(get_template_directory_uri() . '/images/noticias.svg'); ?>" alt="">
-                        <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+
+                        <div class="second__carouselIcon-container">
+                            <img id="logo" class="second__carousel-icon"
+                                src="<?php echo esc_url(get_template_directory_uri() . '/images/noticias.svg'); ?>" alt="">
+                            <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+                        </div>
+                        <br>
                         <p><?php echo esc_html($resumen); ?></p>
                     </div>
                 </div>

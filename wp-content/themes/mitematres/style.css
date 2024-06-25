@@ -1058,6 +1058,12 @@ Text Domain: mi-tema-personalizado
     background: var(--Surface-Surface-default, #FFF);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     height: 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    padding: 20px 8px;
 }
 
 .second__carousel-caption a {
@@ -1079,16 +1085,44 @@ Text Domain: mi-tema-personalizado
     font-weight: 700;
     line-height: 131.523%;
     /* 22.359px */
+    margin: 0px;
 }
 
-.second__carousel-caption p {}
+.second__carousel-caption p {
+    color: #414141;
+    text-align: center;
 
+    /* note */
+    font-family: "Mulish", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 131.523%;
+    /* 18.413px */
+    width: 269px;
+    height: 74px;
+}
 
+.second__carouselIcon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
 
+.second__carousel-icon {
+
+    width: 30px;
+    height: 30px;
+
+}
+
+/* 
 #logo {
     position: absolute;
     width: 30px;
     height: 30px;
     top: 10px;
     left: 135px;
-}
+} */
