@@ -23,6 +23,9 @@ Text Domain: mi-tema-personalizado
 @import url('css/conocenos.css');
 @import url('css/encabezado.css');
 
+#site-content {
+    margin: 0 auto;
+}
 
 .nav-uruguay {
     display: flex;
@@ -684,4 +687,408 @@ Text Domain: mi-tema-personalizado
     line-height: 14px;
     /* 116.667% */
     text-decoration: none;
+}
+
+
+.trabaja-con-nosotros {
+    display: flex;
+    padding: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* gap: 40px; */
+    align-self: stretch;
+
+    background: var(--Surface-Surface-brand, #FF7500);
+    margin-bottom: 30px;
+}
+
+.trabaja-con-nosotros__contenido {
+    display: flex;
+    /* width: 1280px; */
+    padding: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+
+    background: var(--Surface-Surface-brand, #FF7500);
+}
+
+.trabaja-con-nosotros__titulo {
+    color: var(--Text-Text-negative, #FFF);
+
+    /* H2 */
+    font-family: "Simply Sans";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    margin: 0px;
+}
+
+.trabaja-con-nosotros__seccion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.trabaja-con-nosotros__contenedor-imagen {
+    width: 300px;
+    height: 235px;
+}
+
+.trabaja-con-nosotros__imagen {}
+
+.trabaja-con-nosotros__contenido-texto {
+    display: flex;
+    width: 850px;
+    padding: 30px 25px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    border-radius: 10px;
+    background: var(--Surface-Surface-default, #FFF);
+    box-shadow: 0px 4px 39px -4px rgba(0, 0, 0, 0.15);
+}
+
+.contenido__delContenido {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 26px;
+    flex: 1 0 0;
+}
+
+.trabaja-con-nosotros__subtitulo {
+    color: #FF7500;
+    text-align: center;
+    font-family: "Museo Sans Rounded";
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 108.523%;
+    /* 37.983px */
+
+    margin: 0px;
+}
+
+.trabaja-con-nosotros__descripcion__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+}
+
+.trabaja-con-nosotros__descripcion {
+    color: #414141;
+    text-align: center;
+
+    /* p */
+    font-family: "Karla", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 125.523%;
+    /* 17.573px */
+}
+
+.trabaja-con-nosotros__contenedor-enlace {
+    display: flex;
+    padding: 7px 25px;
+    align-items: center;
+    gap: 22px;
+
+    border-radius: 5px;
+    background: var(--Nasanja-Soydelivery, #FF7500);
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.trabaja-con-nosotros__enlace {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--Text-Text-negative, #FFF);
+
+    /* Body XS Bold */
+    font-family: "Karla", sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 14px;
+    /* 116.667% */
+}
+
+.servicios__uruguay {
+
+    background-color: #FF7500;
+    margin: 30px 30px;
+}
+
+.servicios__uruguay__container {
+    background-color: #FF7500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* height: 1155px; */
+    padding: 30px 0px;
+    gap: 48px;
+}
+
+.servicios__uruguay__title {
+    color: #FFF;
+
+    /* H2 */
+    font-family: "Simply Sans";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    margin: 0px;
+}
+
+.servicios__uruguay__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    width: 1046px;
+    margin: 0 auto;
+}
+
+.servicios__uruguay__item {
+    border-radius: 10px;
+    background-color: white;
+    height: 364px;
+    width: 308px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.servicios__uruguay__item p {
+    padding: 0 10px;
+    color: #414141;
+    text-align: center;
+
+    /* p */
+    font-family: Karla;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 125.523%;
+    /* 17.573px */
+}
+
+.services {
+    display: flex;
+    padding: 30px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    align-self: stretch;
+}
+
+.services__title {
+    color: #414141;
+
+    /* Titulos secciones */
+    font-family: "Simply Sans";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.services__item {
+    display: flex;
+    width: 850px;
+    padding: 30px 25px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    border-radius: 10px;
+    background: #D9D9D9;
+    box-shadow: 0px 4px 39px -4px rgba(0, 0, 0, 0.15);
+}
+
+.services__item-image {
+    width: 178px;
+    height: 162px;
+    flex-shrink: 0;
+}
+
+.services__item-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 26px;
+    flex: 1 0 0;
+}
+
+.services__item-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 26px;
+    flex: 1 0 0;
+}
+
+.services__item-description {
+    color: #414141;
+
+    /* p */
+    font-family: Karla;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 125.523%;
+    /* 17.573px */
+    align-self: stretch;
+}
+
+.services__item-link-wrapper {
+    display: flex;
+    padding: 7px 25px;
+    align-items: center;
+    gap: 22px;
+    border-radius: 5px;
+    background: var(--Nasanja-Soydelivery, #FF7500);
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.services__item-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--Text-Text-negative, #FFF);
+
+    /* Body XS Bold */
+    font-family: Karla;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 14px;
+    /* 116.667% */
+}
+
+.second__carousel {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    margin: 0 auto;
+    overflow: visible;
+    /* Cambiar a visible */
+    display: flex;
+    justify-content: center;
+    /* Centra el carousel horizontalmente */
+    z-index: 1;
+    /* Asegurarse de que el contenedor del carousel esté en el nivel correcto */
+}
+
+.second__carousel-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Centra los elementos dentro del carousel */
+    width: 100%;
+    height: 550px;
+    z-index: 1;
+    /* Asegurarse de que los elementos internos estén en el nivel correcto */
+}
+
+.second__carousel-item {
+    position: relative;
+    flex: 0 0 auto;
+    width: 522px;
+    /* Ancho fijo */
+    height: 500px;
+    /* Alto fijo */
+    margin: 0 15px;
+    /* Espacio entre los elementos del carousel */
+    padding: 10px;
+    /* Espaciado interno */
+    /* box-sizing: border-box; */
+    transition: transform 0.5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
+    /* Asegúrate de que el caption se muestre fuera del contenedor */
+}
+
+.second__carousel-img {
+    width: 80%;
+    height: 480px;
+    flex-shrink: 0;
+    object-fit: fill;
+    /* Ajusta la imagen sin distorsionar */
+    border-radius: 10px;
+    /* Bordes redondeados de las imágenes */
+}
+
+.second__carousel-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 455px;
+    flex-shrink: 0;
+}
+
+.second__carousel-caption {
+    position: relative;
+    top: -85px;
+    /* border: 1px solid black; */
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 0px 0px 10px 10px;
+    background: var(--Surface-Surface-default, #FFF);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    height: 190px;
+}
+
+.second__carousel-caption a {
+    height: 50px;
+    color: #FF7500;
+    font-family: "Karla", sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 131.523%;
+    text-decoration: none;
+}
+
+.second__carousel-caption h3 {
+    color: #FF7500;
+    font-family: "Karla", sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 131.523%;
+    /* 22.359px */
+}
+
+.second__carousel-caption p {}
+
+
+
+#logo {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 10px;
+    left: 135px;
 }

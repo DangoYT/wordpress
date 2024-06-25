@@ -187,14 +187,24 @@ get_header('uruguay'); // Carga el header personalizado para Uruguay
             <h2 class="trabaja-con-nosotros__titulo">En soydelivery estamos en constante crecimiento</h2>
             <div class="trabaja-con-nosotros__seccion">
                 <div class="trabaja-con-nosotros__contenedor-imagen">
-                    <img class="trabaja-con-nosotros__imagen" src="<?php echo get_template_directory_uri(); ?>" alt="">
+                    <img class="trabaja-con-nosotros__imagen"
+                        src="<?php echo get_template_directory_uri(); ?>/images/personaAltavoz.svg" alt="">
                 </div>
                 <div class="trabaja-con-nosotros__contenido-texto">
-                    <h3 class="trabaja-con-nosotros__subtitulo">Trabajá con nosotros</h3>
-                    <p class="trabaja-con-nosotros__descripcion"></p>
-                    <div class="trabaja-con-nosotros__contenedor-enlace">
-                        <a class="trabaja-con-nosotros__enlace" href=""></a>
+                    <div class="contenido__delContenido">
+                        <h3 class="trabaja-con-nosotros__subtitulo">Trabajá con nosotros</h3>
+                        <div class="trabaja-con-nosotros__descripcion__container">
+                            <p class="trabaja-con-nosotros__descripcion">Si estás buscando una oportunidad para
+                                desarrollar tus habilidades en una empresa dinámica y en contínuo crecimiento, este es
+                                tu lugar.
+                                Dejanos tu CV que el departamento de Recursos Humanos se comunicará contigo.</p>
+                        </div>
+
+                        <div class="trabaja-con-nosotros__contenedor-enlace">
+                            <a class="trabaja-con-nosotros__enlace" href="">Postularme</a>
+                        </div>
                     </div>
+
                 </div>
             </div>
         </div>
