@@ -28,3 +28,42 @@
         </nav>
     </header>
     <?php wp_body_open(); ?>
+
+    <!-- Popup -->
+    <div id="contact-popup" class="popup">
+        <div class="popup-content">
+            <!-- <span class="close-popup">&times;</span> -->
+            <ul>
+                <li><a href="http://localhost/wordpress/cotiza-tu-servicio/">Cotiza tu servicio</a></li>
+                <li><a href="http://localhost/wordpress/trabaja-con-nosotros/">Trabaja con nosotros</a></li>
+                <li><a href="http://localhost/wordpress/quiero-ser-chofer/">Quiero ser chofer</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var contactMenuItem = document.querySelector('.menu-item a[href="#contact-popup"]');
+            var popup = document.getElementById('contact-popup');
+            var closePopup = document.querySelector('.close-popup');
+
+            contactMenuItem.addEventListener('click', function (e) {
+                e.preventDefault();
+                popup.classList.add('show'); // Añadir la clase para mostrar el popup
+            });
+
+            closePopup.addEventListener('click', function () {
+                popup.classList.remove('show'); // Quitar la clase para ocultar el popup
+            });
+
+            window.addEventListener('click', function (e) {
+                if (e.target == popup) {
+                    popup.classList.remove('show'); // Quitar la clase si se hace clic fuera del popup
+                }
+            });
+        });
+
+    </script>
+</body>
+
+</html>

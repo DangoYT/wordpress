@@ -16,13 +16,35 @@ get_header('uruguay'); // Carga el header personalizado para Uruguay
                 </section>
             </div>
 
-            <div class="apoyos__contenedor">
-                <h2 class="title__apoyos">Alianzas comerciales</h2>
+            <div class="apoyos__uruguay__contenedor">
+                <h2 class="title__apoyos__uruguay">Alianzas comerciales</h2>
                 <?php get_template_part('template-parts/apoyos_sliders'); ?>
             </div>
 
-            <div></div>
-            <div></div>
+            <div class="clientes__uruguay__contenedor">
+                <h2></h2>
+                <div>
+                    <?php get_template_part('template-parts/clientes_slider'); ?>
+                </div>
+            </div>
+            <div class="nuestroEquipo__uruguay">
+                <h2 class="title__nuestroEquipo__uruguay">Nuestro equipo</h2>
+                <div class="nuestroEquipo__uruguay__contenedor">
+                    <div class="nuestroEquipo__uruguay__content">
+                        <p>Operaciones</p>
+                        <p>Administración y finanzas</p>
+                        <p>Comercial</p>
+                        <p>Tecnología</p>
+                        <p>Experiencia de usuario</p>
+                        <p>Innovación logística</p>
+                        <p>Análisis de datos</p>
+                        <p>Recursos humanos</p>
+                        <p>Atención al cliente</p>
+                    </div>
+                    <img class="nuestroEquipo__uruguay__img"
+                        src="<?php echo get_template_directory_uri(); ?>/images/nuestroEquipo.png" alt="">
+                </div>
+            </div>
         </div>
     </section>
 </main>

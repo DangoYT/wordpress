@@ -28,7 +28,7 @@
                                 src="<?php echo esc_url(get_template_directory_uri() . '/images/noticias.svg'); ?>" alt="">
                             <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
                         </div>
-                        <br>
+                        <hr class="second__carousel-hr">
                         <p><?php echo esc_html($resumen); ?></p>
                     </div>
                 </div>
