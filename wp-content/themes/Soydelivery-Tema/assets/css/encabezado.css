@@ -1,0 +1,56 @@
+.encabezado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 120px 40px;
+}
+
+.content {
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    /* justify-content: space-between; */
+    /* align-items: flex-start; */
+    /*  gap: 40px; */
+}
+
+.container {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    width: 32.3rem;
+    height: 13.9rem;
+}
+
+.container h1 {
+    color: #414141;
+    /* H1 */
+    font-family: "Museo Sans Rounded";
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 131.523%;
+    /* 57.87px */
+}
+
+.banderas {
+    display: flex;
+    justify-content: space-between;
+    height: 65.85px;
+    width: 410px;
+}
+
+.banderas img {
+    height: 65.77px;
+    width: 72.97px;
+}
+
+.imagenEncabezado {
+    width: 444px;
+    height: 295px;
+}

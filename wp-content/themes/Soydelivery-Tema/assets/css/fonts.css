@@ -1,0 +1,62 @@
+@font-face {
+    font-family: 'Karla';
+    src: url('../fonts/Karla-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Karla';
+    src: url('../fonts/Karla-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Karla';
+    src: url('../fonts/Karla-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Karla';
+    src: url('../fonts/Karla-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Museo Sans Rounded';
+    src: url('../fonts/MuseoSansRounded-900.otf') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Simply Sans';
+    src: url('../fonts/SimplySans-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Simply Sans';
+    src: url('../fonts/SimplySans-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Simply Sans';
+    src: url('../fonts/SimplySans-BookItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Simply Sans';
+    src: url('../fonts/SimplySans-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}

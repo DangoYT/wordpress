@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Cotiza tu servicio
+Template Name: Quiero ser chofer
 */
 get_header('uruguay');
 ?>
@@ -115,7 +115,7 @@ get_header('uruguay');
 
     .cotiza-tu-servicio-form-container-boton {
         display: flex;
-        justify-content: flex-start;
+        justify-content: space-around;
         align-items: center;
         width: 454px;
         padding-top: 25px;
@@ -351,6 +351,20 @@ get_header('uruguay');
         background: var(--Surface-Surface-default, #FFF);
     }
 
+    .seccion2-inputs-container p {
+        color: #000;
+
+        /* p */
+        font-family: "Karla";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 125.523%;
+        /* 17.573px */
+
+        /* margin: 0px; */
+    }
+
     .seccion2-inputs-container label {
         color: var(--Gray-3, #828282);
 
@@ -361,6 +375,15 @@ get_header('uruguay');
         font-weight: 500;
         line-height: 125.523%;
         /* 17.573px */
+    }
+
+    .seccion2-inputs-container input {
+        width: 24px;
+        height: 24px;
+
+        border-radius: 4px;
+        border: 1px solid var(--Border-Border-brand-4, #D9632B);
+        background: var(--Surface-Surface-default, #FFF);
     }
 
     .form3-container {
@@ -409,7 +432,7 @@ get_header('uruguay');
         padding: 30px;
         flex-direction: column;
         align-items: flex-start;
-        gap: 29px;
+        gap: 24px;
 
         border-radius: 10px;
         background: var(--Surface-Surface-default, #FFF);
@@ -569,6 +592,101 @@ get_header('uruguay');
     .elcontenedordelbotonquedespuescambio {
         margin-left: 90px;
     }
+
+    .form4-container {}
+
+    .form4-allinputs-container {
+        display: flex;
+        width: 488px;
+        /*  padding: 30px; */
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 29px;
+        border-radius: 10px;
+        background: var(--Surface-Surface-default, #FFF);
+    }
+
+    .form4-inputs-containeres {
+        display: flex;
+        /* width: 488px; */
+        padding: 30px;
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+
+    .form4-inputs-container-titulo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .form4-inputs-container-titulo p {
+        color: var(--Gray-3, #828282);
+
+        /* p */
+        font-family: Karla;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 125.523%;
+        /* 17.573px */
+
+        margin-bottom: 24px;
+    }
+
+    .form4-inputs-container {
+        display: flex;
+        width: 430px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .form4-inputs-item-container {
+        display: flex;
+        align-items: center;
+        gap: 9px;
+    }
+
+    .form4-inputs-item-container input {
+        width: 24px;
+        height: 24px;
+        border-radius: 4px;
+        border: 1px solid var(--Border-Border-brand-4, #D9632B);
+        background: var(--Surface-Surface-default, #FFF);
+    }
+
+    .form4-inputs-item-container label {
+        color: var(--Gray-3, #828282);
+
+        /* p */
+        font-family: Karla;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 125.523%;
+        /* 17.573px */
+    }
+
+    .form4-textarea-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 0px;
+    }
+
+    .form4-textarea-item {
+        display: flex;
+        /* width: 490px; */
+        /* flex-direction: column; */
+        /* justify-content: center; */
+        /* align-items: flex-end; */
+        /* gap: 4px; */
+        border-radius: 4px;
+    }
 </style>
 <section class="cotiza-tu-servicio">
     <div class="navegador">
@@ -700,7 +818,7 @@ get_header('uruguay');
 
                                     <div class="seccion2-inputs-container">
 
-                                        <h3>Qué tipo de vehículo tienes?</h3>
+                                        <p>Qué tipo de vehículo tienes?</p>
                                         <div>
                                             <input type="checkbox" id="checkbox" name="checkbox">
                                             <label for="">No tengo vehículo</label>
@@ -776,10 +894,11 @@ get_header('uruguay');
                                     </div>
 
                                     <div class="cotiza-tu-servicio-form-container-boton2">
-                                        <button type="button"
-                                            class="cotiza-tu-servicio-form-boton btn next">Siguiente</button>
+
                                         <button type="button"
                                             class="cotiza-tu-servicio-form-boton btn prev">Anterior</button>
+                                        <button type="button"
+                                            class="cotiza-tu-servicio-form-boton btn next">Siguiente</button>
 
                                     </div>
 
@@ -907,8 +1026,8 @@ get_header('uruguay');
                         </div>
 
                         <div class="form3-botons-container">
-                            <button type="button" class=" btn next">Siguiente</button>
                             <button type="button" class=" btn prev">Anterior</button>
+                            <button type="button" class=" btn next">Siguiente</button>
                         </div>
 
                     </form>
@@ -941,37 +1060,59 @@ get_header('uruguay');
 
                             </div>
                             <div class="cotiza-tu-servicio-form">
-                                <form id="miFormulario" class="cotiza-tu-servicio-form-container">
+                                <form id="miFormulario" class="form4-container">
+                                    <div class="form4-allinputs-container">
+                                        <div class="form4-inputs-containeres">
+                                            <div class="form4-inputs-container-titulo">
+                                                <p>¿Qué disponibilidad tenes para trabajar?</p>
+                                            </div>
+                                            <div class="form4-inputs-container">
+                                                <div class="form4-inputs-item-container">
+                                                    <input type="checkbox" id="checkbox" name="checkbox">
+                                                    <label for="">Full time</label>
+                                                </div>
 
-                                    <div>
-                                        <input type="checkbox" id="checkbox" name="checkbox">
-                                        <label for="">Full time</label>
+                                                <div class="form4-inputs-item-container">
+                                                    <input type="checkbox" id="checkbox" name="checkbox">
+                                                    <label for="">Solo en la mañana</label><br>
+                                                </div>
 
-                                        <input type="checkbox" id="checkbox" name="checkbox">
-                                        <label for="">Solo en la mañana</label><br>
+                                                <div class="form4-inputs-item-container">
+                                                    <input type="checkbox" id="checkbox" name="checkbox">
+                                                    <label for="">Solo en la tarde</label>
+                                                </div>
 
-                                        <input type="checkbox" id="checkbox" name="checkbox">
-                                        <label for="">Solo en la tarde</label>
+                                                <div class="form4-inputs-item-container">
+                                                    <input type="checkbox" id="checkbox" name="checkbox">
+                                                    <label for="">Entre semana</label><br>
+                                                </div>
 
-                                        <input type="checkbox" id="checkbox" name="checkbox">
-                                        <label for="">Entre semana</label><br>
+                                                <div class="form4-inputs-item-container">
+                                                    <input type="checkbox" id="checkbox" name="checkbox">
+                                                    <label for="">Fines de semana</label>
+                                                </div>
 
-                                        <input type="checkbox" id="checkbox" name="checkbox">
-                                        <label for="">Fines de semana</label>
+                                                <div class="form4-inputs-item-container">
+                                                    <input type="checkbox" id="checkbox" name="checkbox">
+                                                    <label for="">Otro</label><br>
+                                                </div>
 
-                                        <input type="checkbox" id="checkbox" name="checkbox">
-                                        <label for="">Otro</label><br>
+                                            </div>
+                                        </div>
                                     </div>
+                                    <div class="form4-textarea-container">
+                                        <div class="form4-textarea-item">
+                                            <textarea class="cotiza-tu-servicio-form-textarea" id="textarea"
+                                                name="textarea" rows="4" cols="50"
+                                                placeholder="¿Cómo nos conociste?"></textarea>
+                                        </div>
 
-
-                                    <textarea class="cotiza-tu-servicio-form-textarea" id="textarea" name="textarea"
-                                        rows="4" cols="50"
-                                        placeholder="¿Cómo nos conociste?"></textarea><!-- <br><br> -->
-
-                                    <textarea class="cotiza-tu-servicio-form-textarea" id="textarea" name="textarea"
-                                        rows="4" cols="50"
-                                        placeholder="¿Te gustaría agregar algún comentario?"></textarea><!-- <br><br> -->
-
+                                        <div class="form4-textarea-item">
+                                            <textarea class="cotiza-tu-servicio-form-textarea" id="textarea"
+                                                name="textarea" rows="4" cols="50"
+                                                placeholder="¿Te gustaría agregar algún comentario?"></textarea>
+                                        </div>
+                                    </div>
 
                                     <div class="progress-container">
                                         <div class="circulo"></div>
@@ -981,9 +1122,9 @@ get_header('uruguay');
                                     </div>
 
                                     <div class="cotiza-tu-servicio-form-container-boton">
-                                        <button type="submit" class="cotiza-tu-servicio-form-boton btn">Enviar</button>
                                         <button type="button"
                                             class="cotiza-tu-servicio-form-boton btn prev">Anterior</button>
+                                        <button type="submit" class="cotiza-tu-servicio-form-boton btn">Enviar</button>
                                     </div>
 
                                 </form>
