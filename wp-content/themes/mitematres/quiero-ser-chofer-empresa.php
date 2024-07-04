@@ -842,8 +842,6 @@ get_header('uruguay');
 
             </div>
 
-
-
             <div class="form-section">
                 <div class="form3-container">
                     <div class="form3-titulo">
@@ -968,7 +966,6 @@ get_header('uruguay');
                 </div>
             </div>
 
-
             <div class="form-section">
                 <div>
                     <div class="cotiza-tu-servicio-container">
@@ -1086,7 +1083,6 @@ get_header('uruguay');
                 </div>
 
             </div>
-
 
             <div class="form-section">
                 <div>
