@@ -12,8 +12,9 @@
     <header class="header-uruguay">
         <nav class="nav-uruguay">
             <div class="logoSdUy_container">
-                <img class="logoSdUy" src="<?php echo get_template_directory_uri(); ?>/images/logoUyBlanco.svg"
-                    alt="Logo de tu sitio">
+                <a href="http://localhost/wordpress/"><img class="logoSdUy" src="<?php echo get_template_directory_uri(); ?>/images/logoUyBlanco.svg"
+                    alt="Logo de tu sitio"></a>
+                
             </div>
             <?php
             wp_nav_menu(
