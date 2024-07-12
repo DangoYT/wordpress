@@ -1,6 +1,6 @@
 <?php
-/* Template Name: Paraguay */
-get_header('paraguay'); // Carga el header personalizado para Paraguay
+/* Template Name: Peru */
+get_header('peru'); // Carga el header personalizado para Peru
 ?>
 
 <main id="site-content" role="main">
@@ -10,14 +10,14 @@ get_header('paraguay'); // Carga el header personalizado para Paraguay
                 <div class="hero-uruguay-title">
                     <h2 class="hero-uruguay-h2">Tecnología e innovación aplicada a tus envíos</h2>
                 </div>
-                <!-- <div class="hero-uruguay-search">
+                <div class="hero-uruguay-search">
                     <p class="hero-uruguay-p">Ingresa tu número de tracking para saber el estado de tu pedido</p>
                     <div class="hero-uruguay-input-search">
                         <input class="hero-uruguay-input" type="number">
                         <a class="hero-uruguay-button" href=""><img
                                 src="<?php echo get_template_directory_uri(); ?>/images/lupa.svg" alt="">Buscar</a>
                     </div>
-                </div> -->
+                </div>
             </div>
             <div class="hero-uruguay-image-container">
                 <img class="hero-uruguay-image"
@@ -70,7 +70,7 @@ get_header('paraguay'); // Carga el header personalizado para Paraguay
             </div>
 
     </section>
-    <!--  <section class="emprendedor">
+    <section class="emprendedor">
         <div class="emprendedor__container">
 
             <div class="emprendedor__image-container">
@@ -116,7 +116,7 @@ get_header('paraguay'); // Carga el header personalizado para Paraguay
             </div>
 
         </div>
-    </section> -->
+    </section>
     <section class="servicios__uruguay">
         <div class="servicios__uruguay__header">
             <h2 class="servicios__uruguay__title">Conoce más sobre nuestros servicios</h2>
@@ -130,7 +130,7 @@ get_header('paraguay'); // Carga el header personalizado para Paraguay
                     tus clientes no tengan que esperar más. Tenemos
                     soporte de 8:00 a 24:00, para que sepas en cada momento el estado de tus envíos.</p>
             </div>
-            <!--  <div class="servicios__uruguay__logo-item">
+            <div class="servicios__uruguay__logo-item">
                 <img class="servicios__uruguay__logo-image"
                     src="<?php echo get_template_directory_uri(); ?>/images/mlFlex.png" alt="">
                 <h3 class="servicios__uruguay__logo-title">MercadoLibre Flex</h3>
@@ -140,7 +140,7 @@ get_header('paraguay'); // Carga el header personalizado para Paraguay
                 <div class="saberMas__btn__container">
                     <a class="saberMas__btn" href="http://localhost/wordpress/ml-flex/">Saber más</a>
                 </div>
-            </div> -->
+            </div>
             <div class="servicios__uruguay__logo-item">
                 <img class="servicios__uruguay__logo-image"
                     src="<?php echo get_template_directory_uri(); ?>/images/fullfilment.png" alt="">
@@ -185,7 +185,7 @@ get_header('paraguay'); // Carga el header personalizado para Paraguay
         <?php get_template_part('template-parts/second_slider'); ?>
     </section>
 
-    <!-- <section class="trabaja-con-nosotros">
+    <section class="trabaja-con-nosotros">
         <div class="trabaja-con-nosotros__contenido">
             <h2 class="trabaja-con-nosotros__titulo">En soydelivery estamos en constante crecimiento</h2>
             <div class="trabaja-con-nosotros__seccion">
@@ -212,7 +212,7 @@ get_header('paraguay'); // Carga el header personalizado para Paraguay
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
 
 
 

@@ -2,7 +2,7 @@
 /*
 Template Name: Quiero ser chofer paraguay
 */
-get_header('uruguay');
+get_header('paraguay');
 ?>
 
 <style>

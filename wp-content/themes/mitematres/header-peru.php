@@ -9,8 +9,8 @@
 </head>
 
 <body <?php body_class(); ?>>
-    <header class="header-uruguay">
-        <nav class="nav-uruguay">
+    <header class="header-peru">
+        <nav class="nav-peru">
             <div class="logoSdUy_container">
                 <a href="http://localhost/wordpress/"><img class="logoSdUy"
                         src="<?php echo get_template_directory_uri(); ?>/images/logoUyBlanco.svg"
@@ -20,7 +20,7 @@
             <?php
             wp_nav_menu(
                 array(
-                    'theme_location' => 'menu_uruguay',
+                    'theme_location' => 'menu_peru',
                     'menu_class' => 'ulContainer',
                     'container' => false,
                     'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>',
@@ -36,10 +36,10 @@
         <div class="popup-content">
             <!-- <span class="close-popup">&times;</span> -->
             <ul>
-                <li><a href="http://localhost/wordpress/cotiza-tu-servicio/">Cotiza tu servicio</a></li>
-                <li><a href="http://localhost/wordpress/trabaja-con-nosotros/">Trabaja con nosotros</a></li>
-                <li><a href="http://localhost/wordpress/quiero-ser-chofer/">Quiero ser chofer</a></li>
-                <li><a href="http://localhost/wordpress/chofer-empresa/">Quiero ser chofer empresa</a></li>
+                <li><a href="http://localhost/wordpress/cotiza-tu-servicios-peru/">Cotiza tu servicio</a></li>
+                <li><a href="http://localhost/wordpress/trabaja-con-nosotros-peru/">Trabaja con nosotros</a></li>
+                <li><a href="http://localhost/wordpress/chofer-peru/">Quiero ser chofer</a></li>
+                <li><a href="http://localhost/wordpress/chofer-empresa-peru/">Quiero ser chofer empresa</a></li>
             </ul>
         </div>
     </div>

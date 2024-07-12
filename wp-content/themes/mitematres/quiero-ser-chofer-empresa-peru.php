@@ -1,8 +1,8 @@
 <?php
 /*
-Template Name: Quiero ser chofer empresa paraguay
+Template Name: Quiero ser chofer empresa peru
 */
-get_header('paraguay');
+get_header('peru');
 ?>
 
 <style>

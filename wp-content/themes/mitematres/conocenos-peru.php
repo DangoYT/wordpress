@@ -1,6 +1,6 @@
 <?php
-/* Template Name: Conocenos Paraguay */
-get_header('paraguay'); // Carga el header personalizado para Uruguay
+/* Template Name: Conocenos Peru */
+get_header('peru'); // Carga el header personalizado para Uruguay
 ?>
 
 <main id="site-content" role="main">
@@ -16,7 +16,17 @@ get_header('paraguay'); // Carga el header personalizado para Uruguay
                 </section>
             </div>
 
+            <div class="apoyos__uruguay__contenedor">
+                <h2 class="title__apoyos__uruguay">Alianzas comerciales</h2>
+                <?php get_template_part('template-parts/apoyos_sliders'); ?>
+            </div>
 
+            <div class="clientes__uruguay__contenedor">
+                <h2></h2>
+                <div>
+                    <?php get_template_part('template-parts/clientes_slider'); ?>
+                </div>
+            </div>
             <div class="nuestroEquipo__uruguay">
                 <h2 class="title__nuestroEquipo__uruguay">Nuestro equipo</h2>
                 <div class="nuestroEquipo__uruguay__contenedor">

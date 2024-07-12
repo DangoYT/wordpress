@@ -1,6 +1,6 @@
 <?php
-/* Template Name: Servicios Paraguay */
-get_header('paraguay'); // Carga el header personalizado para Uruguay
+/* Template Name: Servicios Peru */
+get_header('peru'); // Carga el header personalizado para Peru
 ?>
 
 <main id="site-content" role="main">
@@ -20,13 +20,13 @@ get_header('paraguay'); // Carga el header personalizado para Uruguay
                         Tenemos
                         soporte de 8:00 a 24:00, para que sepas en cada momento el estado de tus envíos.</p>
                 </div>
-                <!-- <div class="servicios__uruguay__item">
+                <div class="servicios__uruguay__item">
                     <img class="" src="<?php echo get_template_directory_uri(); ?>/images/mlFlex.png" alt="">
                     <h3>MercadoLibre Flex</h3>
                     <p>Retiramos y entregamos tus envíos en el día, para que tus clientes no tengan que esperar más.
                         Tenemos
                         soporte de 8:00 a 24:00, para que sepas en cada momento el estado de tus envíos.</p>
-                </div> -->
+                </div>
                 <div class="servicios__uruguay__item">
                     <img class="" src="<?php echo get_template_directory_uri(); ?>/images/fullfilment.png" alt="">
                     <h3>Fullfilment</h3>
@@ -64,7 +64,7 @@ get_header('paraguay'); // Carga el header personalizado para Uruguay
             <a href="contactar.php" class="btn-contactar">Contactar</a>
         </div>
     </section>
-    <!-- <div class="services">
+    <div class="services">
         <h2 class="services__title">Además ofrecemos servicios para pequeños emprendedores</h2>
         <div class="services__item">
             <img class="services__item-image" src="<?php echo get_template_directory_uri(); ?>/images/cuponera.png"
@@ -79,7 +79,7 @@ get_header('paraguay'); // Carga el header personalizado para Uruguay
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
 
 </main>
 

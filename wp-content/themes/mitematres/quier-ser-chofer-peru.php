@@ -1,8 +1,8 @@
 <?php
 /*
-Template Name: Quiero ser chofer empresa paraguay
+Template Name: Quiero ser chofer peru
 */
-get_header('paraguay');
+get_header('peru');
 ?>
 
 <style>
@@ -29,7 +29,7 @@ get_header('paraguay');
         padding: 30px;
         flex-direction: column;
         align-items: center;
-        /* gap: 19px; */
+        gap: 19px;
     }
 
     .cotiza-tu-servicio-texto {
@@ -63,7 +63,6 @@ get_header('paraguay');
         align-items: flex-start;
         gap: 10px;
         align-self: stretch;
-        margin-top: 25px;
     }
 
     .cotiza-tu-servicio-texto-parrafo p {
@@ -154,7 +153,7 @@ get_header('paraguay');
     .selectable-container {
         position: relative;
         display: inline-block;
-        /* width: 222px; */
+        width: 222px;
         height: 48px;
         /* margin-left: 10px; */
     }
@@ -688,26 +687,6 @@ get_header('paraguay');
         /* gap: 4px; */
         border-radius: 4px;
     }
-
-    .form1-empresa-tipoEmpresa {
-        /* border: 1px solid black; */
-        display: flex;
-        justify-content: space-between;
-        margin: 25px 0px;
-    }
-
-    .form1-empresa-tipoEmpresa-inputSelect {
-        display: flex;
-        width: 285px;
-        height: 48px;
-        flex-direction: column;
-        align-items: flex-start;
-        flex-shrink: 0;
-
-        border-radius: 5px;
-        border: var(--Cantidad, 1px) solid var(--Border-Border-brand-1, #FF7500);
-        background: var(--Surface-Surface-default, #FFF);
-    }
 </style>
 <section class="cotiza-tu-servicio">
     <div class="navegador">
@@ -716,7 +695,7 @@ get_header('paraguay');
         <img class="arrow" src="<?php echo get_template_directory_uri(); ?>/images/cajita.svg" alt="Cajita">
         <p class="title__navegador">Quiero ser chofer</p>
         <img class="arrow" src="<?php echo get_template_directory_uri(); ?>/images/cajita.svg" alt="Cajita">
-        <p class="title__navegador">soy empresa</p>
+        <p class="title__navegador">soy particular</p>
     </div>
     <div id="form-container">
         <form id="multiStepForm">
@@ -737,25 +716,8 @@ get_header('paraguay');
                             <div class="cotiza-tu-servicio-form">
 
                                 <form id="miFormulario" class="cotiza-tu-servicio-form-container">
-                                    <div class="form1-empresa-tipoEmpresa">
-                                        <p>Empresa:</p>
-                                        <div class="selectable-container">
-                                            <input class="form1-empresa-tipoEmpresa-inputSelect" type="text"
-                                                id="selectableInput1" name="selectableInput1" readonly
-                                                placeholder="Selecciona tipo de empresa">
-                                            <div class="options" id="options1">
-                                                <div class="option" data-value="opcion1">Empresa Unipersonal Literal
-                                                    E con facturación electrónica</div>
-                                                <div class="option" data-value="opcion2">Empresa Unipersonal con IVA
-                                                </div>
-                                                <div class="option" data-value="opcion3">Sociedad de hecho (Entre 2
-                                                    o más personas)</div>
-                                            </div>
-                                        </div>
 
-                                    </div>
                                     <div class="cotiza-tu-servicio-form-container-inputs">
-
 
                                         <input class="cotiza-tu-servicio-form-input" type="text" id="input1"
                                             name="input1" required placeholder="Tu nombre">
@@ -843,130 +805,6 @@ get_header('paraguay');
             </div>
 
             <div class="form-section">
-                <div class="form3-container">
-                    <div class="form3-titulo">
-                        <div class="form3-titulo-container">
-                            <h2>Te estamos buscando!</h2>
-                        </div>
-                    </div>
-
-                    <form id="miFormulario" class="">
-
-                        <div>
-                            <div class="form3-inputs">
-
-                                <div class="form3-inputs-container-titulo">
-                                    <h3>Qué tipo de libreta de conducir tienes?</h3>
-                                </div>
-
-                                <div class="form3-inputs-container">
-                                    <div class="form3-inputs-container-input">
-                                        <input type="checkbox" id="checkbox" name="checkbox">
-                                        <label for="">Categoría A</label>
-                                    </div>
-
-                                    <div class="form3-inputs-container-input">
-                                        <input type="checkbox" id="checkbox" name="checkbox">
-                                        <label for="">Categoría F</label>
-                                    </div>
-
-                                    <div class="form3-inputs-container-input">
-                                        <input type="checkbox" id="checkbox" name="checkbox">
-                                        <label for="">Categoría B</label>
-                                    </div>
-                                    <div class="form3-inputs-container-input">
-                                        <input type="checkbox" id="checkbox" name="checkbox">
-                                        <label for="">Categoría G1</label>
-                                    </div>
-
-                                    <div class="form3-inputs-container-input">
-                                        <input type="checkbox" id="checkbox" name="checkbox">
-                                        <label for="">Categoría C</label>
-                                    </div>
-                                    <div class="form3-inputs-container-input">
-                                        <input type="checkbox" id="checkbox" name="checkbox">
-                                        <label for="">Categoría G2</label>
-                                    </div>
-
-                                    <div class="form3-inputs-container-input">
-                                        <input type="checkbox" id="checkbox" name="checkbox">
-                                        <label for="">Categoría D</label>
-                                    </div>
-                                    <div class="form3-inputs-container-input">
-                                        <input type="checkbox" id="checkbox" name="checkbox">
-                                        <label for="">Categoría G3</label>
-                                    </div>
-
-                                    <div class="form3-inputs-container-input">
-                                        <input type="checkbox" id="checkbox" name="checkbox">
-                                        <label for="">Categoría E</label>
-                                    </div>
-                                    <div class="form3-inputs-container-input">
-                                        <input type="checkbox" id="checkbox" name="checkbox">
-                                        <label for="">Categoría H</label>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <!-- <div class="form3-selectable-container">
-                                <div class="selectable-container">
-                                    <input class="cotiza-tu-servicio-form-input" type="text" id="selectableInput1"
-                                        name="selectableInput1" readonly placeholder="¿Tenes empresa propia?">
-                                    <div class="options" id="options1">
-                                        <div class="option" data-value="opcion1">Si</div>
-                                        <div class="option" data-value="opcion2">No</div>
-                                    </div>
-                                </div>
-
-                                <div class="selectable-container">
-                                    <input class="cotiza-tu-servicio-form-input" type="text" id="selectableInput2"
-                                        name="selectableInput2" readonly placeholder="Tipo de empresa">
-                                    <div class="options" id="options2">
-                                        <div class="option" data-value="opcion1">Empresa Unipersonal Literal E
-                                            con
-                                            facturación electrónica</div>
-                                        <div class="option" data-value="opcion2">Empresa Unipersonal con IVA
-                                        </div>
-                                        <div class="option" data-value="opcion3">Sociedad de hecho (Entre 2 o
-                                            más
-                                            personas)</div>
-                                    </div>
-                                </div>
-                            </div> -->
-                        </div>
-
-                        <div class="progress-container">
-                            <div class="circulo"></div>
-                            <div class="progress-circle"></div>
-                            <div class="circulo"></div>
-                            <div class="circulo"></div>
-                        </div>
-
-                        <div class="form3-botons-container">
-                            <button type="button" class=" btn prev">Anterior</button>
-                            <button type="button" class=" btn next">Siguiente</button>
-                        </div>
-
-                    </form>
-                    <div class="form3-direcciones-container">
-                        <div class="form3-direcciones1">
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/direcciones.svg" alt="">
-                            <h4>DIRECCIÓN</h4>
-                            <p>República de Corea 2962 San Salvador 1480</p>
-                        </div>
-                        <div class="form3-direcciones2">
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/mailes.svg" alt="">
-                            <h4>MAIL</h4>
-                            <p>comercial@soydelivery.com.uy rrhh@soydelivery.com.uy
-                            </p>
-                        </div>
-                    </div>
-
-
-                </div>
-            </div>
-
-            <div class="form-section">
                 <div>
                     <div class="cotiza-tu-servicio-container">
                         <div class="cotiza-tu-servicio-centrado">
@@ -981,7 +819,10 @@ get_header('paraguay');
                                     <div class="seccion2-inputs-container">
 
                                         <p>Qué tipo de vehículo tienes?</p>
-
+                                        <div>
+                                            <input type="checkbox" id="checkbox" name="checkbox">
+                                            <label for="">No tengo vehículo</label>
+                                        </div>
 
                                         <div>
                                             <input type="checkbox" id="checkbox" name="checkbox">
@@ -1082,6 +923,130 @@ get_header('paraguay');
                     </div>
                 </div>
 
+            </div>
+
+            <div class="form-section">
+                <div class="form3-container">
+                    <div class="form3-titulo">
+                        <div class="form3-titulo-container">
+                            <h2>Te estamos buscando!</h2>
+                        </div>
+                    </div>
+
+                    <form id="miFormulario" class="">
+
+                        <div>
+                            <div class="form3-inputs">
+
+                                <div class="form3-inputs-container-titulo">
+                                    <h3>Qué tipo de vehículo tienes?</h3>
+                                </div>
+
+                                <div class="form3-inputs-container">
+                                    <div class="form3-inputs-container-input">
+                                        <input type="checkbox" id="checkbox" name="checkbox">
+                                        <label for="">Categoría A</label>
+                                    </div>
+
+                                    <div class="form3-inputs-container-input">
+                                        <input type="checkbox" id="checkbox" name="checkbox">
+                                        <label for="">Categoría F</label>
+                                    </div>
+
+                                    <div class="form3-inputs-container-input">
+                                        <input type="checkbox" id="checkbox" name="checkbox">
+                                        <label for="">Categoría B</label>
+                                    </div>
+                                    <div class="form3-inputs-container-input">
+                                        <input type="checkbox" id="checkbox" name="checkbox">
+                                        <label for="">Categoría G1</label>
+                                    </div>
+
+                                    <div class="form3-inputs-container-input">
+                                        <input type="checkbox" id="checkbox" name="checkbox">
+                                        <label for="">Categoría C</label>
+                                    </div>
+                                    <div class="form3-inputs-container-input">
+                                        <input type="checkbox" id="checkbox" name="checkbox">
+                                        <label for="">Categoría G2</label>
+                                    </div>
+
+                                    <div class="form3-inputs-container-input">
+                                        <input type="checkbox" id="checkbox" name="checkbox">
+                                        <label for="">Categoría D</label>
+                                    </div>
+                                    <div class="form3-inputs-container-input">
+                                        <input type="checkbox" id="checkbox" name="checkbox">
+                                        <label for="">Categoría G3</label>
+                                    </div>
+
+                                    <div class="form3-inputs-container-input">
+                                        <input type="checkbox" id="checkbox" name="checkbox">
+                                        <label for="">Categoría E</label>
+                                    </div>
+                                    <div class="form3-inputs-container-input">
+                                        <input type="checkbox" id="checkbox" name="checkbox">
+                                        <label for="">Categoría H</label>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="form3-selectable-container">
+                                <div class="selectable-container">
+                                    <input class="cotiza-tu-servicio-form-input" type="text" id="selectableInput1"
+                                        name="selectableInput1" readonly placeholder="¿Tenes empresa propia?">
+                                    <div class="options" id="options1">
+                                        <div class="option" data-value="opcion1">Si</div>
+                                        <div class="option" data-value="opcion2">No</div>
+                                    </div>
+                                </div>
+
+                                <div class="selectable-container">
+                                    <input class="cotiza-tu-servicio-form-input" type="text" id="selectableInput2"
+                                        name="selectableInput2" readonly placeholder="Tipo de empresa">
+                                    <div class="options" id="options2">
+                                        <div class="option" data-value="opcion1">Empresa Unipersonal Literal E
+                                            con
+                                            facturación electrónica</div>
+                                        <div class="option" data-value="opcion2">Empresa Unipersonal con IVA
+                                        </div>
+                                        <div class="option" data-value="opcion3">Sociedad de hecho (Entre 2 o
+                                            más
+                                            personas)</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="progress-container">
+                            <div class="circulo"></div>
+                            <div class="circulo"></div>
+                            <div class="progress-circle"></div>
+                            <div class="circulo"></div>
+                        </div>
+
+                        <div class="form3-botons-container">
+                            <button type="button" class=" btn prev">Anterior</button>
+                            <button type="button" class=" btn next">Siguiente</button>
+                        </div>
+
+                    </form>
+                    <div class="form3-direcciones-container">
+                        <div class="form3-direcciones1">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/direcciones.svg" alt="">
+                            <h4>DIRECCIÓN</h4>
+                            <p>República de Corea 2962 San Salvador 1480</p>
+                        </div>
+                        <div class="form3-direcciones2">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/mailes.svg" alt="">
+                            <h4>MAIL</h4>
+                            <p>comercial@soydelivery.com.uy rrhh@soydelivery.com.uy
+                            </p>
+                        </div>
+                    </div>
+
+
+                </div>
             </div>
 
             <div class="form-section">
