@@ -1,5 +1,5 @@
 <?php
-/* Template Name: Uruguay */
+/* Template Name: Paraguay */
 get_header('uruguay'); // Carga el header personalizado para Uruguay
 ?>
 

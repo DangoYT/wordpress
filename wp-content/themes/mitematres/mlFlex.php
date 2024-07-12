@@ -12,123 +12,301 @@ get_header('uruguay');
         align-items: center;
 
     }
-.section__content {
-    border: 1px solid black;
-    background-color: #FF7500;
-    display: flex;
-    flex-direction: column;
-    width: 530px;
-    padding: 30px;
-    
-}
 
-.intro {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    border: 1px solid red;
-    width: 470px;
-    /* height: 185px; */
-}
+    .section__content {
+        border: 1px solid black;
 
-.service {
+        display: flex;
+        flex-direction: column;
+        width: 530px;
+        padding: 30px;
+        border-radius: 10px;
+        background: var(--Surface-Surface-brand, #FF7500);
+        gap: 30px;
+        align-items: center;
+    }
 
-}
-.service__item {
+    .intro {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        /* border: 1px solid red; */
+        width: 470px;
+        /* height: 185px; */
+    }
 
-}
-.service__icon {
+    .service {
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        gap: 19px;
+        width: 395px;
+    }
 
-}
-.service__description {
+    .service__item {
+        display: flex;
+        align-items: flex-start;
+        gap: 19px;
+    }
 
-}
-.service__title {
+    .service__icon {
+        width: 17px;
+        height: 22px;
+    }
 
-}
-.service__text {
+    .service__icon img {
+        width: 17px;
+        height: 22px;
+    }
 
-}
-.section__heading {
+    .service__description {
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        gap: 19px;
+    }
 
-}
-.map {
+    .service__title {
+        margin: 0px;
+        color: #FFF;
 
-}
-.map__container {
+        /* p */
+        font-family: "Karla";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 125.523%;
+        /* 17.573px */
+    }
 
-}
-.map__image {
+    .service__text {
+        margin: 0px;
+        color: #FFF;
 
-}
-.contact {
+        /* p */
+        font-family: "Karla";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 125.523%;
+        /* 17.573px */
+    }
 
-}
-.contact__form {
+    .section__heading {
+        color: #FFF;
+        text-align: center;
+        font-family: "Karla";
+        font-size: 23px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 125.523%;
+        /* 28.87px */
 
-}
-.contact__form-group {
+        width: 471px;
+    }
 
-}
-.contact__info {
+    .map {}
 
-}
+    .map__container {
 
+        border-radius: 15px;
+        position: relative;
+        max-width: 471px;
+        max-height: 190px;
+        overflow: hidden;
+    }
 
+    .map__image {
+        position: relative;
+        top: -55px;
+        left: -180px;
+        width: 743px;
+        height: 263px;
+        flex-shrink: 0;
+    }
 
-.intro__title-container {
-    
-}
+    .contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-.intro__title {
-    color: #FFF;
+    .contact__form {}
 
-/* H1 */
-font-family: "Museo Sans Rounded";
-font-size: 44px;
-font-style: normal;
-font-weight: 700;
-line-height: 131.523%; /* 57.87px */
-}
+    .contact__form-group {
+        display: flex;
+        width: 474px;
+        padding: 11px 12px;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        align-content: flex-start;
+        gap: 14px 17px;
+        flex-wrap: wrap;
+    }
 
-.intro__subtitle-container {
-   
-}
-.intro__subtitle {
-    
-    color: #FFF;
-text-align: justify;
+    .contact__info {}
 
-/* p */
-font-family: Karla;
-font-size: 14px;
-font-style: normal;
-font-weight: 500;
-line-height: 125.523%; /* 17.573px */
+    .cotiza-tu-servicio-form-container-textarea {}
 
-}
+    .cotiza-tu-servicio-form-textarea {
+        width: 450px;
+        height: 122px;
+        border-radius: 4px;
+    }
 
+    .intro__title-container {}
+
+    .intro__title {
+        color: #FFF;
+
+        /* H1 */
+        font-family: "Museo Sans Rounded";
+        font-size: 44px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 131.523%;
+        /* 57.87px */
+    }
+
+    .intro__subtitle-container {}
+
+    .intro__subtitle {
+
+        color: #FFF;
+        text-align: justify;
+
+        /* p */
+        font-family: "Karla";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 125.523%;
+        /* 17.573px */
+
+    }
+
+    .selectable-container {
+        position: relative;
+        width: 216px;
+        height: 48px;
+    }
+
+    .cotiza-tu-servicio-form-input {
+        width: 216px;
+        height: 48px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        cursor: pointer;
+    }
+
+    .cotiza-tu-servicio-form-boton {
+        display: flex;
+        padding: 7px 10px;
+        align-items: center;
+        gap: 14px;
+        border-radius: 5px;
+        background: var(--Surface-Surface-gris, #414141);
+        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+        color: var(--Text-Text-negative, #FFF);
+        width: 95px;
+        height: 38px;
+        /* Body XS Bold */
+        font-family: "Karla";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 14px;
+        /* 116.667% */
+    }
+
+    .options {
+        display: none;
+        /* Oculto por defecto */
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        background-color: #fff;
+        z-index: 1000;
+        max-height: 200px;
+        /* Altura máxima con scroll */
+        overflow-y: auto;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .option {
+        padding: 10px;
+        cursor: pointer;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .option:last-child {
+        border-bottom: none;
+    }
+
+    .option:hover {
+        background-color: #f0f0f0;
+    }
+
+    .contact__info {
+        margin-top: 37px;
+    }
+
+    .contact__info-container {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .contact__info-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 18px;
+    }
+
+    .contact__info-icon {}
+
+    .contact__info-text {}
+
+    .contact__info-text h4 {
+        margin: 0px;
+    }
+
+    .contact__info-text p {
+        /* margin: 0px; */
+        color: #FFF;
+    }
+
+    .cotiza-tu-servicio-form-container-boton {
+        margin-top: 11px;
+    }
 </style>
 
 
 <section class="section">
-    
 
-        <div class="navegador">
-            <img class="navegador__arrow" src="<?php echo get_template_directory_uri(); ?>/images/cajita.svg" alt="Cajita">
-            <p class="navegador__title">Servicios</p>
-            <img class="navegador__arrow" src="<?php echo get_template_directory_uri(); ?>/images/cajita.svg" alt="Cajita">
-            <p class="navegador__title">ML Flex</p>
-        </div>
-        <div class="section__container">
 
-            <div class="section__content">
+    <div class="navegador">
+        <img class="navegador__arrow" src="<?php echo get_template_directory_uri(); ?>/images/cajita.svg" alt="Cajita">
+        <p class="navegador__title">Servicios</p>
+        <img class="navegador__arrow" src="<?php echo get_template_directory_uri(); ?>/images/cajita.svg" alt="Cajita">
+        <p class="navegador__title">ML Flex</p>
+    </div>
+    <div class="section__container">
+
+        <div class="section__content">
             <div class="intro">
                 <div class="intro__title-container">
                     <h2 class="intro__title">Te ayudamos a impulsar tu negocio!</h2>
                 </div>
                 <div class="intro__subtitle-container">
-                     <p class="intro__subtitle">Sumamos más puntos Drop off para dejar tus productos y que nosotros los entreguemos. Completa nuestro formulario y te habilitamos al instante para que puedas entregar tus productos en el día!</p>
+                    <p class="intro__subtitle">Sumamos más puntos Drop off para dejar tus productos y que nosotros los
+                        entreguemos. Completa nuestro formulario y te habilitamos al instante para que puedas entregar
+                        tus productos en el día!</p>
                 </div>
             </div>
 
@@ -139,7 +317,8 @@ line-height: 125.523%; /* 17.573px */
                     </div>
                     <div class="service__description">
                         <p class="service__title">10 puntos Drop off</p>
-                        <p class="service__text">Soydelivery tiene 10 puntos Dropoff para que puedas dejar todos tus productos vendidos por Mercadolibre flex</p>
+                        <p class="service__text">Soydelivery tiene 10 puntos Dropoff para que puedas dejar todos tus
+                            productos vendidos por Mercadolibre flex</p>
                     </div>
                 </div>
 
@@ -149,7 +328,8 @@ line-height: 125.523%; /* 17.573px */
                     </div>
                     <div class="service__description">
                         <p class="service__title">Entregas en el día en 11 zonas</p>
-                        <p class="service__text">Vos vendes y nosotros nos encargamos de entregar tus productos más rápido</p>
+                        <p class="service__text">Vos vendes y nosotros nos encargamos de entregar tus productos más
+                            rápido</p>
                     </div>
                 </div>
 
@@ -183,63 +363,51 @@ line-height: 125.523%; /* 17.573px */
                     </div>
                 </div>
             </div>
-            
+
             <h2 class="section__heading">Deja tus productos en el centro Dropoff que más te convenga</h2>
 
             <div class="map">
                 <div class="map__container">
-                    <img class="map__image" src="<?php echo get_template_directory_uri(); ?>/images/mapasoyde.png" alt="">
+                    <img class="map__image" src="<?php echo get_template_directory_uri(); ?>/images/mapasoyde.png"
+                        alt="">
                 </div>
             </div>
 
             <div class="contact">
                 <form id="miFormulario" class="contact__form cotiza-tu-servicio-form-container">
-                    <div class="contact__form-group form1-empresa-tipoEmpresa">
-                        <p class="contact__form-label">Empresa:</p>
-                        <div class="selectable-container">
-                            <input class="form1-empresa-tipoEmpresa-inputSelect" type="text" id="selectableInput1" name="selectableInput1" readonly placeholder="Selecciona tipo de empresa">
-                            <div class="options" id="options1">
-                                <div class="option" data-value="opcion1">Empresa Unipersonal Literal E con facturación electrónica</div>
-                                <div class="option" data-value="opcion2">Empresa Unipersonal con IVA</div>
-                                <div class="option" data-value="opcion3">Sociedad de hecho (Entre 2 o más personas)</div>
-                            </div>
-                        </div>
-                    </div>
-
                     <div class="contact__form-group cotiza-tu-servicio-form-container-inputs">
-                        <input class="cotiza-tu-servicio-form-input" type="text" id="input1" name="input1" required placeholder="Tu nombre">
-                        <input class="cotiza-tu-servicio-form-input" type="text" id="input2" name="input2" required placeholder="Tu telefono">
-                        <input class="cotiza-tu-servicio-form-input" type="email" id="input4" name="input4" required placeholder="Tu e-mail">
-                        <input class="cotiza-tu-servicio-form-input" type="number" id="input3" name="input3" required placeholder="Edad">
+                        <input class="cotiza-tu-servicio-form-input" type="text" id="input1" name="input1" required
+                            placeholder="Tu nombre">
+                        <input class="cotiza-tu-servicio-form-input" type="text" id="input2" name="input2" required
+                            placeholder="Tu nickname">
+                        <input class="cotiza-tu-servicio-form-input" type="number" id="input3" name="input3" required
+                            placeholder="Tu télefono">
+                        <input class="cotiza-tu-servicio-form-input" type="email" id="input4" name="input4" required
+                            placeholder="Tu e-mail">
                         <div class="selectable-container">
-                            <input class="cotiza-tu-servicio-form-input" type="text" id="selectableInput1" name="selectableInput1" readonly placeholder="Carnet de salud vigente">
+                            <input class="cotiza-tu-servicio-form-input" type="text" id="selectableInput1"
+                                name="selectableInput1" readonly placeholder="Pedidos semanales">
                             <div class="options" id="options1">
-                                <div class="option" data-value="opcion1">Si</div>
-                                <div class="option" data-value="opcion2">No</div>
+                                <div class="option" data-value="opcion1">Menos de 50</div>
+                                <div class="option" data-value="opcion2">Entre 50 y 100</div>
+                                <div class="option" data-value="opcion3">Mas de 100</div>
                             </div>
                         </div>
                         <div class="selectable-container">
-                            <input class="cotiza-tu-servicio-form-input" type="text" id="selectableInput2" name="selectableInput2" readonly placeholder="Lugar de residencia">
+                            <input class="cotiza-tu-servicio-form-input" type="text" id="selectableInput2"
+                                name="selectableInput2" readonly placeholder="Tamaño del paquete">
                             <div class="options" id="options2">
-                                <div class="option" data-value="opcion1">Montevideo</div>
-                                <div class="option" data-value="opcion2">Canelones</div>
-                                <div class="option" data-value="opcion3">Colonia</div>
-                                <div class="option" data-value="opcion4">Maldonado</div>
-                                <div class="option" data-value="opcion5">Rocha</div>
-                                <div class="option" data-value="opcion6">Artigas</div>
+                                <div class="option" data-value="opcion1">Pequeño</div>
+                                <div class="option" data-value="opcion2">Mediano</div>
+                                <div class="option" data-value="opcion3">Grande</div>
+
                             </div>
                         </div>
                     </div>
 
                     <div class="contact__form-group cotiza-tu-servicio-form-container-textarea">
-                        <textarea class="cotiza-tu-servicio-form-textarea" id="textarea" name="textarea" rows="4" cols="50" placeholder="Tu mensaje aquí"></textarea>
-                    </div>
-
-                    <div class="contact__form-group progress-container">
-                        <div class="progress-circle active"></div>
-                        <div class="circulo"></div>
-                        <div class="circulo"></div>
-                        <div class="circulo"></div>
+                        <textarea class="cotiza-tu-servicio-form-textarea" id="textarea" name="textarea" rows="4"
+                            cols="50" placeholder="¿Te gustaría dejar un comentario?"></textarea>
                     </div>
 
                     <div class="contact__form-group cotiza-tu-servicio-form-container-boton">
@@ -250,30 +418,37 @@ line-height: 125.523%; /* 17.573px */
                 </form>
 
                 <div class="contact__info">
-                    <div class="form3-direcciones-container">
-                        <div class="form3-direcciones1">
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/direcciones.svg" alt="">
-                            <h4>DIRECCIÓN</h4>
-                            <p>República de Corea 2962 San Salvador 1480</p>
+                    <div class="contact__info-container">
+                        <div class="contact__info-item">
+                            <div class="contact__info-icon">
+                                <img src="<?php echo get_template_directory_uri(); ?>/images/direcciones.svg" alt="">
+                            </div>
+                            <div class="contact__info-text">
+                                <h4>DIRECCIÓN</h4>
+                                <p>República de Corea 2962 San Salvador 1480</p>
+                            </div>
                         </div>
-                        <div class="form3-direcciones2">
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/mailes.svg" alt="">
-                            <h4>MAIL</h4>
-                            <p>comercial@soydelivery.com.uy rrhh@soydelivery.com.uy</p>
+                        <div class="contact__info-item">
+                            <div class="contact__info-icon">
+                                <img src="<?php echo get_template_directory_uri(); ?>/images/mailes.svg" alt="">
+                            </div>
+                            <div class="contact__info-text">
+                                <h4>MAIL</h4>
+                                <p>comercial@soydelivery.com.uy rrhh@soydelivery.com.uy</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            </div>
-
         </div>
-    
+
+    </div>
+
 </section>
 
 
 
 <script>
-    // scripts.js
     document.addEventListener('DOMContentLoaded', function () {
         var selectableInputs = document.querySelectorAll('.selectable-container input');
         var optionsContainers = document.querySelectorAll('.options');
@@ -300,43 +475,6 @@ line-height: 125.523%; /* 17.573px */
                     container.style.display = 'none';
                 });
             }
-        });
-    });
-    document.addEventListener('DOMContentLoaded', function () {
-        const formSections = document.querySelectorAll('.form-section');
-        const nextButtons = document.querySelectorAll('.next');
-        const prevButtons = document.querySelectorAll('.prev');
-        const progressCircles = document.querySelectorAll('.progress-circle');
-        let currentSection = 0;
-
-        function updateProgressCircles() {
-            progressCircles.forEach((circle, index) => {
-                circle.classList.toggle('active', index <= currentSection);
-            });
-        }
-
-        nextButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                formSections[currentSection].classList.remove('active');
-                currentSection++;
-                formSections[currentSection].classList.add('active');
-                updateProgressCircles();
-            });
-        });
-
-        prevButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                formSections[currentSection].classList.remove('active');
-                currentSection--;
-                formSections[currentSection].classList.add('active');
-                updateProgressCircles();
-            });
-        });
-
-        document.getElementById('multiStepForm').addEventListener('submit', function (event) {
-            event.preventDefault();
-            alert('Formulario enviado!');
-            // Aquí puedes agregar el código para enviar el formulario
         });
     });
 
