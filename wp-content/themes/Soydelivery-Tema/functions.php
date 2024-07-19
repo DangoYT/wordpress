@@ -69,13 +69,14 @@ function soydelivery_enqueue_assets()
     wp_enqueue_script('slick-js', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js', array('jquery'), null, true);
 
     // Encolar Google Fonts
-    wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap', false);
+    wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800&family=Museo+Sans+Rounded:wght@100;300;400;500;700&display=swap', false);
 
     // Encolar el archivo CSS de fuentes locales
-    wp_enqueue_style('font-styles', get_template_directory_uri() . '/fonts.css');
+    wp_enqueue_style('font-styles', get_template_directory_uri() . '/assets/css/fonts.css');
 }
 add_action('wp_enqueue_scripts', 'soydelivery_enqueue_assets');
 
+// Registrar menús personalizados para cada país
 function registrar_mis_menus_personalizados()
 {
     register_nav_menus(
@@ -88,5 +89,12 @@ function registrar_mis_menus_personalizados()
 }
 add_action('init', 'registrar_mis_menus_personalizados');
 
+// Función para incluir el template part del slider
+function include_slider()
+{
+    get_template_part('template-part/sliders/slider');
+}
 
+// Hook para añadir el template part en el footer
+add_action('wp_footer', 'include_slider');
 ?>

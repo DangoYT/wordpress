@@ -1,0 +1,52 @@
+.navContainer {
+    display: flex;
+    /* max-width: 1280px; */
+    /* width: 1280px; */
+    height: 140px;
+    padding: 10px 100px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.logoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex: 1 0 0;
+    align-self: stretch;
+}
+
+.logoSoyDev {
+    display: flex;
+    width: 336px;
+    height: 43.509px;
+    padding-right: 84.787px;
+    align-items: center;
+}
+
+.ulContainer {
+    display: flex;
+    width: 617px;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+    list-style-type: none;
+}
+
+.ulContainer li a {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #FFF;
+    font-family: "Simply Sans";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: none;
+}

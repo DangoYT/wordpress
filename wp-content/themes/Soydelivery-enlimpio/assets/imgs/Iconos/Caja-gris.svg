@@ -1,0 +1,17 @@
+<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Cajita" clip-path="url(#clip0_3_12806)">
+<g id="Group 1000002394">
+<rect id="Rectangle 34624104" x="3.15674" y="0.90625" width="8.4375" height="8.4375" rx="1.40625" fill="white" stroke="#C8C5C0" stroke-width="1.6875"/>
+<rect id="Rectangle 34624106" x="1.18774" y="5.68756" width="12.375" height="12.375" fill="white"/>
+<path id="Rectangle 34624103" d="M7.65625 9.0625C7.65625 8.28585 8.28585 7.65625 9.0625 7.65625H14.6875C15.4642 7.65625 16.0938 8.28585 16.0938 9.0625V14.6875C16.0938 15.4642 15.4642 16.0938 14.6875 16.0938H9.0625C8.28585 16.0938 7.65625 15.4642 7.65625 14.6875V9.0625Z" fill="white" stroke="#C8C5C0" stroke-width="1.6875"/>
+<rect id="Rectangle 34624105" x="-1.06201" y="5.68756" width="12.375" height="12.375" rx="3.375" fill="white"/>
+<rect id="Rectangle 34624102" x="0.90625" y="7.65625" width="8.4375" height="8.4375" rx="1.40625" fill="white" stroke="#C8C5C0" stroke-width="1.6875"/>
+<path id="Vector 500" d="M7.375 1.18756V3.43756M5.125 7.37506V9.62506" stroke="#C8C5C0" stroke-width="2.25"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_3_12806">
+<rect width="16.875" height="16.875" fill="white" transform="translate(0.0625 0.0625)"/>
+</clipPath>
+</defs>
+</svg>

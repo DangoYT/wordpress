@@ -1,0 +1,13 @@
+header {
+    background-color: #FF7500
+}
+
+
+.header-paraguay {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-paraguay {
+    display: flex;
+}

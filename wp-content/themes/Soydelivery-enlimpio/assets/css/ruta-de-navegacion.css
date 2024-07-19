@@ -1,0 +1,22 @@
+.navegador {
+    display: flex;
+    gap: 40px;
+    justify-content: flex-start;
+    margin-left: 40px;
+}
+
+.arrow {
+    width: 20px;
+    height: 20px;
+}
+
+.title__navegador {
+    color: #414141;
+    font-family: "Mulish", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 125.523%;
+    /* 25.105px */
+    margin: 0px;
+}
