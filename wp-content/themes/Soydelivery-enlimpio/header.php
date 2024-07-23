@@ -10,14 +10,20 @@
 </head>
 
 <body <?php body_class(); ?>>
-    <header>
+    <header class="header-global">
         <nav id="nav_id" class="navContainer">
             <div class="logoContainer">
                 <img class="logoSoyDev"
                     src="<?php echo get_template_directory_uri(); ?>/assets/imgs/Iconos/Global-Blanco.png"
                     alt="Logo de tu sitio">
             </div>
-            <div>
+            <div class="menuHamburguesa-global-container">
+                <div>
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/imgs/Iconos/menuHamburguesa-blanco.svg"
+                        alt="">
+                </div>
+            </div>
+            <div class="ulContainer-global">
                 <?php
                 wp_nav_menu(
                     array(

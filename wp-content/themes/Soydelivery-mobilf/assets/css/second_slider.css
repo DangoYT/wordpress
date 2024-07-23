@@ -1,0 +1,44 @@
+/* ------------------ Second Slider ----------------- */
+
+.second_slider {
+    position: relative;
+    z-index: 1;
+}
+
+
+.second-slider__container {
+    width: 100%;
+    height: 550px;
+    /* Ajusta la altura según tu diseño */
+    overflow: hidden;
+    position: relative;
+    border: 13px solid #FF7500;
+    margin: 40px 0px;
+}
+
+.second-slider__item {
+    width: 100%;
+    height: 100%;
+    display: block;
+    /* Asegura que los elementos se muestren */
+    position: relative;
+}
+
+.second-slider__item img {
+    width: 811.065px;
+    height: 541px;
+    flex-shrink: 0;
+    object-fit: cover;
+    /* Ajusta la imagen sin distorsionar */
+}
+
+.mcaca {
+    position: absolute;
+    top: 65px;
+    left: 45px;
+    z-index: 2;
+    width: 283px;
+    height: 482px;
+
+    /* Asegura que el elemento este en el nivel correcto */
+}

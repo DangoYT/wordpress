@@ -1,0 +1,118 @@
+.slider__mobile {
+    background: var(--Surface-Surface-brand, #FF7500);
+    gap: 18px;
+    margin: 0 auto;
+}
+
+.slider__mobile__align {}
+
+.slider__mobile__title {
+    display: flex;
+    justify-content: center;
+    width: 320px;
+    height: 58px;
+    text-align: center;
+}
+
+.slider__mobile__title h2 {
+    color: var(--Text-Text-blanco, #FFF);
+    text-align: center;
+    font-family: "Simply Sans";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+}
+
+.slider__mobile__container {}
+
+.slider__servicios__mobil__container {}
+
+.slick-dotted.slick-slider {
+    margin-bottom: 0px;
+}
+
+.slider__servicios__mobil {}
+
+.slider__servicios__mobil__text {
+    text-align: center;
+    width: 190px;
+    height: 110px;
+}
+
+.slider__servicios__mobil__text h3 {
+    margin: 0px 0px 10px 0px;
+    color: #FF7500;
+    text-align: center;
+    font-family: "Mulish";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 108.523%;
+    /* 16.278px */
+}
+
+.slider__servicios__mobil__text p {
+    color: #414141;
+    font-family: "Karla", sans-serif;
+    font-size: 10px;
+    margin: 0px;
+
+    text-align: center;
+}
+
+.slider__servicios__mobil__item {
+    width: 280px;
+    height: 160px;
+    border-radius: 10px;
+    background: var(--Surface-Surface-default, #FFF);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.slider__servicios__mobil__img__container {
+    width: 80px;
+}
+
+.slider__servicios__mobil__img {
+    transform: scale(0.5);
+    position: relative;
+    left: -10px;
+}
+
+#supermercado__img {
+    left: -25px;
+}
+
+.slider__servicios__mobil__frame-1__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    gap: 12px;
+    margin: 20px 0px 50px 0px;
+}
+
+.slider__servicios__mobil__frame-2__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    gap: 12px;
+    margin: 20px 0px 50px 0px;
+}
+
+.slider__servicios__mobil__frame-3__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    gap: 12px;
+    margin: 20px 0px 50px 0px;
+}
+}

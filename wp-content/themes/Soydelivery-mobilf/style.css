@@ -1,0 +1,292 @@
+/*
+Theme Name: Mobil First
+Theme URI: http://tusitio.com
+Author: Tu Nombre
+Author URI: http://tusitio.com
+Description: Descripción de tu tema personalizado.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: mi-tema-personalizado
+*/
+
+/* Importar los archivos CSS desde la carpeta css */
+@import url('assets/css/global.css');
+
+/* MOBILE 360px */
+
+@import url('assets/css/mobile/global/header-global-360.css');
+@import url('assets/css/mobile/global/encabezado-global-360.css');
+@import url('assets/css/mobile/global/slider-mobile-global-360.css');
+@import url('assets/css/mobile/global/btn-global-360.css');
+@import url('assets/css/mobile/global/apoyos-global-360.css');
+@import url('assets/css/mobile/global/footer-global-360.css');
+
+@import url('assets/css/slider.css');
+@import url('assets/css/second_slider.css');
+
+.home {
+    margin: 0 auto;
+}
+
+.body {
+    margin: 0 auto;
+}
+
+.hamburger-menu-popup {
+    display: none;
+}
+
+.page-template.page-template-servicios.page-template-servicios-php.page.page-id-116.logged-in.admin-bar.customize-support {
+    margin: 0;
+}
+
+@media only screen and (max-width: 360px) {
+
+
+
+    .navegador {
+        display: flex;
+    }
+
+    .title__navegador {
+        color: var(--Text-Text-naranja, #FF7500);
+        text-align: center;
+        font-family: "Karla";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 131.523%;
+        /* 13.152px */
+    }
+
+
+    .global__servicios_container {
+        background: var(--Surface-Surface-brand, #FF7500);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 18px;
+
+        padding: 20px 0px 30px 0px;
+
+        margin-bottom: 20px;
+
+    }
+
+    .global__servicios_title {
+        color: var(--Text-Text-blanco, #FFF);
+        text-align: center;
+        font-family: "Simply Sans";
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .global__servicios_description {
+        display: none;
+    }
+
+    .global__servicios_items_container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 18px;
+        position: relative;
+    }
+
+    .global__servicios_item {
+        display: flex;
+        width: 340px;
+        height: 190px;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+        border-radius: 10px;
+        background: var(--Surface-Surface-default, #FFF);
+
+        position: relative;
+    }
+
+    .global__servicios_imgs {
+        position: absolute;
+        left: 10px;
+        transform: scale(0.8);
+    }
+
+    .global__servicios_imgsDesfasadas {
+        position: absolute;
+        left: -10px;
+        transform: scale(0.8);
+    }
+
+    .global__servicios_h3_container {
+        /* border: 1px solid black; */
+        display: flex;
+        width: 135px;
+        height: 16px;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 40px;
+        left: 148.5px;
+    }
+
+    .global__servicios_item h3 {
+
+        color: #FF7500;
+        text-align: center;
+        font-family: "Mulish";
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 108.523%;
+        /* 16.278px */
+    }
+
+    .global__servicios_p {
+        /*  border: 1px solid black; */
+
+        width: 212px;
+        height: 105px;
+
+        position: absolute;
+        top: 60px;
+        left: 110px;
+
+        color: #414141;
+        text-align: center;
+        font-family: "Karla";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 125.523%;
+        /* 15.063px */
+    }
+
+    .global__servicios_item_p_software {
+        /* border: 1px solid black; */
+
+        width: 212px;
+        height: 105px;
+
+        position: absolute;
+        top: 40px;
+        left: 100px;
+
+        color: #414141;
+        text-align: center;
+        font-family: "Karla";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 125.523%;
+        /* 15.063px */
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .slider {
+        /* display: none; */
+        padding: 20px 0px 0px 0px;
+    }
+
+    .slider__title {
+        font-size: 21px;
+    }
+
+    .slider__container {}
+
+    .carousel {
+        height: 400px;
+    }
+
+    .draggable {
+        height: 400px;
+    }
+
+    .carousel-inner {
+        height: 450px;
+    }
+
+    .carousel-item {}
+
+    .carousel-item a {}
+
+    .carousel-item img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .carousel-caption {
+        bottom: 220px;
+        width: 60%;
+        height: 80px;
+    }
+
+    .carousel-caption h3 {
+        font-size: 1.3em;
+    }
+
+    .carousel-caption a {}
+
+    .carousel-caption p {}
+
+    .carousel-caption .icon {}
+
+    .slick-dots {}
+
+    .slick-dots li button:before {}
+
+    .slick-dots li.slick-active button:before {}
+
+    .slick-prev,
+    .slick-next {}
+
+    .slick-prev:before,
+    .slick-next:before {}
+
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------ */

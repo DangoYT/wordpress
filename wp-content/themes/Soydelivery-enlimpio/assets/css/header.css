@@ -1,5 +1,13 @@
-header {
-    background-color: #FF7500
+/* header {
+    background-color: #FF7500;
+    display: flex;
+    justify-content: space-around;
+} */
+
+.header-global {
+    display: flex;
+    justify-content: space-around;
+    background-color: #FF7500;
 }
 
 
@@ -10,4 +18,15 @@ header {
 
 .nav-paraguay {
     display: flex;
+}
+
+
+.header-peru {
+    background-color: #FF7500;
+
+}
+
+.nav-peru {
+    display: flex;
+    justify-content: space-around;
 }
