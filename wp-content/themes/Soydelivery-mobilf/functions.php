@@ -78,6 +78,10 @@ function soydelivery_enqueue_assets()
     wp_enqueue_style('font-styles', get_template_directory_uri() . '/assets/css/fonts.css');
 
     wp_enqueue_script('hamburger-menu-js', get_template_directory_uri() . '/assets/js/hamburger-menu.js', array('jquery'), null, true);
+
+    // Encolar el archivo de JavaScript para el formulario
+    wp_enqueue_script('form-handler-js', get_template_directory_uri() . '/assets/js/form-handler.js', array('jquery'), null, true);
+
 }
 add_action('wp_enqueue_scripts', 'soydelivery_enqueue_assets');
 

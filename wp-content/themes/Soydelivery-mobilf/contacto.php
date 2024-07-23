@@ -69,83 +69,14 @@ get_header(); ?>
         <div class="popup__contacto__content">
 
             <img id="closePopup" class="popup__close"
-                src="<?php echo get_template_directory_uri(); ?>/images/paper-plane.svg" alt="">
+                src="<?php echo get_template_directory_uri(); ?>/assets/imgs/Iconos/paper-plane-blanco.svg" alt="">
             <p>Gracias por ponerte en contacto con nosotros.
 
-                Tu información fue enviado con éxito
+                Tu información fue enviada con éxito.
 
                 ¡Pronto te contactaremos!</p>
         </div>
     </div>
 </section>
-
-
-
-
-
-
-<script>
-
-    document.addEventListener('DOMContentLoaded', function () {
-        var miFormulario = document.getElementById('miFormulario');
-        var submitted = false;
-
-        if (miFormulario) {
-            miFormulario.addEventListener('submit', function () {
-                submitted = true;
-            });
-        }
-
-        var selectableInputs = document.querySelectorAll('.selectable-container input');
-        var optionsContainers = document.querySelectorAll('.options');
-        var options = document.querySelectorAll('.option');
-
-        selectableInputs.forEach(function (input) {
-            input.addEventListener('click', function () {
-                var optionsContainer = this.nextElementSibling;
-                optionsContainer.style.display = optionsContainer.style.display === 'block' ? 'none' : 'block';
-            });
-        });
-
-        options.forEach(function (option) {
-            option.addEventListener('click', function () {
-                var input = this.closest('.selectable-container').querySelector('input');
-                input.value = this.textContent;
-                this.parentElement.style.display = 'none';
-            });
-        });
-
-        document.addEventListener('click', function (e) {
-            if (!e.target.closest('.selectable-container')) {
-                optionsContainers.forEach(function (container) {
-                    container.style.display = 'none';
-                });
-            }
-        });
-
-        window.mostrarPopup = function () {
-            if (!submitted) return;
-
-            var popup = document.getElementById('popup');
-            var closePopup = document.getElementById('closePopup');
-
-            popup.style.display = 'flex';
-
-            closePopup.onclick = function () {
-                popup.style.display = 'none';
-            }
-
-            window.onclick = function (event) {
-                if (event.target == popup) {
-                    popup.style.display = 'none';
-                }
-            }
-
-            submitted = false;
-        }
-    });
-
-
-</script>
 
 <?php get_footer(); ?>

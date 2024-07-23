@@ -1,0 +1,16 @@
+@media only screen and (max-width: 360px) {
+    .navegador {
+        display: flex;
+    }
+
+    .title__navegador {
+        color: var(--Text-Text-naranja, #FF7500);
+        text-align: center;
+        font-family: "Karla";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 131.523%;
+        /* 13.152px */
+    }
+}
