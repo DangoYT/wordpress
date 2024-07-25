@@ -1,0 +1,207 @@
+@media only screen and (max-width: 360px) {
+    .que-esperas-para-despegar__uruguay {
+        display: flex;
+        width: 360px;
+        /* padding: 10px; */
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+
+        background: var(--Surface-Surface-brand, #FF7500);
+    }
+
+    .que-esperas-para-despegar__uruguay-title {
+        color: var(--Text-Text-blanco, #FFF);
+        text-align: center;
+        font-family: "Simply Sans";
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .que-esperas-para-despegar__uruguay-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .enviar-con-soydelivery__uruguay-container {
+        border-radius: 5.772px;
+        background: var(--Surface-Surface-default, #FFF);
+        box-shadow: 0px 2.309px 2.309px 0px rgba(0, 0, 0, 0.25);
+
+        display: flex;
+        justify-content: center;
+        width: 340px;
+    }
+
+    .enviar-con-soydelivery__uruguay-imagen-container {}
+
+    .enviar-con-soydelivery__uruguay-imagen-container img {
+        width: 175.272px;
+        height: 226.36px;
+    }
+
+    .enviar-con-soydelivery__uruguay-texto-container {}
+
+    .enviar-con-soydelivery__uruguay-texto-container h3 {
+        color: var(--Text-Text-naranja, #FF7500);
+        font-family: "Museo Sans Rounded";
+        font-size: 13.927px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 8.081px;
+        /* 60.87% */
+
+        position: relative;
+        top: 10px;
+    }
+
+    .enviar-con-soydelivery__uruguay-texto-container p {
+        width: 156.435px;
+        height: 34.635px;
+
+        color: #414141;
+        font-family: "Karla";
+        font-size: 12.927px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 145%;
+        /* 10.044px */
+
+        position: relative;
+        top: 20px;
+        left: 5px;
+    }
+
+    .enviar-con-soydelivery__uruguay-btn-container {
+        position: relative;
+        top: 75px;
+        left: 5px;
+
+        display: flex;
+        padding: 4.041px 14.431px;
+        align-items: center;
+        gap: 12.699px;
+
+
+    }
+
+    .enviar-con-soydelivery__uruguay-btn-container a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 112.435px;
+        height: 33.635px;
+
+        border-radius: 2.886px;
+        background: var(--Nasanja-Soydelivery, #FF7500);
+        box-shadow: 0px 1.154px 2.309px 0px rgba(0, 0, 0, 0.25);
+
+        color: var(--Text-Text-negative, #FFF);
+        font-family: "Karla";
+        font-size: 14.927px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 8.081px;
+        /* 116.667% */
+
+        text-decoration: none;
+    }
+
+    .te-estamos-buscando__uruguay-container {
+        border-radius: 5.772px;
+        background: var(--Surface-Surface-default, #FFF);
+        box-shadow: 0px 2.309px 2.309px 0px rgba(0, 0, 0, 0.25);
+
+        display: flex;
+        justify-content: center;
+        width: 340px;
+        height: 230px;
+    }
+
+    .te-estamos-buscando__uruguay-texto-container {}
+
+    .te-estamos-buscando__uruguay-texto-container h2 {
+        color: var(--Text-Text-naranja, #FF7500);
+        font-family: "Museo Sans Rounded";
+        font-size: 17.277px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 8.081px;
+        /* 60.87% */
+
+        position: relative;
+        left: 20px;
+        top: 10px;
+    }
+
+    .te-estamos-buscando__uruguay-texto-container p {
+        color: #414141;
+        font-family: "Karla";
+        font-size: 12.927px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%;
+
+        width: 156.435px;
+        height: 34.635px;
+
+        position: relative;
+        top: 20px;
+        left: 20px;
+    }
+
+    .te-estamos-buscando__uruguay-btn-container {
+        position: relative;
+        top: 40px;
+        left: 5px;
+
+        display: flex;
+        padding: 4.041px 14.431px;
+        align-items: center;
+        gap: 12.699px;
+    }
+
+    .te-estamos-buscando__uruguay-btn-container a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 112.435px;
+        height: 33.635px;
+
+        border-radius: 2.886px;
+        background: var(--Nasanja-Soydelivery, #FF7500);
+        box-shadow: 0px 1.154px 2.309px 0px rgba(0, 0, 0, 0.25);
+
+        color: var(--Text-Text-negative, #FFF);
+        font-family: "Karla";
+        font-size: 14.927px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 8.081px;
+        /* 116.667% */
+
+        text-decoration: none;
+    }
+
+    .te-estamos-buscando__uruguay-imagen-container {
+        position: relative;
+        width: 73.89px;
+        height: 98.979px;
+    }
+
+    .te-estamos-buscando__uruguay-imagen-container img {
+        position: absolute;
+
+        top: 60px;
+        left: -80px;
+
+        width: 144.89px;
+        height: 98.979px;
+    }
+}

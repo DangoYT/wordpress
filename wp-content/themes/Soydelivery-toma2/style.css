@@ -1,0 +1,272 @@
+/*
+Theme Name: Mobil First
+Theme URI: http://tusitio.com
+Author: Tu Nombre
+Author URI: http://tusitio.com
+Description: Descripción de tu tema personalizado.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: mi-tema-personalizado
+*/
+
+/* Importar los archivos CSS desde la carpeta css */
+@import url('assets/css/global.css');
+
+@import url('assets/css/uruguay/header-uruguay-dsk.css');
+
+@import url('assets/css/mobile/global/slider-servicios-mobile-paises.css');
+
+@import url('assets/css/pop-up.css');
+/* MOBILE 360px */
+
+@import url('assets/css/mobile/global/header-global-360.css');
+@import url('assets/css/mobile/global/encabezado-global-360.css');
+@import url('assets/css/mobile/global/slider-mobile-global-360.css');
+@import url('assets/css/mobile/global/btn-global-360.css');
+@import url('assets/css/mobile/global/apoyos-global-360.css');
+@import url('assets/css/mobile/global/footer-global-360.css');
+
+@import url('assets/css/mobile/navegador-360.css');
+
+@import url('assets/css/mobile/global/servicios/global-servicios-360.css');
+@import url('assets/css/mobile/global/conocenos/globla-conocenos-360.css');
+@import url('assets/css/mobile/global/contacto/global-contacto-360.css');
+
+/* MOBILE 360px URUGUAY */
+
+@import url('assets/css/mobile/uruguay/header-uruguay-360.css');
+
+@import url('assets/css/mobile/uruguay/encabezado-uruguay-360.css');
+@import url('assets/css/mobile/uruguay/que-esperas-para-despegar-uruguay.css');
+@import url('assets/css/mobile/uruguay/soy-emprendedor-uruguay-360.css');
+@import url('assets/css/mobile/uruguay/trabaja-conosotros-uruguay-360.css');
+
+@import url('assets/css/slider.css');
+@import url('assets/css/second_slider.css');
+
+.home {
+    margin: 0 auto;
+}
+
+.body {
+    margin: 0 auto;
+}
+
+
+
+.page-template.page-template-templates.page-template-uruguay.page-template-page-uruguay.page-template-templatesuruguaypage-uruguay-php.page.page-id-127 {
+    margin: 0;
+}
+
+.page-template.page-template-servicios.page-template-servicios-php.page.page-id-116.logged-in.admin-bar.customize-support {
+    margin: 0;
+}
+
+.page-template.page-template-conocenos.page-template-conocenos-php.page.page-id-110.logged-in.admin-bar.customize-support {
+    margin: 0;
+}
+
+.page-template.page-template-contacto.page-template-contacto-php.page.page-id-123.logged-in.admin-bar.customize-support {
+    margin: 0;
+}
+
+.page-template.page-template-templates.page-template-uruguay.page-template-page-uruguay.page-template-templatesuruguaypage-uruguay-php.page.page-id-127.logged-in.admin-bar.customize-support {
+    margin: 0;
+}
+
+.page-template.page-template-templates.page-template-uruguay.page-template-servicios-uruguay.page-template-templatesuruguayservicios-uruguay-php.page.page-id-131 {
+    margin: 0;
+}
+
+
+.second-slider {
+    display: flex;
+    overflow: hidden;
+}
+
+.slider-item {
+    flex: 1 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.slider-item-image img {
+    width: 100%;
+    height: auto;
+}
+
+.slider-item-content {
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+@media only screen and (max-width: 360px) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .slider {
+        /* display: none; */
+        padding: 20px 0px 0px 0px;
+        height: 400px;
+    }
+
+    .slider__title {
+        font-size: 21px;
+        padding: 60px 0px 0px 0px;
+        margin: 0px;
+    }
+
+    .slider__container {}
+
+    .carousel {
+        height: 400px;
+    }
+
+    .draggable {
+        height: 400px;
+    }
+
+    .carousel-inner {
+        height: 450px;
+    }
+
+    .carousel-item {}
+
+    .carousel-item a {}
+
+    .carousel-item img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .carousel-caption {
+        bottom: 220px;
+        width: 60%;
+        height: 80px;
+    }
+
+    .carousel-caption h3 {
+        font-size: 1.3em;
+    }
+
+    .carousel-caption a {}
+
+    .carousel-caption p {}
+
+    .carousel-caption .icon {}
+
+    .slick-dots {}
+
+    .slick-dots li button:before {}
+
+    .slick-dots li.slick-active button:before {}
+
+    .slick-prev,
+    .slick-next {}
+
+    .slick-prev:before,
+    .slick-next:before {}
+
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------ */
+function soydelivery_custom_post_types() {
+    register_post_type('noticia',
+        array('labels'=> array('name'=> __('Noticias'),
+                'singular_name'=> __('Noticia'),
+                'add_new_item'=> __('Agregar Nueva Noticia'),
+                'edit_item'=> __('Editar Noticia'),
+                'new_item'=> __('Nueva Noticia'),
+                'view_item'=> __('Ver Noticia'),
+                'search_items'=> __('Buscar Noticias'),
+                'not_found'=> __('No se encontraron noticias'),
+                'not_found_in_trash'=> __('No se encontraron noticias en la papelera'),
+            ),
+            'public'=> true,
+            'has_archive'=> true,
+            'rewrite'=> array('slug'=> 'noticia'),
+            'supports'=> array('title', 'thumbnail'), // Eliminamos 'editor'
+            'menu_icon'=> 'dashicons-media-document',
+        ));
+    register_post_type('noticia_uruguay',
+        array('labels'=> array('name'=> __('Noticias Uruguay'),
+                'singular_name'=> __('Noticia Uruguay'),
+                'add_new_item'=> __('Agregar Nueva Noticia Uruguay'),
+                'edit_item'=> __('Editar Noticia Uruguay'),
+                'new_item'=> __('Nueva Noticia Uruguay'),
+                'view_item'=> __('Ver Noticia Uruguay'),
+                'search_items'=> __('Buscar Noticias Uruguay'),
+                'not_found'=> __('No se encontraron noticias Uruguay'),
+                'not_found_in_trash'=> __('No se encontraron noticias Uruguay en la papelera'),
+            ),
+            'public'=> true,
+            'has_archive'=> true,
+            'rewrite'=> array('slug'=> 'noticia_uruguay'),
+            'supports'=> array('title', 'thumbnail'), // Eliminamos 'editor'
+            'menu_icon'=> 'dashicons-media-document',
+        ));
+    register_post_type('noticia_paraguay',
+        array('labels'=> array('name'=> __('Noticias Paraguay'),
+                'singular_name'=> __('Noticia Paraguay'),
+                'add_new_item'=> __('Agregar Nueva Noticia Paraguay'),
+                'edit_item'=> __('Editar Noticia Paraguay'),
+                'new_item'=> __('Nueva Noticia Paraguay'),
+                'view_item'=> __('Ver Noticia Paraguay'),
+                'search_items'=> __('Buscar Noticias Paraguay'),
+                'not_found'=> __('No se encontraron noticias Paraguay'),
+                'not_found_in_trash'=> __('No se encontraron noticias Paraguay en la papelera'),
+            ),
+            'public'=> true,
+            'has_archive'=> true,
+            'rewrite'=> array('slug'=> 'noticia_paraguay'),
+            'supports'=> array('title', 'thumbnail'), // Eliminamos 'editor'
+            'menu_icon'=> 'dashicons-media-document',
+        ));
+
+    register_post_type('noticia_peru',
+        array('labels'=> array('name'=> __('Noticias Peru'),
+                'singular_name'=> __('Noticia Peru'),
+                'add_new_item'=> __('Agregar Nueva Noticia Peru'),
+                'edit_item'=> __('Editar Noticia Peru'),
+                'new_item'=> __('Nueva Noticia Peru'),
+                'view_item'=> __('Ver Noticia Peru'),
+                'search_items'=> __('Buscar Noticias Peru'),
+                'not_found'=> __('No se encontraron noticias Peru'),
+                'not_found_in_trash'=> __('No se encontraron noticias Peru en la papelera'),
+            ),
+            'public'=> true,
+            'has_archive'=> true,
+            'rewrite'=> array('slug'=> 'noticia_peru'),
+            'supports'=> array('title', 'thumbnail'), // Eliminamos 'editor'
+            'menu_icon'=> 'dashicons-media-document',
+        ));
+
+}
+
+add_action('init', 'soydelivery_custom_post_types');

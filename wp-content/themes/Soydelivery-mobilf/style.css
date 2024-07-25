@@ -1,5 +1,5 @@
 /*
-Theme Name: Mobil First
+Theme Name: Mobil First de la carpeta mobilf
 Theme URI: http://tusitio.com
 Author: Tu Nombre
 Author URI: http://tusitio.com
@@ -13,6 +13,11 @@ Text Domain: mi-tema-personalizado
 /* Importar los archivos CSS desde la carpeta css */
 @import url('assets/css/global.css');
 
+@import url('assets/css/uruguay/header-uruguay-dsk.css');
+
+@import url('assets/css/mobile/global/slider-servicios-mobile-paises.css');
+
+@import url('assets/css/pop-up.css');
 /* MOBILE 360px */
 
 @import url('assets/css/mobile/global/header-global-360.css');
@@ -25,8 +30,17 @@ Text Domain: mi-tema-personalizado
 @import url('assets/css/mobile/navegador-360.css');
 
 @import url('assets/css/mobile/global/servicios/global-servicios-360.css');
+@import url('assets/css/mobile/global/conocenos/globla-conocenos-360.css');
+@import url('assets/css/mobile/global/contacto/global-contacto-360.css');
 
-@import url('assets/css/mobile/global/conocenos/globla-conocenos.css');
+/* MOBILE 360px URUGUAY */
+
+@import url('assets/css/mobile/uruguay/header-uruguay-360.css');
+
+@import url('assets/css/mobile/uruguay/encabezado-uruguay-360.css');
+@import url('assets/css/mobile/uruguay/que-esperas-para-despegar-uruguay.css');
+@import url('assets/css/mobile/uruguay/soy-emprendedor-uruguay-360.css');
+@import url('assets/css/mobile/uruguay/trabaja-conosotros-uruguay-360.css');
 
 @import url('assets/css/slider.css');
 @import url('assets/css/second_slider.css');
@@ -39,8 +53,10 @@ Text Domain: mi-tema-personalizado
     margin: 0 auto;
 }
 
-.hamburger-menu-popup {
-    display: none;
+
+
+.page-template.page-template-templates.page-template-uruguay.page-template-page-uruguay.page-template-templatesuruguaypage-uruguay-php.page.page-id-127 {
+    margin: 0;
 }
 
 .page-template.page-template-servicios.page-template-servicios-php.page.page-id-116.logged-in.admin-bar.customize-support {
@@ -55,17 +71,38 @@ Text Domain: mi-tema-personalizado
     margin: 0;
 }
 
+.page-template.page-template-templates.page-template-uruguay.page-template-page-uruguay.page-template-templatesuruguaypage-uruguay-php.page.page-id-127.logged-in.admin-bar.customize-support {
+    margin: 0;
+}
+
+.page-template.page-template-templates.page-template-uruguay.page-template-servicios-uruguay.page-template-templatesuruguayservicios-uruguay-php.page.page-id-131 {
+    margin: 0;
+}
+
+
+.second-slider {
+    display: flex;
+    overflow: hidden;
+}
+
+.slider-item {
+    flex: 1 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.slider-item-image img {
+    width: 100%;
+    height: auto;
+}
+
+.slider-item-content {
+    text-align: center;
+    margin-top: 10px;
+}
+
+
 @media only screen and (max-width: 360px) {
-
-
-
-
-
-
-
-
-
-
 
 
 

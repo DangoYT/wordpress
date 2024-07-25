@@ -1,0 +1,112 @@
+@media only screen and (max-width: 360px) {
+    .encabezado__uruguay {
+        padding: 0px 0px 20px 0px;
+
+    }
+
+    .encabezado__uruguay-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+            "item1"
+            "item3"
+            "item2";
+
+        justify-items: center;
+    }
+
+    .encabezado__uruguay-title-container {
+        grid-area: item1;
+    }
+
+    .encabezado__uruguay-title-container h2 {
+        width: 310.892px;
+
+        color: #414141;
+        text-align: center;
+        font-family: "Museo Sans Rounded";
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 131.523%;
+        /* 28.935px */
+    }
+
+    .encabezado__uruguay-search-container {
+        grid-area: item2;
+        display: flex;
+        padding: 14.079px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 9.855px;
+
+        width: 330px;
+
+        border-radius: 7.04px;
+        background: var(--Surface-Surface-brand, #FF7500);
+    }
+
+    .encabezado__uruguay-search-container p {
+        color: #FFF;
+        font-family: "Karla";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 131.523%;
+        /* 13.152px */
+
+        width: 243.571px;
+    }
+
+    .encabezado__uruguay-search-input-container {
+        display: flex;
+        align-items: flex-start;
+        gap: 13.375px;
+    }
+
+    .encabezado__uruguay-search-input-container input {
+        display: flex;
+        width: 200.629px;
+        padding: 8.448px 10.559px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 7.04px;
+
+        border-radius: 3.52px;
+        border: 0.704px solid var(--Border-Border-brand-1, #FF7500);
+        background: var(--Surface-Surface-default, #FFF);
+    }
+
+    .encabezado__uruguay-search-input-container a {
+        display: flex;
+        padding: 7.04px 10.559px;
+        align-items: center;
+        gap: 14.079px;
+
+        border-radius: 3.927px;
+        background: var(--Surface-Surface-gris, #414141);
+        box-shadow: 0px 1.571px 3.141px 0px rgba(0, 0, 0, 0.15);
+
+        color: var(--Text-Text-negative, #FFF);
+        font-family: "Karla";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 10.995px;
+        /* 116.667% */
+        text-decoration: none;
+    }
+
+    .encabezado__uruguay-image-container {
+        grid-area: item3;
+        display: flex;
+        flex-direction: column;
+        width: 360px;
+    }
+
+    .encabezado__uruguay-image-container img {
+        transform: scale(0.8);
+    }
+
+}

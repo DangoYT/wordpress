@@ -1,0 +1,18 @@
+.menu-hamburguesa-uruguay {
+    display: none;
+    /* Oculto por defecto */
+}
+
+.nav-uruguay ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav-uruguay ul li {
+    margin-right: 15px;
+}
+
+
+.hamburger-menu-popup {
+    display: none;
+}

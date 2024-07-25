@@ -1,0 +1,122 @@
+@media only screen and (max-width: 360px) {
+    .global__conocenos__apoyos {
+        display: none;
+    }
+
+    .global__conocenos_expertosEnUltimaMilla {
+        display: none;
+    }
+
+
+
+    .global__conocenos_header {}
+
+    .global__conocenos_header__container {
+
+        width: 360px;
+        height: 203px;
+
+        position: relative;
+    }
+
+    .global__conocenos_header__text {
+        position: relative;
+    }
+
+    .global__conocenos_header__text h2 {
+        width: 310px;
+        color: #414141;
+        text-align: center;
+        font-family: "Museo Sans Rounded";
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 131.523%;
+        /* 28.935px */
+
+        position: relative;
+        left: 25px;
+    }
+
+    .global__conocenos_header__text p {
+        width: 144px;
+
+        position: absolute;
+        top: 55px;
+        left: 200px;
+
+        color: #414141;
+        font-family: "Karla";
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 131.523%;
+        /* 13.152px */
+    }
+
+    .global__conocenos_header__img {
+
+        position: absolute;
+        top: -20px;
+        left: -120px;
+
+        transform: scale(0.4);
+    }
+
+
+    /* ------------------------------------------------------------------------------------------- */
+
+    .global__btn__contactar_conocenos {
+        display: flex;
+        height: 37px;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 10px;
+        align-self: stretch;
+
+        margin: 25px 0px;
+    }
+
+    .btn-contactar_conocenos {
+        width: 310px;
+        height: 38px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        color: var(--Text-Text-negative, #FFF);
+        font-family: "Karla";
+        font-size: 19.39px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 15.618px;
+        /* 80.549% */
+
+        text-decoration: none;
+
+        border-radius: 5.578px;
+        background: var(--Nasanja-Soydelivery, #FF7500);
+        box-shadow: 0px 2.231px 4.462px 0px rgba(0, 0, 0, 0.25);
+    }
+
+
+    .btn-contactar_conocenos a {
+        color: var(--Text-Text-negative, #FFF);
+        font-family: "Karla";
+        font-size: 19.39px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 15.618px;
+        /* 80.549% */
+
+        text-decoration: none;
+    }
+
+
+
+
+
+
+
+}

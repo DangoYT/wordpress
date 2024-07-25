@@ -1,0 +1,128 @@
+@media only screen and (max-width: 360px) {
+    .soy-emprendedor-uruguay {}
+
+    .soy-emprendedor-uruguay__container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "item1"
+            "item3"
+            "item2";
+
+        justify-items: center;
+    }
+
+    .soy-emprendedor-uruguay__image-container {
+        grid-area: item2;
+    }
+
+    .soy-emprendedor-uruguay__image {
+        width: 265.5px;
+        height: 253.311px;
+        flex-shrink: 0;
+    }
+
+    .soy-emprendedor-uruguay__content {}
+
+    .soy-emprendedor-uruguay__title {
+        grid-area: item1;
+        width: 300px;
+
+        color: #414141;
+        font-family: "Museo Sans Rounded";
+        font-size: 25.532px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 131.523%;
+        /* 33.58px */
+    }
+
+    .soy-emprendedor-uruguay__description {
+        grid-area: item3;
+
+        display: flex;
+        width: 269.692px;
+        padding: 11.605px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8.124px;
+
+        border-radius: 5.803px;
+        background: var(--Surface-Surface-brand, #FF7500);
+    }
+
+    .soy-emprendedor-uruguay__text {
+        color: #FFF;
+        font-family: "Karla";
+        font-size: 14.704px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 131.523%;
+    }
+
+    .soy-emprendedor-uruguay__options {}
+
+    .soy-emprendedor-uruguay__option {
+        display: flex;
+        align-items: flex-end;
+        gap: 10px;
+    }
+
+    .soy-emprendedor-uruguay__checkbox-container {
+        display: flex;
+        padding: 10.605px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 11.605px;
+
+        width: 207px;
+
+        border-radius: 5.803px;
+        background: var(--Surface-Surface-default, #FFF);
+    }
+
+    .soy-emprendedor-uruguay__checkbox-item {
+        display: flex;
+        align-items: center;
+        gap: 4.186px;
+    }
+
+    .soy-emprendedor-uruguay__checkbox {
+        border-radius: 2.321px;
+        border: 0.58px solid var(--Border-Border-brand-4, #D9632B);
+        background: var(--Surface-Surface-default, #FFF);
+    }
+
+    .soy-emprendedor-uruguay__label {
+        color: var(--Text-Text-primario, #25221E);
+        font-family: "Karla";
+        font-size: 16.284px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 13.927px;
+        /* 150% */
+    }
+
+
+    .soy-emprendedor-uruguay__button-container {
+        border-radius: 3.237px;
+        background: var(--Surface-Surface-gris, #414141);
+        box-shadow: 0px 1.295px 2.589px 0px rgba(0, 0, 0, 0.15);
+
+        display: flex;
+
+    }
+
+    .soy-emprendedor-uruguay__button {
+        color: var(--Text-Text-negative, #FFF);
+        text-align: center;
+        font-family: "Karla";
+        font-size: 10px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 12.1px;
+        /* 121% */
+        text-decoration: none;
+    }
+
+}

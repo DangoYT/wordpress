@@ -1,0 +1,61 @@
+@media only screen and (max-width: 360px) {
+
+    .servicios__uruguay {
+        display: none;
+    }
+
+    .menu-hamburguesa-uruguay {
+        display: block;
+    }
+
+    .nav-uruguay {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background: #FF7500;
+    }
+
+    .nav-uruguay ul {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 48px;
+        right: 2px;
+    }
+
+    .nav-uruguay ul.show {
+        display: flex;
+        width: 216px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: -3px;
+    }
+
+    .nav-uruguay ul li {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        align-self: stretch;
+
+        border-radius: 0px 0px 5px 5px;
+        border: var(--Cantidad, 1px) solid var(--Border-Border-brand-1, #FF7500);
+        background: var(--Surface-Surface-default, #FFF);
+    }
+
+    .nav-uruguay ul li a {
+        color: var(--Text-Text-primario, #25221E);
+
+        /* Body M */
+        font-family: "Karla";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        /* 150% */
+        text-decoration: none;
+
+        padding-left: 10px;
+    }
+}
