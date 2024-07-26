@@ -1,0 +1,107 @@
+.clientes_slider_container {}
+
+.clientes_slider__item {}
+
+.elcontenedordelcontenedor {}
+
+.clientes_slider_itemContainer {}
+
+.clientes_slider_item_imgContainer {}
+
+.clientes_slider_itemImg {}
+
+.clientes_slider_title {}
+
+.clientes_slider_autor {}
+
+.clientes_slider_parrafo {}
+
+@media only screen and (max-width: 360px) {
+    .clientes_slider_container {
+        height: 500px;
+    }
+
+    .draggable {
+        height: 500px;
+    }
+
+    .clientes_slider__item {}
+
+    .elcontenedordelcontenedor {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .clientes_slider_itemContainer {
+        border-radius: 0px 0px 8.276px 8.276px;
+        background: var(--Surface-Surface-brand, #FF7500);
+
+        display: flex;
+        width: 240px;
+        height: 261.517px;
+        padding: 66.207px 12.414px 20.69px 12.414px;
+        flex-direction: column;
+        align-items: center;
+        gap: 21px;
+        flex-shrink: 0;
+    }
+
+    .clientes_slider_item_imgContainer {
+        border-radius: 0px 0px 10px 10px;
+        border: 2.83px solid var(--Border-Border-brand-1, #FF7500);
+        background: var(--Surface-Surface-default, #FFF);
+
+        display: flex;
+        width: 170.081px;
+        height: 85.041px;
+        padding: 20px 4.081px 20.041px 4px;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+
+        overflow: hidden;
+
+        position: relative;
+        bottom: -60px;
+    }
+
+    .clientes_slider_itemImg {
+        object-fit: cover;
+        /* Esto asegura que la imagen cubra completamente el contenedor */
+        display: block;
+    }
+
+    .clientes_slider_title {
+        color: var(--Text-Text-negative, #FFF);
+        font-family: "Inter";
+        font-size: 25.552px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin: 0px;
+    }
+
+    .clientes_slider_autor {
+        color: var(--Text-Text-negative, #FFF);
+        text-align: center;
+        font-family: "Karla";
+        font-size: 15.931px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 11.586px;
+        letter-spacing: 0.099px;
+    }
+
+    .clientes_slider_parrafo {
+        color: var(--Text-Text-negative, #FFF);
+        text-align: center;
+        font-family: "Karla";
+        font-size: 16.931px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 15.586px;
+        letter-spacing: 0.099px;
+        margin: 0px;
+    }
+}

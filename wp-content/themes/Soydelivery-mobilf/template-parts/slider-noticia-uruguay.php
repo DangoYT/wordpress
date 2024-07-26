@@ -1,5 +1,5 @@
-<div class="carousel">
-    <div class="carousel-inner">
+<div class="carousel-noticias-uruguay">
+    <div class="carousel-noticias-uruguay-inner">
         <?php
         $slider_query = new WP_Query(
             array(
@@ -13,7 +13,7 @@
                 $imagen = get_field('imagen_de_la_noticia_uruguay');
                 $resumen = get_field('resumen_de_la_noticia_uruguay');
                 ?>
-                <div class="carousel-item">
+                <div class="carousel-noticias-uruguay-item">
                     <?php
                     if ($imagen && !empty($imagen['url'])) {
                         echo '<a href="' . get_permalink() . '">';
@@ -21,7 +21,7 @@
                         echo '</a>';
                     }
                     ?>
-                    <div class="carousel-caption">
+                    <div class="carousel-noticias-uruguay-caption">
                         <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
                         <p><?php echo esc_html($resumen); ?></p>
                     </div>
@@ -38,7 +38,7 @@
 
 <script>
     jQuery(document).ready(function ($) {
-        $('.carousel-inner').slick({
+        $('.carousel-noticias-uruguay-inner').slick({
             dots: true,
             infinite: true,
             speed: 300,

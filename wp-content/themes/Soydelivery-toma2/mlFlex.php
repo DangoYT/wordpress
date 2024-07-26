@@ -291,9 +291,11 @@ get_header('uruguay');
 
 
     <div class="navegador">
-        <img class="navegador__arrow" src="<?php echo get_template_directory_uri(); ?>/images/cajita.svg" alt="Cajita">
+        <img class="navegador__arrow"
+            src="<?php echo get_template_directory_uri(); ?>/assets/imgs/Iconos/arrow-right-naranja.svg" alt="">
         <p class="navegador__title">Servicios</p>
-        <img class="navegador__arrow" src="<?php echo get_template_directory_uri(); ?>/images/cajita.svg" alt="Cajita">
+        <img class="navegador__arrow"
+            src="<?php echo get_template_directory_uri(); ?>/assets/imgs/Iconos/arrow-right-naranja.svg" alt="">
         <p class="navegador__title">ML Flex</p>
     </div>
     <div class="section__container">
@@ -313,7 +315,8 @@ get_header('uruguay');
             <div class="service">
                 <div class="service__item">
                     <div class="service__icon">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/VectorBlanco.svg" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/imgs/Iconos/Icono-Blanco.svg"
+                            alt="">
                     </div>
                     <div class="service__description">
                         <p class="service__title">10 puntos Drop off</p>
@@ -324,7 +327,8 @@ get_header('uruguay');
 
                 <div class="service__item">
                     <div class="service__icon">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/VectorBlanco.svg" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/imgs/Iconos/Icono-Blanco.svg"
+                            alt="">
                     </div>
                     <div class="service__description">
                         <p class="service__title">Entregas en el día en 11 zonas</p>
@@ -335,7 +339,8 @@ get_header('uruguay');
 
                 <div class="service__item">
                     <div class="service__icon">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/VectorBlanco.svg" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/imgs/Iconos/Icono-Blanco.svg"
+                            alt="">
                     </div>
                     <div class="service__description">
                         <p class="service__title">Comprobante de entrega y seguimiento en tiempo real</p>
@@ -345,7 +350,8 @@ get_header('uruguay');
 
                 <div class="service__item">
                     <div class="service__icon">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/VectorBlanco.svg" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/imgs/Iconos/Icono-Blanco.svg"
+                            alt="">
                     </div>
                     <div class="service__description">
                         <p class="service__title">Atención al cliente de Lunes a Domingo</p>
@@ -355,7 +361,8 @@ get_header('uruguay');
 
                 <div class="service__item">
                     <div class="service__icon">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/VectorBlanco.svg" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/imgs/Iconos/Icono-Blanco.svg"
+                            alt="">
                     </div>
                     <div class="service__description">
                         <p class="service__title">Integración y automatización total</p>

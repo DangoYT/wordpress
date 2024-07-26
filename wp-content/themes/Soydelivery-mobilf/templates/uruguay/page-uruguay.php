@@ -128,7 +128,7 @@ require get_template_directory() . '/templates/headers/header-uruguay.php';
             </div>
         </div>
     </section>
-    <section class="servicios__uruguay">
+    <section class="servicios__uruguay-dsk">
         <div class="servicios__uruguay__header">
             <h2 class="servicios__uruguay__title">Conoce más sobre nuestros servicios</h2>
         </div>

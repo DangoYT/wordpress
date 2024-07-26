@@ -3,11 +3,11 @@
 <div class="clientes_slider_container">
     <div class="clientes_slider__item">
         <div class="elcontenedordelcontenedor">
+            <div class="clientes_slider_item_imgContainer">
+                <img class="clientes_slider_itemImg"
+                    src="<?php echo get_template_directory_uri(); ?>/assets/imgs/Marcas/universobinario.png" alt="">
+            </div>
             <div class="clientes_slider_itemContainer">
-                <div class="clientes_slider_item_imgContainer">
-                    <img class="clientes_slider_itemImg"
-                        src="<?php echo get_template_directory_uri(); ?>/assets/imgs/Marcas/universobinario.png" alt="">
-                </div>
                 <h3 class="clientes_slider_title">Universo Binario</h3>
                 <p class="clientes_slider_autor">Gerente de Administración y Finanzas
                     Farmacia El Tunel</p>
@@ -19,11 +19,11 @@
     </div>
     <div class="clientes_slider__item">
         <div class="elcontenedordelcontenedor">
+            <div class="clientes_slider_item_imgContainer">
+                <img class="clientes_slider_itemImg"
+                    src="<?php echo get_template_directory_uri(); ?>/assets/imgs/Marcas/thechemistlook.png" alt="">
+            </div>
             <div class="clientes_slider_itemContainer">
-                <div class="clientes_slider_item_imgContainer">
-                    <img class="clientes_slider_itemImg"
-                        src="<?php echo get_template_directory_uri(); ?>/assets/imgs/Marcas/thechemistlook.png" alt="">
-                </div>
                 <h3 class="clientes_slider_title">The Chemist Look</h3>
                 <p class="clientes_slider_autor">Responsable de ventas web en Joacamar</p>
                 <p class="clientes_slider_parrafo">"Excelente servicio con 100% de cumplimiento en las entregas y plena
@@ -37,11 +37,11 @@
     </div>
     <div class="clientes_slider__item">
         <div class="elcontenedordelcontenedor">
+            <div class="clientes_slider_item_imgContainer">
+                <img class="clientes_slider_itemImg"
+                    src="<?php echo get_template_directory_uri(); ?>/assets/imgs/Marcas/clickshop.png" alt="">
+            </div>
             <div class="clientes_slider_itemContainer">
-                <div class="clientes_slider_item_imgContainer">
-                    <img class="clientes_slider_itemImg"
-                        src="<?php echo get_template_directory_uri(); ?>/assets/imgs/Marcas/clickshop.png" alt="">
-                </div>
                 <h3 class="clientes_slider_title">ClicShop</h3>
                 <p class="clientes_slider_autor">Directora de Copacabana</p>
                 <p class="clientes_slider_parrafo">"Conforme con la decisión de haber contratado a SoyDelivery Cumplen
@@ -54,11 +54,11 @@
     </div>
     <div class="clientes_slider__item">
         <div class="elcontenedordelcontenedor">
+            <div class="clientes_slider_item_imgContainer">
+                <img class="clientes_slider_itemImg"
+                    src="<?php echo get_template_directory_uri(); ?>/assets/imgs/Marcas/copacabana.png" alt="">
+            </div>
             <div class="clientes_slider_itemContainer">
-                <div class="clientes_slider_item_imgContainer">
-                    <img class="clientes_slider_itemImg"
-                        src="<?php echo get_template_directory_uri(); ?>/assets/imgs/Marcas/copacabana.png" alt="">
-                </div>
                 <h3 class="clientes_slider_title">Copacabana</h3>
                 <p class="clientes_slider_autor">Directora de Copacabana</p>
                 <p class="clientes_slider_parrafo">"Conforme con la decisión de haber contratado a SoyDelivery Cumplen
@@ -71,11 +71,11 @@
     </div>
     <div class="clientes_slider__item">
         <div class="elcontenedordelcontenedor">
+            <div class="clientes_slider_item_imgContainer">
+                <img class="clientes_slider_itemImg"
+                    src="<?php echo get_template_directory_uri(); ?>/assets/imgs/Marcas/thalesLab.png" alt="">
+            </div>
             <div class="clientes_slider_itemContainer">
-                <div class="clientes_slider_item_imgContainer">
-                    <img class="clientes_slider_itemImg"
-                        src="<?php echo get_template_directory_uri(); ?>/assets/imgs/Marcas/thalesLab.png" alt="">
-                </div>
                 <h3 class="clientes_slider_title">Thales Lab</h3>
                 <p class="clientes_slider_autor">Lorem, ipsum dolor</p>
                 <p class="clientes_slider_parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, nobis
@@ -86,11 +86,11 @@
     </div>
     <div class="clientes_slider__item">
         <div class="elcontenedordelcontenedor">
+            <div class="clientes_slider_item_imgContainer">
+                <img class="clientes_slider_itemImg"
+                    src="<?php echo get_template_directory_uri(); ?>/assets/imgs/Marcas/zonatecno.png" alt="">
+            </div>
             <div class="clientes_slider_itemContainer">
-                <div class="clientes_slider_item_imgContainer">
-                    <img class="clientes_slider_itemImg"
-                        src="<?php echo get_template_directory_uri(); ?>/assets/imgs/Marcas/zonatecno.png" alt="">
-                </div>
                 <h3 class="clientes_slider_title">Zonatecno</h3>
                 <p class="clientes_slider_autor">Lorem, ipsum dolor</p>
                 <p class="clientes_slider_parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, nobis
@@ -106,14 +106,24 @@
     jQuery(document).ready(function ($) {
         $('.clientes_slider_container').slick({
             autoplay: true,
-            autoplaySpeed: 3000,
+            autoplaySpeed: 23000,
             dots: false,
             arrows: false,
             infinite: true,
             speed: 500,
             slidesToShow: 3,
             variableWidth: false,
-            slidesToScroll: 1
+            slidesToScroll: 1,
+            responsive: [
+                {
+                    breakpoint: 370,
+                    settings: {
+                        slidesToShow: 1, // Mostrar una noticia a la vez en pantallas de 320px o menos
+                        slidesToScroll: 1,
+                        dots: false
+                    }
+                }
+            ]
         });
     });
 </script>

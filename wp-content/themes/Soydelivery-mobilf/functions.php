@@ -12,7 +12,10 @@ function registrar_mis_menus()
     register_nav_menus(
         array(
             'header' => __('Header Menu'),
-            'footer' => __('Footer Menu')
+            'footer' => __('Footer Menu'),
+            'menu_uruguay' => __('Menú Uruguay'),
+            'menu_paraguay' => __('Menú Paraguay'),
+            'menu_peru' => __('Menú Perú')
         )
     );
 }
@@ -120,10 +123,14 @@ function soydelivery_enqueue_assets()
     wp_enqueue_script('slick-js', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js', array('jquery'), null, true);
 
     // Encolar Google Fonts
-    wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800&family=Museo+Sans+Rounded:wght@100;300;400;500;700&display=swap', false);
+    wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap', false);
 
     // Encolar el archivo CSS de fuentes locales
     wp_enqueue_style('font-styles', get_template_directory_uri() . '/assets/css/fonts.css');
+
+    // Encolar scripts personalizados
+    wp_enqueue_script('hamburger-menu-js', get_template_directory_uri() . '/assets/js/hamburger-menu.js', array('jquery'), null, true);
+    wp_enqueue_script('form-handler-js', get_template_directory_uri() . '/assets/js/form-handler.js', array('jquery'), null, true);
 }
 add_action('wp_enqueue_scripts', 'soydelivery_enqueue_assets');
 
@@ -148,4 +155,58 @@ function include_slider()
 
 // Hook para añadir el template part en el footer
 add_action('wp_footer', 'include_slider');
+
+function add_custom_page_templates($templates)
+{
+    $subdirs = array('paraguay', 'peru', 'uruguay');
+    foreach ($subdirs as $subdir) {
+        $dir = get_template_directory() . '/templates/' . $subdir . '/';
+        if (is_dir($dir)) {
+            $files = scandir($dir);
+            foreach ($files as $file) {
+                if (strpos($file, '.php') !== false) {
+                    $template_name = str_replace('.php', '', $file);
+                    $template_name = str_replace('-', ' ', $template_name);
+                    $templates['templates/' . $subdir . '/' . $file] = ucfirst($subdir) . ' - ' . ucfirst($template_name);
+                }
+            }
+        }
+    }
+    return $templates;
+}
+add_filter('theme_page_templates', 'add_custom_page_templates');
+
+function load_custom_templates($template)
+{
+    global $post;
+    if (!$post)
+        return $template;
+
+    $custom_templates = array();
+    $subdirs = array('paraguay', 'peru', 'uruguay');
+    foreach ($subdirs as $subdir) {
+        $dir = get_template_directory() . '/templates/' . $subdir . '/';
+        if (is_dir($dir)) {
+            $files = scandir($dir);
+            foreach ($files as $file) {
+                if (strpos($file, '.php') !== false) {
+                    $template_name = str_replace('.php', '', $file);
+                    $template_name = str_replace('-', ' ', $template_name);
+                    $custom_templates['templates/' . $subdir . '/' . $file] = ucfirst($subdir) . ' - ' . ucfirst($template_name);
+                }
+            }
+        }
+    }
+
+    $page_template = get_page_template_slug($post);
+    if ($page_template && isset($custom_templates[$page_template])) {
+        $template_path = get_template_directory() . '/' . $page_template;
+        if (file_exists($template_path)) {
+            $template = $template_path;
+        }
+    }
+    return $template;
+}
+add_filter('template_include', 'load_custom_templates');
+
 ?>

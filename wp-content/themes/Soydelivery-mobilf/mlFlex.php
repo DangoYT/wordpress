@@ -2,7 +2,8 @@
 /*
 Template Name: Ml Flex
 */
-get_header('uruguay');
+// Carga el header personalizado para Uruguay desde la carpeta correcta
+require get_template_directory() . '/templates/headers/header-uruguay.php';
 ?>
 
 <style>
@@ -284,6 +285,87 @@ get_header('uruguay');
     .cotiza-tu-servicio-form-container-boton {
         margin-top: 11px;
     }
+
+    @media only screen and (max-width: 360px) {
+        .section__content {
+            border: 1px solid black;
+            display: flex;
+            flex-direction: column;
+            width: 330px;
+            padding: 0px;
+            border-radius: 10px;
+            background: var(--Surface-Surface-brand, #FF7500);
+            gap: 30px;
+            align-items: center;
+        }
+
+        .contact__form-group {
+            width: 360px;
+        }
+
+        .cotiza-tu-servicio-form-textarea {
+            width: 280px;
+            height: 122px;
+            border-radius: 4px;
+            margin-top: 20px;
+        }
+
+        .contact__form-group {
+            display: flex;
+            width: 360px;
+            padding: 0;
+            align-items: flex-start;
+            justify-content: space-evenly;
+            align-content: flex-start;
+            gap: 14px 17px;
+            flex-wrap: wrap;
+        }
+
+        .intro {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            /* border: 1px solid red; */
+            width: 295px;
+            /* height: 185px; */
+        }
+
+        .service {
+            display: flex;
+            flex-direction: column;
+            /* align-items: center; */
+            gap: 19px;
+            width: 300px;
+        }
+
+        .section__heading {
+            color: #FFF;
+            text-align: center;
+            font-family: "Karla";
+            font-size: 23px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 125.523%;
+            width: 300px;
+        }
+
+        .map__container {
+            border-radius: 15px;
+            position: relative;
+            max-width: 310px;
+            max-height: 190px;
+            overflow: hidden;
+        }
+
+        .map__image {
+            position: relative;
+            top: -55px;
+            left: -15px;
+            width: 496px;
+            height: 263px;
+            flex-shrink: 0;
+        }
+    }
 </style>
 
 
@@ -291,9 +373,11 @@ get_header('uruguay');
 
 
     <div class="navegador">
-        <img class="navegador__arrow" src="<?php echo get_template_directory_uri(); ?>/images/cajita.svg" alt="Cajita">
+        <img class="navegador__arrow"
+            src="<?php echo get_template_directory_uri(); ?>/assets/imgs/Iconos/arrow-right-naranja.svg" alt="">
         <p class="navegador__title">Servicios</p>
-        <img class="navegador__arrow" src="<?php echo get_template_directory_uri(); ?>/images/cajita.svg" alt="Cajita">
+        <img class="navegador__arrow"
+            src="<?php echo get_template_directory_uri(); ?>/assets/imgs/Iconos/arrow-right-naranja.svg" alt="">
         <p class="navegador__title">ML Flex</p>
     </div>
     <div class="section__container">
@@ -313,7 +397,8 @@ get_header('uruguay');
             <div class="service">
                 <div class="service__item">
                     <div class="service__icon">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/VectorBlanco.svg" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/imgs/Iconos/Icono-Blanco.svg"
+                            alt="">
                     </div>
                     <div class="service__description">
                         <p class="service__title">10 puntos Drop off</p>
@@ -324,7 +409,8 @@ get_header('uruguay');
 
                 <div class="service__item">
                     <div class="service__icon">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/VectorBlanco.svg" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/imgs/Iconos/Icono-Blanco.svg"
+                            alt="">
                     </div>
                     <div class="service__description">
                         <p class="service__title">Entregas en el día en 11 zonas</p>
@@ -335,7 +421,8 @@ get_header('uruguay');
 
                 <div class="service__item">
                     <div class="service__icon">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/VectorBlanco.svg" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/imgs/Iconos/Icono-Blanco.svg"
+                            alt="">
                     </div>
                     <div class="service__description">
                         <p class="service__title">Comprobante de entrega y seguimiento en tiempo real</p>
@@ -345,7 +432,8 @@ get_header('uruguay');
 
                 <div class="service__item">
                     <div class="service__icon">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/VectorBlanco.svg" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/imgs/Iconos/Icono-Blanco.svg"
+                            alt="">
                     </div>
                     <div class="service__description">
                         <p class="service__title">Atención al cliente de Lunes a Domingo</p>
@@ -355,7 +443,8 @@ get_header('uruguay');
 
                 <div class="service__item">
                     <div class="service__icon">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/VectorBlanco.svg" alt="">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/imgs/Iconos/Icono-Blanco.svg"
+                            alt="">
                     </div>
                     <div class="service__description">
                         <p class="service__title">Integración y automatización total</p>
@@ -368,7 +457,7 @@ get_header('uruguay');
 
             <div class="map">
                 <div class="map__container">
-                    <img class="map__image" src="<?php echo get_template_directory_uri(); ?>/images/mapasoyde.png"
+                    <img class="map__image" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/mapa 2.png"
                         alt="">
                 </div>
             </div>

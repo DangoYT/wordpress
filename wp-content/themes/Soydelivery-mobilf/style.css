@@ -18,6 +18,10 @@ Text Domain: mi-tema-personalizado
 @import url('assets/css/mobile/global/slider-servicios-mobile-paises.css');
 
 @import url('assets/css/pop-up.css');
+
+@import url('assets/css/slider-noticias-uruguay.css');
+
+@import url('assets/css/clientes-slider.css');
 /* MOBILE 360px */
 
 @import url('assets/css/mobile/global/header-global-360.css');
@@ -33,6 +37,7 @@ Text Domain: mi-tema-personalizado
 @import url('assets/css/mobile/global/conocenos/globla-conocenos-360.css');
 @import url('assets/css/mobile/global/contacto/global-contacto-360.css');
 
+
 /* MOBILE 360px URUGUAY */
 
 @import url('assets/css/mobile/uruguay/header-uruguay-360.css');
@@ -41,6 +46,7 @@ Text Domain: mi-tema-personalizado
 @import url('assets/css/mobile/uruguay/que-esperas-para-despegar-uruguay.css');
 @import url('assets/css/mobile/uruguay/soy-emprendedor-uruguay-360.css');
 @import url('assets/css/mobile/uruguay/trabaja-conosotros-uruguay-360.css');
+@import url('assets/css/mobile/uruguay/servicios-uruguay-360.css');
 
 @import url('assets/css/slider.css');
 @import url('assets/css/second_slider.css');
@@ -79,6 +85,25 @@ Text Domain: mi-tema-personalizado
     margin: 0;
 }
 
+.page-template.page-template-templates.page-template-uruguay.page-template-cotiza-tu-servicios.page-template-templatesuruguaycotiza-tu-servicios-php.page.page-id-142.logged-in.admin-bar.customize-support {
+    margin: 0;
+}
+
+.page-template.page-template-trabaja-con-nosotros.page-template-trabaja-con-nosotros-php.page.page-id-144.logged-in.admin-bar.customize-support {
+    margin: 0;
+}
+
+.page-template.page-template-templates.page-template-uruguay.page-template-quiero-ser-chofer.page-template-templatesuruguayquiero-ser-chofer-php.page.page-id-146.logged-in.admin-bar.customize-support {
+    margin: 0;
+}
+
+.page-template.page-template-templates.page-template-uruguay.page-template-quiero-ser-chofer-empresa.page-template-templatesuruguayquiero-ser-chofer-empresa-php.page.page-id-148.logged-in.admin-bar.customize-support {
+    margin: 0;
+}
+
+.servicios__uruguay-dsk {
+    display: none;
+}
 
 .second-slider {
     display: flex;
@@ -149,7 +174,7 @@ Text Domain: mi-tema-personalizado
     }
 
     .draggable {
-        height: 400px;
+        /* height: 400px; */
     }
 
     .carousel-inner {

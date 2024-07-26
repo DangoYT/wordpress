@@ -6,233 +6,174 @@ Template Name: Trabaja con nosotros
 require get_template_directory() . '/templates/headers/header-uruguay.php';
 ?>
 <style>
-    .trabaja-con-nosotrosContacto {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin: 20px;
-    }
+    @media only screen and (max-width: 360px) {
+        .trabaja-con-nosotros_uru {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
 
-    .trabaja-con-nosotros-container {
-        display: flex;
-        padding: 30px;
-        flex-direction: column;
-        align-items: center;
-        gap: 33px;
-        /* width: 522px; */
-        /* width: 100%; */
-        border-radius: 10px;
-        background: var(--Surface-Surface-brand, #FF7500);
-    }
+        .arrow {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+        }
 
-    .trabaja-con-nosotros-container h1 {
-        color: #FFF;
-        margin: 0px;
-        font-family: "Museo Sans Rounded";
-        font-size: 44px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 131.523%;
-    }
+        .title__navegador {
+            color: var(--Text-Text-naranja, #FF7500);
+            text-align: center;
+            font-family: "Karla";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 131.523%;
+            /* 13.152px */
+        }
 
-    .trabaja-con-nosotros-container p {
-        width: 462px;
-        color: #414141;
-        text-align: justify;
-        margin: 0px;
-        font-family: Karla;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 125.523%;
-    }
+        .trabaja-con-nosotrosContacto {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
 
-    .trabaja-con-nosotros-formContainer {}
+        .trabaja-con-nosotros-container {
+            background-color: #ff7500;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
 
-    .trabaja-con-nosotros-form {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
+        .trabaja-con-nosotros-container h1 {
+            color: #FFF;
+            font-family: "Museo Sans Rounded";
+            font-size: 26px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 131.523%;
+            /* 28.935px */
+            margin-bottom: 20px;
+        }
 
-    .trabaja-con-nosotros-textarea {
-        border-radius: 4px;
-    }
+        .trabaja-con-nosotros-container p {
+            color: #414141;
+            text-align: justify;
+            font-family: "Karla";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 125.523%;
+            /* 12.552px */
+            margin-bottom: 20px;
+        }
 
-    .trabaja-con-nosotros-form input {}
+        .trabaja-con-nosotros-formContainer {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
 
-    .trabaja-con-nosotros-inputs {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 15px
-    }
+        .trabaja-con-nosotros-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
 
-    .trabaja-con-nosotros-inputs input {
-        width: 215px;
-        height: 48px;
-        border-radius: 5px;
-        border: var(--Cantidad, 1px) solid var(--Border-Border-brand-1, #FF7500);
-        background: var(--Surface-Surface-default, #FFF);
-    }
+        .trabaja-con-nosotros-inputs {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
 
-    .trabaja-con-nosotros-btns {
-        display: flex;
-        width: 462px;
-        justify-content: flex-end;
-        align-items: center;
-        gap: 20px;
-    }
+        .trabaja-con-nosotros-form input[type="text"],
+        .trabaja-con-nosotros-form input[type="tel"],
+        .trabaja-con-nosotros-form input[type="email"],
+        .trabaja-con-nosotros-textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            width: 100%;
+            box-sizing: border-box;
+        }
 
-    .trabaja-con-nosotros-btn {
-        display: flex;
-        padding: 7px 10px;
-        align-items: center;
-        gap: 14px;
-        width: 95px;
-        height: 38px;
-        border-radius: 5px;
-        background: var(--Surface-Surface-gris, #414141);
-        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
-        color: #fff;
-    }
+        .trabaja-con-nosotros-btns {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 15px;
+        }
 
-    .trabaja-con-nosotros-InputCV {
-        display: flex;
-        padding: 7px 10px;
-        align-items: center;
-        gap: 14px;
-        border-radius: 5px;
-        border: 1.5px solid var(--Border-Border-negative, #FFF);
-        background: var(--Surface-Surface-brand, #FF7500);
-        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
-    }
+        .file-upload-wrapper {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            background-color: #414141;
+            color: #fff;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
 
-    .custom-file-upload {
-        position: relative;
-        display: flex;
-        align-items: center;
-    }
+        .inputescondido {
+            display: none;
+        }
 
-    .custom-file-upload input[type="file"] {
-        display: none;
-    }
+        .trabaja-con-nosotros-btn {
+            padding: 10px 20px;
+            background-color: #414141;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
 
+        .trabaja-con-nosotros-btn:hover {
+            background-color: #e06900;
+        }
 
+        .cotiza-tu-servicio-form-direcciones {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
 
-    .custom-file-upload #file-name {
-        font-size: 14px;
-        color: #666;
-    }
+        .direcciones-container1,
+        .direcciones-container2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
 
-    .file-upload-wrapper {
-        display: flex;
-        align-items: center;
-        padding: 0px 10px;
-        background-color: #fff;
-        cursor: pointer;
-        border-radius: 5px;
-        border: 1.5px solid var(--Border-Border-negative, #FFF);
-        background: var(--Surface-Surface-brand, #FF7500);
-        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
-        width: 127px;
-        height: 38px;
-    }
+        .direcciones-container1 img,
+        .direcciones-container2 img {
+            width: 24px;
+            height: 24px;
+            margin-bottom: 10px;
+        }
 
-    .file-upload-wrapper:hover {
-        background-color: #f0f0f0;
-    }
+        .direcciones-container1 h4,
+        .direcciones-container2 h4 {
+            color: #FFF;
+            font-family: "Museo Sans Rounded";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 131.523%;
+            margin-bottom: 5px;
+        }
 
-    .file-upload-wrapper span {
-        font-size: 14px;
-        color: #fff;
-    }
-
-    .inputescondido {
-        display: none;
-    }
-
-    .cotiza-tu-servicio-form-direcciones {
-        display: flex;
-        justify-content: flex-end;
-        width: 462px;
-        height: 80px;
-    }
-
-    .direcciones-container1 {
-        position: relative;
-        width: 210px;
-        margin-top: 19px;
-        /* margin-left: 20px; */
-        /* border: 1px solid black; */
-    }
-
-    .direcciones-container2 {
-        position: relative;
-        width: 220px;
-        margin-top: 19px;
-        /* margin-left: 10px; */
-        /* border: 1px solid black; */
-    }
-
-    .direcciones-container1 img {
-        position: absolute;
-        left: -40px;
-    }
-
-    .direcciones-container2 img {
-        position: absolute;
-        left: -40px;
-    }
-
-    .direcciones-container1 h4 {
-        color: #414141;
-        font-family: "Inter";
-        font-size: 13px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 20px;
-        /* 153.846% */
-        letter-spacing: 0.26px;
-        margin: 0px;
-    }
-
-    .direcciones-container2 h4 {
-        color: #414141;
-        font-family: "Inter";
-        font-size: 13px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 20px;
-        /* 153.846% */
-        letter-spacing: 0.26px;
-        margin: 0px;
-    }
-
-    .direcciones-container1 p {
-        color: #FFF;
-        font-family: "Inter";
-        font-size: 13px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 20px;
-        letter-spacing: 0.26px;
-        width: 162px;
-    }
-
-    .direcciones-container2 p {
-        color: #FFF;
-        font-family: "Inter";
-        font-size: 13px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 20px;
-        letter-spacing: 0.26px;
-        width: 162px;
-    }
-
-    .trabaja-con-nosotros_uru {
-        margin: 30px 0px 30px 30px;
+        .direcciones-container1 p,
+        .direcciones-container2 p {
+            color: #FFF;
+            text-align: center;
+            font-family: "Karla";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 125.523%;
+        }
     }
 </style>
 <div class="navegador trabaja-con-nosotros_uru">
@@ -264,12 +205,9 @@ require get_template_directory() . '/templates/headers/header-uruguay.php';
                     <div class="file-upload-wrapper" onclick="document.getElementById('cv').click()">
                         <span id="file-name">Adjuntar CV</span>
                         <input class="inputescondido" type="file" id="cv" name="cv" accept=".pdf,.doc,.docx" required>
-
                     </div>
-
                     <button class="trabaja-con-nosotros-btn" type="submit">Enviar</button>
                 </div>
-
             </form>
         </div>
         <div class="cotiza-tu-servicio-form-direcciones">
@@ -281,10 +219,10 @@ require get_template_directory() . '/templates/headers/header-uruguay.php';
             <div class="direcciones-container2">
                 <img src="<?php echo get_template_directory_uri(); ?>/images/mailes.svg" alt="">
                 <h4>MAIL</h4>
-                <p>comercial@soydelivery.com.uy rrhh@soydelivery.com.uy
-                </p>
+                <p>comercial@soydelivery.com.uy rrhh@soydelivery.com.uy</p>
             </div>
         </div>
+    </div>
 </section>
 
 <?php get_footer(); ?>

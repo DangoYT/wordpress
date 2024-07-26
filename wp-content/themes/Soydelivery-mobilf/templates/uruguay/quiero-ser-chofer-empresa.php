@@ -7,1240 +7,386 @@ require get_template_directory() . '/templates/headers/header-uruguay.php';
 ?>
 
 <style>
-    /* styles.css */
-    .cotiza-tu-servicio {
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-        padding: 30px 0px;
-    }
-
-    .cotiza-tu-servicio-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .cotiza-tu-servicio-centrado {
-        border-radius: 10px;
-        background: var(--Surface-Surface-brand, #FF7500);
-
-        display: flex;
-        padding: 30px;
-        flex-direction: column;
-        align-items: center;
-        /* gap: 19px; */
-    }
-
-    .cotiza-tu-servicio-texto {
-        width: 462px;
-    }
-
-    .cotiza-tu-servicio-texto-titulo {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        align-self: stretch;
-    }
-
-    .cotiza-tu-servicio-texto-titulo h2 {
-        color: #FFF;
-
-        /* H1 */
-        font-family: "Museo Sans Rounded";
-        font-size: 44px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 131.523%;
-        /* 57.87px */
-
-        margin: 0px;
-    }
-
-    .cotiza-tu-servicio-texto-parrafo {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-        align-self: stretch;
-        margin-top: 25px;
-    }
-
-    .cotiza-tu-servicio-texto-parrafo p {
-        color: #414141;
-        text-align: justify;
-        margin: 0px;
-        /* p */
-        font-family: Karla;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 125.523%;
-        /* 17.573px */
-    }
-
-    .cotiza-tu-servicio-form-container {
-        display: flex;
-        flex-direction: wrap;
-        align-content: space-around;
-        justify-content: space-around;
-        align-items: flex-start;
-        width: 474px;
-        gap: 25px;
-        flex-wrap: wrap;
-    }
-
-    .cotiza-tu-servicio-form-input {
-        display: flex;
-        width: 216px;
-        height: 48px;
-        flex-direction: column;
-        align-items: flex-start;
-        flex-shrink: 0;
-
-        border-radius: 5px;
-        border: var(--Cantidad, 1px) solid var(--Border-Border-brand-1, #FF7500);
-        background: var(--Surface-Surface-default, #FFF);
-    }
-
-    .cotiza-tu-servicio-form-textarea {
-        display: flex;
-        width: 100%;
-        height: 122px;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-end;
-        gap: 4px;
-        border-radius: 4px;
-    }
-
-    .cotiza-tu-servicio-form-container-boton {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        width: 454px;
-        padding-top: 25px;
-    }
-
-    .cotiza-tu-servicio-form-container-boton2 {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        width: 454px;
-        /* padding-top: 20px; */
-    }
-
-    .cotiza-tu-servicio-form-boton {
-        display: flex;
-        padding: 7px 10px;
-        align-items: center;
-        gap: 14px;
-        width: 95px;
-        border-radius: 5px;
-        background: var(--Surface-Surface-gris, #414141);
-        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
-
-        color: var(--Text-Text-negative, #FFF);
-
-        /* Body XS Bold */
-        font-family: " Karla";
-        font-size: 12px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 14px;
-        /* 116.667% */
-    }
-
-    .selectable-container {
-        position: relative;
-        display: inline-block;
-        /* width: 222px; */
-        height: 48px;
-        /* margin-left: 10px; */
-    }
-
-    .options {
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        border: 1px solid #ccc;
-        background-color: #fff;
-        z-index: 1;
-    }
-
-    .option {
-        padding: 10px;
-        cursor: pointer;
-    }
-
-    .option:hover {
-        background-color: #f1f1f1;
-    }
-
-    .cotiza-tu-servicio-form-direcciones {
-        display: flex;
-        justify-content: flex-end;
-        width: 100%;
-    }
-
-    .direcciones-container1 {
-        position: relative;
-        width: 210px;
-        margin-top: 19px;
-        /* margin-left: 20px; */
-        /* border: 1px solid black; */
-    }
-
-    .direcciones-container2 {
-        position: relative;
-        width: 220px;
-        margin-top: 19px;
-        /* margin-left: 10px; */
-        /* border: 1px solid black; */
-    }
-
-    .direcciones-container1 img {
-        position: absolute;
-        left: -40px;
-    }
-
-    .direcciones-container2 img {
-        position: absolute;
-        left: -40px;
-    }
-
-    .direcciones-container1 h4 {
-        color: #414141;
-        font-family: "Inter";
-        font-size: 13px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 20px;
-        /* 153.846% */
-        letter-spacing: 0.26px;
-        margin: 0px;
-    }
-
-    .direcciones-container2 h4 {
-        color: #414141;
-        font-family: "Inter";
-        font-size: 13px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 20px;
-        /* 153.846% */
-        letter-spacing: 0.26px;
-        margin: 0px;
-    }
-
-    .direcciones-container1 {
-        color: #FFF;
-        font-family: "Inter";
-        font-size: 13px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 20px;
-        letter-spacing: 0.26px;
-    }
-
-    .direcciones-container2 {
-        color: #FFF;
-        font-family: "Inter";
-        font-size: 13px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 20px;
-        letter-spacing: 0.26px;
-    }
-
-
-
-
-
     .form-section {
         display: none;
     }
 
     .form-section.active {
-        /* display: block; */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        display: block;
     }
 
-    .btn {
-        display: flex;
-        padding: 7px 10px;
-        align-items: center;
-        gap: 14px;
-        width: 95px;
-        border-radius: 5px;
-        background: var(--Surface-Surface-gris, #414141);
-        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
-
-        color: var(--Text-Text-negative, #FFF);
-
-        /* Body XS Bold */
-        font-family: " Karla";
-        font-size: 12px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 14px;
-        /* 116.667% */
-    }
-
-    .btn:hover {
-        background-color: #e66000;
-    }
-
-    .progress-container {
-        display: flex;
-        justify-content: center;
-    }
-
-    .circulo {
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-        background-color: #e0e0e0;
-        margin: 0 5px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #fff;
-    }
-
-    .progress-circle {
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-        background-color: #e0e0e0;
-        margin: 0 5px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #fff;
-    }
-
-    .progress-circle.active {
-        background-color: #414141;
-
-    }
-
-    .cotiza-tu-servicio-form-container-inputs {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 25px;
-    }
-
-    .cotiza-tu-servicio-form-container-textarea {
-        display: flex;
-        padding: 25px 0px;
-    }
-
-    .seccion2-inputs-container {
-        display: flex;
-        width: 488px;
-        padding: 30px;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 6px;
-
-        border-radius: 10px;
-        background: var(--Surface-Surface-default, #FFF);
-    }
-
-    .seccion2-inputs-container p {
-        color: #000;
-
-        /* p */
-        font-family: "Karla";
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 125.523%;
-        /* 17.573px */
-
-        /* margin: 0px; */
-    }
-
-    .seccion2-inputs-container label {
-        color: var(--Gray-3, #828282);
-
-        /* p */
-        font-family: "Karla";
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 125.523%;
-        /* 17.573px */
-    }
-
-    .seccion2-inputs-container input {
-        width: 24px;
-        height: 24px;
-
-        border-radius: 4px;
-        border: 1px solid var(--Border-Border-brand-4, #D9632B);
-        background: var(--Surface-Surface-default, #FFF);
-    }
-
-    .form3-container {
-        border: 1px solid black;
-        display: flex;
-        width: 470px;
-        padding: 30px;
-        flex-direction: column;
-        align-items: center;
-        gap: 19px;
-
-        border-radius: 10px;
-        background: var(--Surface-Surface-brand, #FF7500);
-    }
-
-    .form3-titulo {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 15px;
-        align-self: stretch;
-    }
-
-    .form3-titulo-container {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        align-self: stretch;
-    }
-
-    .form3-titulo-container h2 {
-        color: #FFF;
-        margin: 0px;
-        /* H1 */
-        font-family: "Museo Sans Rounded";
-        font-size: 44px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 131.523%;
-        /* 57.87px */
-    }
-
-    .form3-inputs {
-        display: flex;
-        /* width: 488px; */
-        padding: 30px;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 24px;
-
-        border-radius: 10px;
-        background: var(--Surface-Surface-default, #FFF);
-    }
-
-    .form3-inputs-container-titulo {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-    }
-
-    .form3-inputs-container-titulo h3 {
-        color: #000;
-        margin: 0px;
-        /* p */
-        font-family: "Karla";
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 125.523%;
-        /* 17.573px */
-    }
-
-    .form3-inputs-container {
-        display: flex;
-        width: 430px;
-        align-items: center;
-        align-content: center;
-        gap: 16px 100px;
-        flex-wrap: wrap;
-    }
-
-    .form3-inputs-container-input {
-        display: flex;
-        align-items: center;
-        gap: 9px;
-    }
-
-    .form3-inputs-container-input input {
-        width: 24px;
-        height: 24px;
-        border-radius: 4px;
-        border: 1px solid var(--Border-Border-brand-4, #D9632B);
-        background: var(--Surface-Surface-default, #FFF);
-    }
-
-    .form3-inputs-container-input label {
-        color: var(--Gray-3, #828282);
-
-        /* p */
-        font-family: " Karla";
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 125.523%;
-        /* 17.573px */
-    }
-
-    .form3-selectable-container {
-        display: flex;
-        align-items: flex-start;
-        justify-content: space-between;
-        gap: 19px;
-        padding: 25px 0px;
-        width: 100%;
-    }
-
-    .form3-botons-container {
-        display: flex;
-        width: 100%;
-        justify-content: space-evenly;
-        padding: 25px 0px;
-    }
-
-    .form3-direcciones-container {
-        display: flex;
-        width: 550px;
-        justify-content: space-around;
-
-    }
-
-    .form3-direcciones1 {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        width: 160px;
-        margin-left: 10px;
-    }
-
-    .form3-direcciones2 {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        width: 240px;
-        margin-left: 10px;
-    }
-
-    .form3-direcciones1 img {
-        position: absolute;
-        top: 0px;
-        left: -30px;
-    }
-
-    .form3-direcciones1 h4 {
-        margin: 0px;
-        color: #414141;
-        font-family: "Inter";
-        font-size: 13px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 20px;
-        /* 153.846% */
-        letter-spacing: 0.26px;
-    }
-
-    .form3-direcciones1 p {
-        margin: 0px;
-        color: #FFF;
-        font-family: "Inter";
-        font-size: 13px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 20px;
-        letter-spacing: 0.26px;
-    }
-
-    .form3-direcciones2 img {
-        position: absolute;
-        top: 0px;
-        left: -30px;
-    }
-
-    .form3-direcciones2 h4 {
-        margin: 0px;
-        color: #414141;
-        font-family: "Inter";
-        font-size: 13px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: 20px;
-        /* 153.846% */
-        letter-spacing: 0.26px;
-    }
-
-    .form3-direcciones2 p {
-        margin: 0px;
-        color: #FFF;
-        font-family: "Inter";
-        font-size: 13px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 20px;
-        letter-spacing: 0.26px;
-    }
-
-    .elcontenedordelbotonquedespuescambio {
-        margin-left: 90px;
-    }
-
-    .form4-container {}
-
-    .form4-allinputs-container {
-        display: flex;
-        width: 488px;
-        /*  padding: 30px; */
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 29px;
-        border-radius: 10px;
-        background: var(--Surface-Surface-default, #FFF);
-    }
-
-    .form4-inputs-containeres {
-        display: flex;
-        /* width: 488px; */
-        padding: 30px;
-        flex-direction: column;
-        align-items: flex-start;
-
-    }
-
-    .form4-inputs-container-titulo {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-    }
-
-    .form4-inputs-container-titulo p {
-        color: var(--Gray-3, #828282);
-
-        /* p */
-        font-family: Karla;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 125.523%;
-        /* 17.573px */
-
-        margin-bottom: 24px;
-    }
-
-    .form4-inputs-container {
-        display: flex;
-        width: 430px;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        gap: 16px;
-    }
-
-    .form4-inputs-item-container {
-        display: flex;
-        align-items: center;
-        gap: 9px;
-    }
-
-    .form4-inputs-item-container input {
-        width: 24px;
-        height: 24px;
-        border-radius: 4px;
-        border: 1px solid var(--Border-Border-brand-4, #D9632B);
-        background: var(--Surface-Surface-default, #FFF);
-    }
-
-    .form4-inputs-item-container label {
-        color: var(--Gray-3, #828282);
-
-        /* p */
-        font-family: Karla;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 125.523%;
-        /* 17.573px */
-    }
-
-    .form4-textarea-container {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        padding: 20px 0px;
-    }
-
-    .form4-textarea-item {
-        display: flex;
-        /* width: 490px; */
-        /* flex-direction: column; */
-        /* justify-content: center; */
-        /* align-items: flex-end; */
-        /* gap: 4px; */
-        border-radius: 4px;
-    }
-
-    .form1-empresa-tipoEmpresa {
-        /* border: 1px solid black; */
-        display: flex;
-        justify-content: flex-start;
-        margin: 25px 0px;
-        flex-wrap: nowrap;
-        align-items: center;
-        gap: 110px;
-    }
-
-    .form1-empresa-tipoEmpresa p {
-        color: #FFF;
-        font-family: "Karla";
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 24px;
-        /* 150% */
-    }
-
-    .form1-empresa-tipoEmpresa-inputSelect {
-        display: flex;
-        width: 285px;
-        height: 48px;
-        flex-direction: column;
-        align-items: flex-start;
-        flex-shrink: 0;
-
-        border-radius: 5px;
-        border: var(--Cantidad, 1px) solid var(--Border-Border-brand-1, #FF7500);
-        background: var(--Surface-Surface-default, #FFF);
-    }
-
-    .miFormulario2 {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
+    .contacto-clientes__form-inputs-checkbox-container {}
+
+    .contacto-clientes__form-inputs-checkbox {}
+
+    .cotiza-tu-servicio-form-container-boton {}
+
+    .cotiza-tu-servicio-form-boton {}
+
+    @media only screen and (max-width: 360px) {
+        .quiero-ser-chofer__uruguay {
+            margin: 30px 0;
+        }
+
+        .contacto-clientes__form-inputs-checkbox-container {
+            border-radius: 5px;
+            background: var(--Surface-Surface-default, #FFF);
+        }
+
+        .contacto-clientes__form-inputs-checkbox-container p {
+            color: #000;
+            font-family: "Karla";
+            font-size: 17px;
+            font-style: normal;
+            font-weight: bold;
+            line-height: 125.523%;
+            margin-left: 20px;
+        }
+
+        .contacto-clientes__form-inputs-checkbox {
+            display: flex;
+            align-items: center;
+        }
+
+        .contacto-clientes__form-inputs-checkbox label {
+            color: var(--Gray-3, #828282);
+            font-family: "Karla";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 125.523%;
+        }
+
+        .contacto-clientes__form-inputs-checkbox input {
+            width: 24px;
+            height: 24px;
+        }
+
+        .option-year {
+            max-width: 150px;
+        }
+
+        .contacto-clientes__options {
+            max-height: 150px;
+            overflow-y: auto;
+        }
+
+        .cotiza-tu-servicio-form-boton {
+            border-radius: 3.448px;
+            background: var(--Surface-Surface-gris, #414141);
+            box-shadow: 0px 1.379px 2.759px 0px rgba(0, 0, 0, 0.15);
+
+            color: var(--Text-Text-negative, #FFF);
+            font-family: "Karla";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 125.523%;
+            text-align: center;
+
+            width: 78px;
+            height: 32px;
+
+            margin-top: 20px;
+        }
+
+        .cotiza-tu-servicio-form-container-boton {
+            display: flex;
+            justify-content: space-evenly;
+
+        }
+
+        .cotiza-tu-servicio-form-container-boton2 {
+            display: flex;
+            justify-content: space-evenly;
+
+        }
     }
 </style>
-<section class="cotiza-tu-servicio">
-    <div class="navegador">
-        <img class="arrow" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/Iconos/arrow-right-naranja.svg"
-            alt="">
-        <p class="title__navegador">Contacto</p>
-        <img class="arrow" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/Iconos/arrow-right-naranja.svg"
-            alt="">
-        <p class="title__navegador">Quiero ser chofer</p>
-        <img class="arrow" src="<?php echo get_template_directory_uri(); ?>/assets/imgs/Iconos/arrow-right-naranja.svg"
-            alt="">
-        <p class="title__navegador">soy empresa</p>
-    </div>
+
+<section class="quiero-ser-chofer__uruguay">
+
     <div id="form-container">
-        <form id="multiStepForm">
+        <form id="multiStepForm"
+            action="https://docs.google.com/forms/d/e/1FAIpQLSd_2fLadIJzN37u89r0_xpLRBfW5zrcVCyNuE9yb9uFPI8jiA/formResponse"
+            method="post" target="hidden_iframe" onsubmit="submitted=true;">
             <div class="form-section active">
-                <div>
-                    <div class="cotiza-tu-servicio-container">
-                        <div class="cotiza-tu-servicio-centrado">
-                            <div class="cotiza-tu-servicio-texto">
-                                <div class="cotiza-tu-servicio-texto-titulo">
-                                    <h2>Te estamos buscando!</h2>
-                                </div>
-                                <div class="cotiza-tu-servicio-texto-parrafo">
-                                    <p>¿Tenés un vehículo y querés trabajar con nosotros?</p>
-
-                                    <p>Completa el siguiente formulario y nos pondremos en contacto contigo</p>
-                                </div>
-                            </div>
-                            <div class="cotiza-tu-servicio-form">
-
-                                <form id="miFormulario" class="cotiza-tu-servicio-form-container">
-                                    <div class="form1-empresa-tipoEmpresa">
-                                        <p>Empresa:</p>
-                                        <div class="selectable-container">
-                                            <input class="form1-empresa-tipoEmpresa-inputSelect" type="text"
-                                                id="selectableInput1" name="selectableInput1" readonly
-                                                placeholder="Selecciona tipo de empresa">
-                                            <div class="options" id="options1">
-                                                <div class="option" data-value="opcion1">Empresa Unipersonal Literal
-                                                    E con facturación electrónica</div>
-                                                <div class="option" data-value="opcion2">Empresa Unipersonal con IVA
-                                                </div>
-                                                <div class="option" data-value="opcion3">Sociedad de hecho (Entre 2
-                                                    o más personas)</div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                    <div class="cotiza-tu-servicio-form-container-inputs">
-
-
-                                        <input class="cotiza-tu-servicio-form-input" type="text" id="input1"
-                                            name="input1" required placeholder="Tu nombre">
-
-
-                                        <input class="cotiza-tu-servicio-form-input" type="text" id="input2"
-                                            name="input2" required placeholder="Tu telefono"><!-- <br><br> -->
-
-
-                                        <input class="cotiza-tu-servicio-form-input" type="email" id="input4"
-                                            name="input4" required placeholder="Tu e-mail">
-
-
-
-                                        <input class="cotiza-tu-servicio-form-input" type="number" id="input3"
-                                            name="input3" required placeholder="Edad">
-
-
-                                        <div class="selectable-container">
-                                            <input class="cotiza-tu-servicio-form-input" type="text"
-                                                id="selectableInput1" name="selectableInput1" readonly
-                                                placeholder="Carnet de salud vigente">
-                                            <div class="options" id="options1">
-                                                <div class="option" data-value="opcion1">Si</div>
-                                                <div class="option" data-value="opcion2">No</div>
-                                            </div>
-                                        </div>
-
-                                        <div class="selectable-container">
-                                            <input class="cotiza-tu-servicio-form-input" type="text"
-                                                id="selectableInput2" name="selectableInput2" readonly
-                                                placeholder="Lugar de residencia">
-                                            <div class="options" id="options2">
-                                                <div class="option" data-value="opcion1">Montevideo</div>
-                                                <div class="option" data-value="opcion2">Canelones</div>
-                                                <div class="option" data-value="opcion3">Colonia</div>
-                                                <div class="option" data-value="opcion4">Maldonado</div>
-                                                <div class="option" data-value="opcion5">Rocha</div>
-                                                <div class="option" data-value="opcion6">Artigas</div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="cotiza-tu-servicio-form-container-textarea">
-                                        <textarea class="cotiza-tu-servicio-form-textarea" id="textarea" name="textarea"
-                                            rows="4" cols="50" placeholder="Tu mensaje aquí"></textarea>
-                                    </div>
-
-                                    <div class="progress-container">
-                                        <div class="progress-circle active"></div>
-                                        <div class="circulo"></div>
-                                        <div class="circulo"></div>
-                                        <div class="circulo"></div>
-                                    </div>
-
-                                    <div class="cotiza-tu-servicio-form-container-boton">
-                                        <div class="elcontenedordelbotonquedespuescambio">
-                                            <button type="button"
-                                                class="btn next cotiza-tu-servicio-form-boton">Siguiente</button>
-                                        </div>
-
-                                    </div>
-
-                                </form>
-                                <div class="cotiza-tu-servicio-form-direcciones">
-                                    <div class="direcciones-container1">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/images/direcciones.svg"
-                                            alt="">
-                                        <h4>DIRECCIÓN</h4>
-                                        <p>República de Corea 2962 San Salvador 1480</p>
-                                    </div>
-                                    <div class="direcciones-container2">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/images/mailes.svg" alt="">
-                                        <h4>MAIL</h4>
-                                        <p>comercial@soydelivery.com.uy rrhh@soydelivery.com.uy
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
+                <div class="contacto-clientes__form-container">
+                    <div class="contacto-clientes__text">
+                        <div class="contacto-clientes__text-title">
+                            <h2 class="contacto-clientes__title">Quiero ser conductor</h2>
                         </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="form-section">
-                <div class="form3-container">
-                    <div class="form3-titulo">
-                        <div class="form3-titulo-container">
-                            <h2>Te estamos buscando!</h2>
+                        <div class="contacto-clientes__text-paragraph">
+                            <p class="contacto-clientes__paragraph">Completa el siguiente formulario y nos pondremos en
+                                contacto contigo</p>
                         </div>
                     </div>
 
-                    <form id="miFormulario" class="miFormulario2">
-
-                        <div>
-                            <div class="form3-inputs">
-
-                                <div class="form3-inputs-container-titulo">
-                                    <h3>Qué tipo de libreta de conducir tienes?</h3>
+                    <div class="contacto-clientes__form-elements">
+                        <div class="contacto-clientes__form-inputs">
+                            <div class="contacto-clientes__selectable-container selectable-container">
+                                <input class="contacto-clientes__input" type="text" id="selectableInput2" name=""
+                                    readonly placeholder="Selecciona tipo de empresa">
+                                <div class="contacto-clientes__options" id="options2">
+                                    <div class="contacto-clientes__option option" data-value="Montevideo">No tengo
+                                        empresa
+                                    </div>
+                                    <div class="contacto-clientes__option option" data-value="Canelones">Empresa
+                                        Unipersonal Literal E con facturación electrónica</div>
+                                    <div class="contacto-clientes__option option" data-value="Colonia">Empresa
+                                        Unipersonal con IVA</div>
+                                    <div class="contacto-clientes__option option" data-value="Maldonado">Sociedad de
+                                        hecho (Entre 2 o más personas)</div>
                                 </div>
-
-                                <div class="form3-inputs-container">
-                                    <div class="form3-inputs-container-input">
-                                        <input type="checkbox" id="checkbox" name="checkbox">
-                                        <label for="">Categoría A</label>
-                                    </div>
-
-                                    <div class="form3-inputs-container-input">
-                                        <input type="checkbox" id="checkbox" name="checkbox">
-                                        <label for="">Categoría F</label>
-                                    </div>
-
-                                    <div class="form3-inputs-container-input">
-                                        <input type="checkbox" id="checkbox" name="checkbox">
-                                        <label for="">Categoría B</label>
-                                    </div>
-                                    <div class="form3-inputs-container-input">
-                                        <input type="checkbox" id="checkbox" name="checkbox">
-                                        <label for="">Categoría G1</label>
-                                    </div>
-
-                                    <div class="form3-inputs-container-input">
-                                        <input type="checkbox" id="checkbox" name="checkbox">
-                                        <label for="">Categoría C</label>
-                                    </div>
-                                    <div class="form3-inputs-container-input">
-                                        <input type="checkbox" id="checkbox" name="checkbox">
-                                        <label for="">Categoría G2</label>
-                                    </div>
-
-                                    <div class="form3-inputs-container-input">
-                                        <input type="checkbox" id="checkbox" name="checkbox">
-                                        <label for="">Categoría D</label>
-                                    </div>
-                                    <div class="form3-inputs-container-input">
-                                        <input type="checkbox" id="checkbox" name="checkbox">
-                                        <label for="">Categoría G3</label>
-                                    </div>
-
-                                    <div class="form3-inputs-container-input">
-                                        <input type="checkbox" id="checkbox" name="checkbox">
-                                        <label for="">Categoría E</label>
-                                    </div>
-                                    <div class="form3-inputs-container-input">
-                                        <input type="checkbox" id="checkbox" name="checkbox">
-                                        <label for="">Categoría H</label>
-                                    </div>
-                                </div>
-
                             </div>
-                            <!-- <div class="form3-selectable-container">
-                                <div class="selectable-container">
-                                    <input class="cotiza-tu-servicio-form-input" type="text" id="selectableInput1"
-                                        name="selectableInput1" readonly placeholder="¿Tenes empresa propia?">
-                                    <div class="options" id="options1">
-                                        <div class="option" data-value="opcion1">Si</div>
-                                        <div class="option" data-value="opcion2">No</div>
-                                    </div>
+                            <input class="contacto-clientes__input" type="text" id="input1" name="" required
+                                placeholder="Nombre y Apellido">
+                            <input class="contacto-clientes__input" type="text" id="input2" name="" required
+                                placeholder="Tu telefono">
+                            <input class="contacto-clientes__input" type="email" id="input3" name="" required
+                                placeholder="Tu e-mail">
+                            <input class="contacto-clientes__input" type="number" id="input4" name="" required
+                                placeholder="Tu edad">
+
+                            <div class="contacto-clientes__selectable-container selectable-container">
+                                <input class="contacto-clientes__input" type="text" id="selectableInput1" name=""
+                                    readonly placeholder="Carnet de salud vigente">
+                                <div class="contacto-clientes__options" id="options1">
+                                    <div class="contacto-clientes__option option" data-value="Si">Si</div>
+                                    <div class="contacto-clientes__option option" data-value="No">No</div>
                                 </div>
-
-                                <div class="selectable-container">
-                                    <input class="cotiza-tu-servicio-form-input" type="text" id="selectableInput2"
-                                        name="selectableInput2" readonly placeholder="Tipo de empresa">
-                                    <div class="options" id="options2">
-                                        <div class="option" data-value="opcion1">Empresa Unipersonal Literal E
-                                            con
-                                            facturación electrónica</div>
-                                        <div class="option" data-value="opcion2">Empresa Unipersonal con IVA
-                                        </div>
-                                        <div class="option" data-value="opcion3">Sociedad de hecho (Entre 2 o
-                                            más
-                                            personas)</div>
+                            </div>
+                            <div class="contacto-clientes__selectable-container selectable-container">
+                                <input class="contacto-clientes__input" type="text" id="selectableInput2" name=""
+                                    readonly placeholder="Lugar de residencia">
+                                <div class="contacto-clientes__options" id="options2">
+                                    <div class="contacto-clientes__option option" data-value="Montevideo">Montevideo
                                     </div>
+                                    <div class="contacto-clientes__option option" data-value="Canelones">San José</div>
+                                    <div class="contacto-clientes__option option" data-value="Canelones">Canelones</div>
+                                    <div class="contacto-clientes__option option" data-value="Colonia">Colonia</div>
+                                    <div class="contacto-clientes__option option" data-value="Maldonado">Maldonado</div>
+                                    <div class="contacto-clientes__option option" data-value="Rocha">Rocha</div>
+                                    <div class="contacto-clientes__option option" data-value="Artigas">Artigas</div>
                                 </div>
-                            </div> -->
-                        </div>
-
-                        <div class="progress-container">
-                            <div class="circulo"></div>
-                            <div class="progress-circle"></div>
-                            <div class="circulo"></div>
-                            <div class="circulo"></div>
-                        </div>
-
-                        <div class="form3-botons-container">
-                            <button type="button" class=" btn prev">Anterior</button>
-                            <button type="button" class=" btn next">Siguiente</button>
-                        </div>
-
-                    </form>
-                    <div class="form3-direcciones-container">
-                        <div class="form3-direcciones1">
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/direcciones.svg" alt="">
-                            <h4>DIRECCIÓN</h4>
-                            <p>República de Corea 2962 San Salvador 1480</p>
-                        </div>
-                        <div class="form3-direcciones2">
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/mailes.svg" alt="">
-                            <h4>MAIL</h4>
-                            <p>comercial@soydelivery.com.uy rrhh@soydelivery.com.uy
-                            </p>
+                            </div>
                         </div>
                     </div>
-
-
+                    <div class="progress-container">
+                        <div class="progress-circle active"></div>
+                        <div class="circulo"></div>
+                        <div class="circulo"></div>
+                        <div class="circulo"></div>
+                    </div>
+                    <div class="cotiza-tu-servicio-form-container-boton">
+                        <button type="button" class="btn next cotiza-tu-servicio-form-boton">Siguiente</button>
+                    </div>
                 </div>
             </div>
 
             <div class="form-section">
-                <div>
-                    <div class="cotiza-tu-servicio-container">
-                        <div class="cotiza-tu-servicio-centrado">
-                            <div class="cotiza-tu-servicio-texto">
-                                <div class="cotiza-tu-servicio-texto-titulo">
-                                    <h2>Te estamos buscando!</h2>
+                <div class="contacto-clientes__form-container">
+                    <div class="contacto-clientes__form-elements">
+                        <div class="contacto-clientes__form-inputs">
+                            <div class="contacto-clientes__form-inputs-checkbox-container">
+                                <p>Qué tipo de libreta de conducir tienes?</p>
+                                <div class="contacto-clientes__form-inputs-checkbox">
+                                    <input type="checkbox" id="checkbox9" name="" value="Categoría A">
+                                    <label for="checkbox9">Categoria A</label>
                                 </div>
-                            </div>
-                            <div class="cotiza-tu-servicio-form">
-                                <form id="miFormulario" class="cotiza-tu-servicio-form-container">
-
-                                    <div class="seccion2-inputs-container">
-
-                                        <p>Qué tipo de vehículo tienes?</p>
-
-
-                                        <div>
-                                            <input type="checkbox" id="checkbox" name="checkbox">
-                                            <label for="">Moto</label>
-                                        </div>
-
-                                        <div>
-                                            <input type="checkbox" id="checkbox" name="checkbox">
-                                            <label for="">Bicicleta</label>
-                                        </div>
-
-                                        <div>
-                                            <input type="checkbox" id="checkbox" name="checkbox">
-                                            <label for="">Camioneta pequeña (Fiorino, Berlingo, etc)</label>
-                                        </div>
-
-                                        <div>
-                                            <input type="checkbox" id="checkbox" name="checkbox">
-                                            <label for="">Camioneta mediana (H1, Expert, etc)</label>
-                                        </div>
-
-                                        <div>
-                                            <input type="checkbox" id="checkbox" name="checkbox">
-                                            <label for="">Camioneta grande (Boxer, Master, etc)</label>
-                                        </div>
-
-                                        <div>
-                                            <input type="checkbox" id="checkbox" name="checkbox">
-                                            <label for="">Camión con furgon</label>
-                                        </div>
-
-                                        <div>
-                                            <input type="checkbox" id="checkbox" name="checkbox">
-                                            <label for="">Camión abierto</label>
-                                        </div>
-
-                                    </div>
-                                    <div class="selectable-container">
-                                        <input class="cotiza-tu-servicio-form-input" type="text" id="selectableInput1"
-                                            name="selectableInput1" readonly placeholder="Marca y modelo del vehículo">
-                                        <div class="options" id="options1">
-                                            <div class="option" data-value="opcion1">Chevrolet</div>
-                                            <div class="option" data-value="opcion2">Renault</div>
-                                            <div class="option" data-value="opcion3">Volkswagen</div>
-                                            <div class="option" data-value="opcion4">Fiat</div>
-                                            <div class="option" data-value="opcion5">Citroen</div>
-                                            <div class="option" data-value="opcion6">Otro</div>
-                                        </div>
-                                    </div>
-
-                                    <div class="selectable-container">
-                                        <input class="cotiza-tu-servicio-form-input" type="text" id="selectableInput2"
-                                            name="selectableInput2" readonly placeholder="Año">
-                                        <div class="options" id="options2">
-                                            <div class="option" data-value="opcion1">2024</div>
-                                            <div class="option" data-value="opcion2">2019</div>
-                                            <div class="option" data-value="opcion3">2014</div>
-                                            <div class="option" data-value="opcion4">2009</div>
-                                            <div class="option" data-value="opcion5">2004</div>
-                                            <div class="option" data-value="opcion6">1994</div>
-                                        </div>
-                                    </div>
-
-                                    <div class="progress-container">
-                                        <div class="circulo"></div>
-                                        <div class="circulo"></div>
-                                        <div class="progress-circle"></div>
-                                        <div class="circulo"></div>
-                                    </div>
-
-                                    <div class="cotiza-tu-servicio-form-container-boton2">
-
-                                        <button type="button"
-                                            class="cotiza-tu-servicio-form-boton btn prev">Anterior</button>
-                                        <button type="button"
-                                            class="cotiza-tu-servicio-form-boton btn next">Siguiente</button>
-
-                                    </div>
-
-                                </form>
-                                <div class="cotiza-tu-servicio-form-direcciones">
-                                    <div class="direcciones-container1">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/images/direcciones.svg"
-                                            alt="">
-                                        <h4>DIRECCIÓN</h4>
-                                        <p>República de Corea 2962 San Salvador 1480</p>
-                                    </div>
-                                    <div class="direcciones-container2">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/images/mailes.svg" alt="">
-                                        <h4>MAIL</h4>
-                                        <p>comercial@soydelivery.com.uy rrhh@soydelivery.com.uy
-                                        </p>
-                                    </div>
+                                <div class="contacto-clientes__form-inputs-checkbox">
+                                    <input type="checkbox" id="checkbox10" name="" value="Categoría B">
+                                    <label for="checkbox10">Categoria B</label>
+                                </div>
+                                <div class="contacto-clientes__form-inputs-checkbox">
+                                    <input type="checkbox" id="checkbox11" name="" value="Categoría C">
+                                    <label for="checkbox11">Categoria C</label>
+                                </div>
+                                <div class="contacto-clientes__form-inputs-checkbox">
+                                    <input type="checkbox" id="checkbox12" name="" value="Categría D">
+                                    <label for="checkbox12">Categoria D</label>
+                                </div>
+                                <div class="contacto-clientes__form-inputs-checkbox">
+                                    <input type="checkbox" id="checkbox13" name="" value="Categoría F">
+                                    <label for="checkbox13">Categoria F</label>
+                                </div>
+                                <div class="contacto-clientes__form-inputs-checkbox">
+                                    <input type="checkbox" id="checkbox14" name="" value="Categoría G1">
+                                    <label for="checkbox14">Categoria G1</label>
+                                </div>
+                                <div class="contacto-clientes__form-inputs-checkbox">
+                                    <input type="checkbox" id="checkbox15" name="" value="Categoría G2">
+                                    <label for="checkbox15">Categoria G2</label>
+                                </div>
+                                <div class="contacto-clientes__form-inputs-checkbox">
+                                    <input type="checkbox" id="checkbox16" name="" value="Categoría G3">
+                                    <label for="checkbox16">Categoria G3</label>
+                                </div>
+                                <div class="contacto-clientes__form-inputs-checkbox">
+                                    <input type="checkbox" id="checkbox17" name="" value="Categoría E">
+                                    <label for="checkbox17">Categoria E</label>
+                                </div>
+                                <div class="contacto-clientes__form-inputs-checkbox">
+                                    <input type="checkbox" id="checkbox18" name="" value="Categoría H">
+                                    <label for="checkbox18">Categoria H</label>
                                 </div>
                             </div>
 
                         </div>
                     </div>
+                    <div class="progress-container">
+                        <div class="circulo"></div>
+                        <div class="progress-circle"></div>
+                        <div class="circulo"></div>
+                        <div class="circulo"></div>
+                    </div>
+                    <div class="cotiza-tu-servicio-form-container-boton2">
+                        <button type="button" class="cotiza-tu-servicio-form-boton btn prev">Anterior</button>
+                        <button type="button" class="cotiza-tu-servicio-form-boton btn next">Siguiente</button>
+                    </div>
                 </div>
-
             </div>
 
             <div class="form-section">
-                <div>
-                    <div class="cotiza-tu-servicio-container">
-                        <div class="cotiza-tu-servicio-centrado">
-                            <div class="cotiza-tu-servicio-texto">
-                                <div class="cotiza-tu-servicio-texto-titulo">
-                                    <h2>Te estamos buscando!</h2>
+                <div class="contacto-clientes__form-container">
+                    <div class="contacto-clientes__form-elements">
+                        <div class="contacto-clientes__form-inputs">
+                            <div class="contacto-clientes__form-inputs-checkbox-container">
+                                <p>Qué tipo de vehículo tienes?</p>
+
+                                <div class="contacto-clientes__form-inputs-checkbox">
+                                    <input type="checkbox" id="checkbox2" name="" value="Moto">
+                                    <label for="checkbox2">Moto</label>
                                 </div>
-
-                            </div>
-                            <div class="cotiza-tu-servicio-form">
-                                <form id="miFormulario" class="form4-container">
-                                    <div class="form4-allinputs-container">
-                                        <div class="form4-inputs-containeres">
-                                            <div class="form4-inputs-container-titulo">
-                                                <p>¿Qué disponibilidad tenes para trabajar?</p>
-                                            </div>
-                                            <div class="form4-inputs-container">
-                                                <div class="form4-inputs-item-container">
-                                                    <input type="checkbox" id="checkbox" name="checkbox">
-                                                    <label for="">Full time</label>
-                                                </div>
-
-                                                <div class="form4-inputs-item-container">
-                                                    <input type="checkbox" id="checkbox" name="checkbox">
-                                                    <label for="">Solo en la mañana</label><br>
-                                                </div>
-
-                                                <div class="form4-inputs-item-container">
-                                                    <input type="checkbox" id="checkbox" name="checkbox">
-                                                    <label for="">Solo en la tarde</label>
-                                                </div>
-
-                                                <div class="form4-inputs-item-container">
-                                                    <input type="checkbox" id="checkbox" name="checkbox">
-                                                    <label for="">Entre semana</label><br>
-                                                </div>
-
-                                                <div class="form4-inputs-item-container">
-                                                    <input type="checkbox" id="checkbox" name="checkbox">
-                                                    <label for="">Fines de semana</label>
-                                                </div>
-
-                                                <div class="form4-inputs-item-container">
-                                                    <input type="checkbox" id="checkbox" name="checkbox">
-                                                    <label for="">Otro</label><br>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="form4-textarea-container">
-                                        <div class="form4-textarea-item">
-                                            <textarea class="cotiza-tu-servicio-form-textarea" id="textarea"
-                                                name="textarea" rows="4" cols="50"
-                                                placeholder="¿Cómo nos conociste?"></textarea>
-                                        </div>
-
-                                        <div class="form4-textarea-item">
-                                            <textarea class="cotiza-tu-servicio-form-textarea" id="textarea"
-                                                name="textarea" rows="4" cols="50"
-                                                placeholder="¿Te gustaría agregar algún comentario?"></textarea>
-                                        </div>
-                                    </div>
-
-                                    <div class="progress-container">
-                                        <div class="circulo"></div>
-                                        <div class="circulo"></div>
-                                        <div class="circulo"></div>
-                                        <div class="progress-circle"></div>
-                                    </div>
-
-                                    <div class="cotiza-tu-servicio-form-container-boton">
-                                        <button type="button"
-                                            class="cotiza-tu-servicio-form-boton btn prev">Anterior</button>
-                                        <button type="submit" class="cotiza-tu-servicio-form-boton btn">Enviar</button>
-                                    </div>
-
-                                </form>
-                                <div class="cotiza-tu-servicio-form-direcciones">
-                                    <div class="direcciones-container1">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/images/direcciones.svg"
-                                            alt="">
-                                        <h4>DIRECCIÓN</h4>
-                                        <p>República de Corea 2962 San Salvador 1480</p>
-                                    </div>
-                                    <div class="direcciones-container2">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/images/mailes.svg" alt="">
-                                        <h4>MAIL</h4>
-                                        <p>comercial@soydelivery.com.uy rrhh@soydelivery.com.uy
-                                        </p>
-                                    </div>
+                                <div class="contacto-clientes__form-inputs-checkbox">
+                                    <input type="checkbox" id="checkbox3" name="" value="Bicicleta">
+                                    <label for="checkbox3">Bicicleta</label>
+                                </div>
+                                <div class="contacto-clientes__form-inputs-checkbox">
+                                    <input type="checkbox" id="checkbox4" name="" value="Camioneta pequeña">
+                                    <label for="checkbox4">Camioneta pequeña (Fiorino, Berlingo, etc)</label>
+                                </div>
+                                <div class="contacto-clientes__form-inputs-checkbox">
+                                    <input type="checkbox" id="checkbox5" name="" value="Camioneta mediana">
+                                    <label for="checkbox5">Camioneta mediana (H1, Expert, etc)</label>
+                                </div>
+                                <div class="contacto-clientes__form-inputs-checkbox">
+                                    <input type="checkbox" id="checkbox6" name="" value="Camioneta grande">
+                                    <label for="checkbox6">Camioneta grande (Boxer, Master, etc)</label>
+                                </div>
+                                <div class="contacto-clientes__form-inputs-checkbox">
+                                    <input type="checkbox" id="checkbox7" name="" value="Camión con furgon">
+                                    <label for="checkbox7">Camión con furgon</label>
+                                </div>
+                                <div class="contacto-clientes__form-inputs-checkbox">
+                                    <input type="checkbox" id="checkbox8" name="" value="Camión abierto">
+                                    <label for="checkbox8">Camión abierto</label>
                                 </div>
                             </div>
-
+                            <div class="contacto-clientes__selectable-container selectable-container">
+                                <input class="contacto-clientes__input" type="text" id="selectableInput3" name=""
+                                    readonly placeholder="Marca y modelo de tu vehiculo">
+                                <div class="contacto-clientes__options" id="options3">
+                                    <div class="contacto-clientes__option option" data-value="Chevrolet">Chevrolet</div>
+                                    <div class="contacto-clientes__option option" data-value="Renault">Renault</div>
+                                    <div class="contacto-clientes__option option" data-value="Volkswagen">Volkswagen
+                                    </div>
+                                    <div class="contacto-clientes__option option" data-value="Fiat">Fiat</div>
+                                    <div class="contacto-clientes__option option" data-value="Citroen">Citroen</div>
+                                    <div class="contacto-clientes__option option" data-value="Otro">Otro</div>
+                                </div>
+                            </div>
+                            <div class="contacto-clientes__selectable-container selectable-container">
+                                <input class="contacto-clientes__input" type="text" id="selectableInput4"
+                                    name="entry.2017070637" readonly placeholder="Año">
+                                <div class="contacto-clientes__options" id="options4">
+                                    <?php for ($year = 2024; $year >= 1990; $year--): ?>
+                                        <div class="option" data-value="<?php echo $year; ?>"><?php echo $year; ?></div>
+                                    <?php endfor; ?>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    <div class="progress-container">
+                        <div class="circulo"></div>
+                        <div class="progress-circle"></div>
+                        <div class="circulo"></div>
+                        <div class="circulo"></div>
+                    </div>
+                    <div class="cotiza-tu-servicio-form-container-boton2">
+                        <button type="button" class="cotiza-tu-servicio-form-boton btn prev">Anterior</button>
+                        <button type="button" class="cotiza-tu-servicio-form-boton btn next">Siguiente</button>
+                    </div>
                 </div>
+            </div>
 
+
+            <div class="form-section">
+                <div class="contacto-clientes__form-container">
+                    <div class="contacto-clientes__form-elements">
+                        <div class="contacto-clientes__form-inputs">
+                            <div class="contacto-clientes__form-inputs-checkbox-container">
+                                <p>¿Qué disponibilidad tenes para trabajar?</p>
+                                <div class="contacto-clientes__form-inputs-checkbox">
+                                    <input type="checkbox" id="checkbox19" name="" value="Full time">
+                                    <label for="checkbox19">Full time</label>
+                                </div>
+                                <div class="contacto-clientes__form-inputs-checkbox">
+                                    <input type="checkbox" id="checkbox20" name="" value="Solo en la mañana">
+                                    <label for="checkbox20">Solo en la mañana</label>
+                                </div>
+                                <div class="contacto-clientes__form-inputs-checkbox">
+                                    <input type="checkbox" id="checkbox21" name="" value="Solo en la tarde">
+                                    <label for="checkbox21">Solo en la tarde</label>
+                                </div>
+                                <div class="contacto-clientes__form-inputs-checkbox">
+                                    <input type="checkbox" id="checkbox22" name="" value="Entre semana">
+                                    <label for="checkbox22">Entre semana</label>
+                                </div>
+                                <div class="contacto-clientes__form-inputs-checkbox">
+                                    <input type="checkbox" id="checkbox23" name="" value="Fines de semana">
+                                    <label for="checkbox23">Fines de semana</label>
+                                </div>
+                                <div class="contacto-clientes__form-inputs-checkbox">
+                                    <input type="checkbox" id="checkbox24" name="" value="Otro">
+                                    <label for="checkbox24">Otro</label>
+                                </div>
+                            </div>
+                            <textarea class="contacto-clientes__textarea" id="textarea1" name="" rows="4" cols="50"
+                                placeholder="Como nos conociste?"></textarea>
+                            <textarea class="contacto-clientes__textarea" id="textarea2" name="" rows="4" cols="50"
+                                placeholder="Te gustaria dejar un comentario?"></textarea>
+                        </div>
+                    </div>
+                    <div class="progress-container">
+                        <div class="circulo"></div>
+                        <div class="circulo"></div>
+                        <div class="progress-circle"></div>
+                        <div class="circulo"></div>
+                    </div>
+                    <div class="cotiza-tu-servicio-form-container-boton">
+                        <button type="button" class="cotiza-tu-servicio-form-boton btn prev">Anterior</button>
+                        <button type="submit" class="cotiza-tu-servicio-form-boton btn">Enviar</button>
+                    </div>
+                </div>
             </div>
         </form>
+
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
+            onload="if(submitted) { mostrarPopup(); }"></iframe>
+    </div>
+    <div id="popup" class="popup__contacto" style="display: none;">
+        <div class="popup__contacto__content">
+            <img id="closePopup" class="popup__close"
+                src="<?php echo get_template_directory_uri(); ?>/assets/imgs/Iconos/paper-plane-blanco.svg" alt="">
+            <p>Gracias por ponerte en contacto con nosotros. Tu información fue enviada con éxito. ¡Pronto te
+                contactaremos!</p>
+        </div>
     </div>
 </section>
 
 <script>
-    // scripts.js
-    document.addEventListener('DOMContentLoaded', function () {
-        var selectableInputs = document.querySelectorAll('.selectable-container input');
-        var optionsContainers = document.querySelectorAll('.options');
-        var options = document.querySelectorAll('.option');
 
-        selectableInputs.forEach(function (input) {
-            input.addEventListener('click', function () {
-                var optionsContainer = this.nextElementSibling;
-                optionsContainer.style.display = optionsContainer.style.display === 'block' ? 'none' : 'block';
-            });
-        });
-
-        options.forEach(function (option) {
-            option.addEventListener('click', function () {
-                var input = this.closest('.selectable-container').querySelector('input');
-                input.value = this.textContent;
-                this.parentElement.style.display = 'none';
-            });
-        });
-
-        document.addEventListener('click', function (e) {
-            if (!e.target.closest('.selectable-container')) {
-                optionsContainers.forEach(function (container) {
-                    container.style.display = 'none';
-                });
-            }
-        });
-    });
     document.addEventListener('DOMContentLoaded', function () {
         const formSections = document.querySelectorAll('.form-section');
         const nextButtons = document.querySelectorAll('.next');
@@ -1256,29 +402,124 @@ require get_template_directory() . '/templates/headers/header-uruguay.php';
 
         nextButtons.forEach(button => {
             button.addEventListener('click', () => {
-                formSections[currentSection].classList.remove('active');
-                currentSection++;
-                formSections[currentSection].classList.add('active');
-                updateProgressCircles();
+                if (currentSection < formSections.length - 1) {
+                    formSections[currentSection].classList.remove('active');
+                    currentSection++;
+                    formSections[currentSection].classList.add('active');
+                    updateProgressCircles();
+                }
             });
         });
 
         prevButtons.forEach(button => {
             button.addEventListener('click', () => {
-                formSections[currentSection].classList.remove('active');
-                currentSection--;
-                formSections[currentSection].classList.add('active');
-                updateProgressCircles();
+                if (currentSection > 0) {
+                    formSections[currentSection].classList.remove('active');
+                    currentSection--;
+                    formSections[currentSection].classList.add('active');
+                    updateProgressCircles();
+                }
             });
         });
 
-        document.getElementById('multiStepForm').addEventListener('submit', function (event) {
-            event.preventDefault();
-            alert('Formulario enviado!');
-            // Aquí puedes agregar el código para enviar el formulario
-        });
-    });
+        document.addEventListener('DOMContentLoaded', function () {
+            const formSections = document.querySelectorAll('.form-section');
+            const nextButtons = document.querySelectorAll('.next');
+            const prevButtons = document.querySelectorAll('.prev');
+            const progressCircles = document.querySelectorAll('.progress-circle');
+            let currentSection = 0;
 
+            function updateProgressCircles() {
+                progressCircles.forEach((circle, index) => {
+                    circle.classList.toggle('active', index <= currentSection);
+                });
+            }
+
+            nextButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    if (currentSection < formSections.length - 1) {
+                        formSections[currentSection].classList.remove('active');
+                        currentSection++;
+                        formSections[currentSection].classList.add('active');
+                        updateProgressCircles();
+                    }
+                });
+            });
+
+            prevButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    if (currentSection > 0) {
+                        formSections[currentSection].classList.remove('active');
+                        currentSection--;
+                        formSections[currentSection].classList.add('active');
+                        updateProgressCircles();
+                    }
+                });
+            });
+
+            document.addEventListener('DOMContentLoaded', function () {
+                const formSections = document.querySelectorAll('.form-section');
+                const nextButtons = document.querySelectorAll('.next');
+                const prevButtons = document.querySelectorAll('.prev');
+                const progressCircles = document.querySelectorAll('.progress-circle');
+                let currentSection = 0;
+
+                function updateProgressCircles() {
+                    progressCircles.forEach((circle, index) => {
+                        circle.classList.toggle('active', index <= currentSection);
+                    });
+                }
+
+                nextButtons.forEach(button => {
+                    button.addEventListener('click', () => {
+                        if (currentSection < formSections.length - 1) {
+                            formSections[currentSection].classList.remove('active');
+                            currentSection++;
+                            formSections[currentSection].classList.add('active');
+                            updateProgressCircles();
+                        }
+                    });
+                });
+
+                prevButtons.forEach(button => {
+                    button.addEventListener('click', () => {
+                        if (currentSection > 0) {
+                            formSections[currentSection].classList.remove('active');
+                            currentSection--;
+                            formSections[currentSection].classList.add('active');
+                            updateProgressCircles();
+                        }
+                    });
+                });
+
+                document.getElementById('multiStepForm').addEventListener('submit', function (event) {
+                    event.preventDefault();
+                    const form = this;
+                    const data = new FormData(form);
+
+                    fetch(form.action, {
+                        method: 'POST',
+                        body: data,
+                        mode: 'no-cors'
+                    }).then(() => {
+                        mostrarPopup();
+                    }).catch(error => {
+                        console.error('Error:', error);
+                    });
+                });
+
+                function mostrarPopup() {
+                    document.getElementById('popup').style.display = 'block';
+                }
+
+                document.getElementById('closePopup').addEventListener('click', function () {
+                    document.getElementById('popup').style.display = 'none';
+                });
+            });
+
+        });
+
+    });
 </script>
 
 <?php get_footer(); ?>
